@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="subject" content="Blogging">
+  <meta name="author" content="Furu.Art">
+  <meta name="keywords" content="Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster">
+  <meta name="copyright" content="&copy; Furu.Art 2016">
+
+  <title>[#1] Gulp&#39;owanie z Furu - nauka języka</title>
+  <meta name="description" content="Przyszła pora na kolejną lekcję Gulp’owania z Furu! Dzisiaj będzie już stricte praktycznie, pojawi się dużo kodu oraz sporo tłumaczeń co się dzieje w danej s...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/gulp-1/">
+  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/scripts/js/prism/prism.css">
+
+  <script src="/assets/scripts/js/jquery.js"></script>
+  <script src="/assets/scripts/js/prism/prism.js"></script>
+</head>
+
+
+  <body class="body-custom">
+    <div class="htmlMask disable"></div>
+
+    <div class="container-fluid">
+
+      <div class="mobile-trigger"><i class="ion-android-menu"></i> <i class="ion-android-close closed"></i></div>
+<div class="mobile-navigation-bar">
+  <div class="navigation-bar">
+    <ul class="mini-navigation">
+      <header>
+        <header>
+
+  <nav id="drop">
+
+  <div class="trigger">
+    <i class="ion-android-arrow-back"></i>
+    <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+</nav>
+
+  <div class="brand">
+
+    <div class="logo">
+
+      <a href="/"></a>
+
+    </div>
+
+</div>
+
+  <h1 class="title">Blog w Pełni</h1>
+   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <div class="spacer"></div>
+
+</header>
+      </header>
+      <li><a href="/"><i class="ion-home"></i> Strona główna</a></li>
+      <li><a href="/about"><i class="ion-android-contact"></i> O mnie</a></li>
+      <li><a href="/search/category"><i class="ion-android-folder"></i> Kategorie</a></li>
+      <li><a href="/archive"><i class="ion-android-calendar"></i> Archiwum</a></li>
+    </ul>
+  </div>
+</div>
+      
+      <div class="col-3">
+
+      <div class="triggerInactive">
+  <i class="ion-android-arrow-forward"></i>
+  <p class="tip">Przywróc nawigację.</p>
+</div>
+
+<!-- Nerds: Experimental Functions(); -> Do not use!
+<div class="nightMode">
+  <i class="ion-android-bulb"></i>
+  <p class="tip">Uruchom tryb nocny, oszczędza wzrok.</p>
+</div> 
+
+<div class="trigger-tools">
+  <i class="ion-gear-b"></i>
+
+  <div class="tools-list">
+    <div class="trigger-readability">
+      <p><i class="ion-ios-glasses"></i></p> 
+    </div>
+    <div class="trigger-font-size">
+      <i class="ion-plus-round"></i>
+    </div>
+  </div>
+  
+</div>
+-->
+
+      <div class="navigation-bar">
+        
+        <header>
+
+  <nav id="drop">
+
+  <div class="trigger">
+    <i class="ion-android-arrow-back"></i>
+    <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+</nav>
+
+  <div class="brand">
+
+    <div class="logo">
+
+      <a href="/"></a>
+
+    </div>
+
+</div>
+
+  <h1 class="title">Blog w Pełni</h1>
+   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <div class="spacer"></div>
+
+</header>
+
+        <div class="aboutMe">
+
+  <h2 class="title"><strong>O Furu</strong> - czyli o mnie</h2>
+  
+  <div class="me">
+
+    <div class="photo">
+
+      <a href="/about"></a>
+
+    </div>
+
+  </div>
+
+  <div class="data">
+
+    <p class="info">Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
+
+    <div class="socials">
+
+      <ul>
+
+        <li><a href="https://fb.com/furu.art"><i class="ion-social-facebook"></i></a></li>
+
+        <li><a href="https://www.instagram.com/furu.art/"><i class="ion-social-instagram-outline"></i></a></li>
+
+        <li><a href="https://github.com/furuart/"><i class="ion-social-github"></i></a></li>
+      
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+        <div class="category">
+
+  <h2 class="title">Kategorie</h2>
+  <div class="data">
+      
+        <li><a href="/search/category/">Dla webdeveloper'a <i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="/search/category/">Dla webdesigner'a <i class="after ion-android-arrow-forward"></i></a></li>
+      
+  </div>
+</div>`
+
+        <div class="archive">
+  <h2 class="title">Archiwum</h2>
+  <div class="data">
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
+      
+    
+  
+  </div>
+</div>
+
+        <div class="ads">
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+</div>
+
+        <footer>
+
+</footer>
+
+
+      </div>
+
+      </div>
+
+      <div class="col-9">     
+           
+              <div class="navigator">
+    <span><a href="/">Strona główna</a></span>
+    <span><i class="ion-chevron-right"></i></span>
+    <span><a href="/gulp-1/">Obecny post</span>
+  </div>
+
+  <div class="row">
+
+    <article class="article">
+
+      <header class="article-header">
+          <div style="background-image: url('');" class="headerImage">
+        <h2 class="article-title"><a href="#nope">[#1] Gulp'owanie z Furu - nauka języka</a></h2>
+        </div>
+         <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>24 Maja 2016</span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dla webdeveloper'a </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
+          </div>
+      </header>
+
+      <div class="article-content">
+        <h3 id="przysza-pora-na-kolejn-lekcj-gulpowania-z-furu-dzisiaj-bdzie-ju-stricte-praktycznie-pojawi-si-duo-kodu-oraz-sporo-tumacze-co-si-dzieje-w-danej-sekcji-z-racji-i-wiem-e-nie-kady-ma-pojcie-jak-si-tworzy-strony-www-postaram-si-to-dzisiaj-wszystko-dokadnie-wyjani-by-zachci-kadego-do-podjcia-si-stworzenia-swojej-czci-siebie-w-internecie">Przyszła pora na kolejną lekcję Gulp’owania z Furu! Dzisiaj będzie już stricte praktycznie, pojawi się dużo kodu oraz sporo tłumaczeń co się dzieje w danej sekcji, z racji iż wiem że nie każdy ma pojęcie jak się tworzy strony WWW, postaram się to dzisiaj wszystko dokładnie wyjaśnić by zachęcić każdego do podjęcia się stworzenia swojej części siebie w internecie!</h3>
+
+<!--more-->
+
+<p>Jeśli zrobiliśmy wszystko tak jak w poprzedniej lekcji <a href="/gulp-0/">Tutaj</a>, to z powodzeniem możemy przystąpić do dalszej pracy, w której skupimy się na wprowadzeniu do Gulp’a języka kodowania Jade oraz języka ostylowania Sass (o których było wcześniej <a href="/jezyk-developera/">Tutaj</a>). Dobrze, więc zacznijmy od dodania kilku plików do naszego folderu z Gulp’em:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-7.png" alt="Gulp'owanie #1-1" /></p>
+
+<p>Tworzymy w folderze jade, plik z rozszerzeniem .jade, a w folderze sass plik z rozszerzeniem, tutaj jak komu wygodniej ja wybrałem .scss, lecz może być .sass, różnice zostały przedstawione w wyżej podlinkowanym wpisie. Dobrze, wypadałoby teraz nauczyć Gulp’a rozumienia kodu Jade oraz Sass, w tym celu otwieramy konsolę w naszym folderze (<code>SHIFT</code> + <code>Prawy przycisk myszy</code> - <code>Otwórz okno polecenia tutaj</code>) i wpisujemy:</p>
+
+<p><code>npm install gulp-jade --save-dev</code></p>
+
+<p>Parametry znajdujące się przy poleceniu omawiałem w [#0] lekcji z Gulp’em, gdy wszystko wykonaliśmy poprawnie, przystępujemy do wprowadzenia drugiego języka, wpisujemy:</p>
+
+<p><code>npm install gulp-sass --save-dev</code></p>
+
+<p>A teraz, jak sprawdzić czy nasze biblioteki zainstalowały się na pewno poprawnie? Wchodzimy w nasz tajemniczy plik <code>package.json</code> i naszym oczom powinno się ukazać takie coś:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-8.png" alt="Gulp'owanie #1-2" /></p>
+
+<p>Jak widać, nasz początkowo pusty plik, który zawierał wyłącznie nawiasy klamrowe, zawiera teraz nazwy poszczególnych bibliotek jakie instalowaliśmy przy pomocy polecenia npm install wraz z ich wersjami, no dobrze, tylko po co? Mniej więcej po to, aby wiedzieć że pracujemy na pewno na najnowszej wersji danej biblioteki i dla upewnienia, czy faktycznie została prawidłowo dodana do <code>node_modules</code>, jakim cudem pakiety które instalowaliśmy zagnieździły się w tym pliku? Tutaj swoją rolę odgrywa parametr –save-dev, czy zapis dla programisty, tłumacząc łopatologicznie. Właśnie do tego służy niepozorny plik <code>package.json</code>. Jeśli wszystko zrobiliście poprawnie, powinno to wyglądać tak jak u mnie, teraz zajmiemy się nauką Gulp’a, aby zrozumiał co my do niego wklepujemy. Otwieramy nasz plik ‘gulpfile.js’ (którego znaczenie tłumaczyłem również w [#0] lekcji) i robimy takie czary mary:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-9.png" alt="Gulp'owanie #1-3" /></p>
+
+<pre><code class="language-javascript">var jade = require('gulp-jade');
+
+gulp.task('jade', function() {
+
+});
+</code></pre>
+
+<p>Do poprzedniego kodu dodajemy nową zmienną, importującą bibliotekę Jade oraz tworzymy nowe polecenie dla Gulp’a o nazwie <code>jade</code>, dodatkowo dodałem komentarze dla lepszego rozeznania w kodzie (komentarze czyli tekst który nie jest wyświetlany na stronie ani nie jest rozpoznawany przez program jako kod do wykonania, można nim oddzielać dane sekcje kodu i opisywać co robią). Teraz sprawimy, żeby nasze polecenie <code>jade</code>, potrafiło odnaleźć, rozpoznać i skompilować język <code>jade</code> na zwykły <code>html</code> (kompilowanie czyli proces przetwarzania kodu pisanego w danym języku na kod zrozumiały dla komputera, w tym przypadku przeglądarki), więc do dzieła:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-101.png" alt="Gulp'owanie #1-4" /></p>
+
+<pre><code class="language-javascript">gulp.task('jade', function() {
+    
+return gulp.src('./jade/**/*.jade')
+        
+  .pipe(jade({
+    pretty: true
+  }))
+        
+  .pipe(gulp.dest('./'))
+});
+
+gulp.task('default', ['connect', 'jade']);
+</code></pre>
+
+<p>A teraz cóż ja tutaj uczynił? Pierw rozszerzyłem polecenie <code>jade</code>, dodając funkcję która zawiera polecenie gulp.src, którego zadaniem jest wyszukanie plików w języku <code>jade</code>, precyzyjniej, <code>gulp.src</code> służy do wyszukiwania miejsca źródłowego skąd pochodzi plik który ma zostać skompilowany, tak jak u mnie gulp ma rozglądać się za plikami <code>jade</code> znajdującymi się w folderze jade, a co oznaczają te wszystkie gwiazdki? Gwiazdki podwójne, mówią Gulp’owi że powinien szukać plików z rozszerzeniem jade w każdym podfolderze zawartym w folderze <code>jade</code>, ponieważ w którymkolwiek z podfolderów może pojawiać się dowolnie nazwany (tutaj pojedyncza gwiazdka plik) plik w języku jade, następnie Gulp, ‘wpycha’ znalezione pliki do rury (<code>.pipe</code>, gulp posługuje się rurami), gdzie wewnętrzne polecenie biblioteki jade, zawiera opcję <code>pretty: true</code>, dzięki czemu nie muszę martwić się o to czy podczas pisania kodu nie wstawiłem za dużo spacji, tabulatorów czy enterów ponieważ opcja pretty uporządkuje mój kod automatycznie, zaoszczędzając tym samym cenny czas. Następnie, gdy Gulp zakończy wpychanie do rury ma za zadanie czekać, aż zawartość rury wyleci i jego zadaniem jest otrzymany produkt wrzucić do katalogu, w którym powinien znaleźć się plik docelowy ( .pipe(gulp.dest(‘./’)), gdzie (‘./’) oznacza katalog główny czyli nasz folder). Lecz, aby finalnie Gulp zrozumiał, że nauczył się właśnie Jade’a, musimy jeszcze nakazać mu domyślnie ładowanie polecenia <code>jade</code>, co robimy dopisując w gulp.task(‘default’), nazwę <code>jade</code>. W ten oto sposób powinniśmy otrzymać wpisując polecenie gulp:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-11.png" alt="Gulp'owanie #1-5" /></p>
+
+<p>Co świadczy o tym, że Gulp zaczął rozumieć Jade! Teraz przyszła pora na nieodłącznego kompana Jade, czyli Sass, ponownie wchodzimy w nasz plik ‘gulpfile.js’:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-121.png" alt="Gulp'owanie #1-6" /></p>
+
+<pre><code class="language-javascript">var sass = require('gulp-sass');
+
+gulp.task('sass', function() {
+
+  return gulp.src('./sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+  });
+
+gulp.task('sass:watch', function() {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
+gulp.task('default', ['connect', 'jade', 'sass']);
+</code></pre>
+
+<p>Analogicznie jak poprzednio dodajemy nową zmienną z biblioteką Sass, następnie wydajemy polecenie Gulp’owi o nazwie <code>sass</code> (nazwa może być dowolna, nie musi tutaj być sass, może być np. style, wtedy w <code>default</code> zmieniamy <code>sass</code> na <code>style</code>), w której funkcja zwraca (return, polecenie służące do zwracania danych, wartości w językach programowania) polecenie <code>gulp.src</code>, które szuka plików Sass, następnie Gulp wpycha do rury znalezione pliki, po czym przy wykorzystaniu polecenia z biblioteki Sass, jeżeli nasz kod będzie zawierał błędy, np. gdzieś zjedliśmy klamrę albo pomyliliśmy literę, otrzymamy w naszej konsoli błąd z dokładnym położeniem (sass.logError, zwraca błędy spotkane podczas kompilacji), następnie z rury nasze pliki trafiają do folderu o nazwie <code>css</code>. Następne polecenie, które wydaliśmy Gulp’owi ma za zadanie obserwowanie plików sass na bieżąco, dzięki czemu jest w stanie po każdym zapisie pliku rozpoznać czy nie występują błędy w naszym kodzie(<code>sass:watch</code>), co wywołujemy wpisując polecenie <code>gulp.watch</code>, miejsce obserwowania plików oraz nazwa naszego polecenia zawierającego rozpoznawanie Sass. Na sam koniec trzeba jeszcze pokazać Gulp’owi, że już potrafi obsługiwać Sass, więc analogicznie dodajemy po przecinku <code>sass</code>. Jeśli wszystko zrobiliśmy jak należy, otrzymamy po wpisaniu w konsolę <code>gulp</code>:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-13.png" alt="Gulp'owanie #1-6" /></p>
+
+<p>W ten oto sposób nauczyliśmy naszego Gulp’a posługiwania się dwoma językami nowoczesnego webdeveloper’a! Pamiętajcie, że jeżeli wasz edytor domyślnie nie posiada obsługi danego języka musicie wgrać odpowiednie rozszerzenie z obsługą tego języka, tak aby składnia była przez niego rozpoznawana, w moim przypadku Visual Studio Code nie posiadał obsługi Jade, więc musiałem zainstalować składnię Jade do programu, w zależności od edytora robi się to inaczej, aczkolwiek podobnie, także nie będę tutaj pokazywał sposobu jak to zrobić, po prostu wpiszcie w Google nazwę waszego edytora i język jakiego potrzebujecie np. Visual Studio Code jade</p>
+
+<p>Liczyłem, że w tej lekcji uda się stworzyć pierwszą stronę WWW, jednakże wytłumaczenie poleceń jakimi posługuje się Gulp w celu implementacji języka i przetworzenie go, zajęło całkiem sporo miejsca, także w następnej lekcji tworzymy własną stronę w Jade oraz ostylowujemy ją Sass’em i całość zostanie wzbogacona o tajemniczą opcję: ‘Livereload’, która umożliwia przetwarzanie kodu na żywo, zapisując plik w edytorze nie trzeba odświeżać przeglądarki, aby ujrzeć zmiany! Więc do kolejnej lekcji, a tymczasem jak zawsze jeśli podobał Ci się artykuł, spróbowałeś nauczyć Gulp’a nowych języków czy po prostu miło Ci się czytało, zostaw ‘Lubię to!’ co zmotywuje mnie jeszcze bardziej do dalszego tworzenia artykułów, komentarze mile widziane! Trzymajcie się w Pełni! :&gt;</p>
+
+<hr />
+
+<p>Artykuł oraz grafiki w nim zawarte są moją własnościa - <strong>Furu.ART</strong>, zakaz kopiowania treści na inne blogi, fanpage czy strony - Bo nogi z <em>**</em> powyrywam!</p>
+
+        <div class="tags">
+            
+              <span>#code</span>
+            
+              <span>#console</span>
+            
+              <span>#developer</span>
+            
+              <span>#Dla Webdevelopera</span>
+            
+              <span>#front-end</span>
+            
+              <span>#gulp</span>
+            
+              <span>#jade</span>
+            
+              <span>#javascript</span>
+            
+              <span>#konsola</span>
+            
+              <span>#node</span>
+            
+              <span>#npm</span>
+            
+              <span>#pipes</span>
+            
+              <span>#sass</span>
+            
+              <span>#web</span>
+            
+              <span>#webdeveloper</span>
+            
+        </div>
+         
+        <div id="disqus_thread"></div>
+        <script>
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                
+                s.src = '//blogwpeni.disqus.com/embed.js';
+                
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+
+    <script src="/assets/scripts/js/functions.js"></script>
+    
+  </body>
+
+</html>

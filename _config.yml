@@ -1,0 +1,54 @@
+# Global settings about Page
+
+# Title of page
+title: Blog w Pełni
+# Description of page
+description: Projektowanie i Kodowanie w Pełni
+# Subject of page
+subject: Blogging
+# Author of page
+author: Furu.Art
+# Language of page
+lang: PL
+# Mail to contact
+email: grafikawpelni@gmail.com
+# Base url of page
+baseurl: ""
+# Url of page
+url: ""
+# Home Url of page
+homeurl: /
+# Scripts url 
+scripts: "assets/scripts/js/"
+# Keywords for SEO
+keywords: Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster
+# Information about me
+info: 'Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a>'
+# Facebook URL
+facebook_url: https://fb.com/furu.art
+# Instagram URL
+instagram_url: https://www.instagram.com/furu.art/
+# Github URL
+github_url: https://github.com/furuart/
+
+
+# Styling of Page
+bodyclass: body-custom
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+# Permalink
+permalink: :title/
+# Excerpt
+excerpt_separator: <!--more-->
+
+comments: true
+
+gems: ['jekyll-paginate']
+
+paginate: 6
+
+paginate_path: "/strona-:num"
+
+timezone: null

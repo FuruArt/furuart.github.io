@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="subject" content="Blogging">
+  <meta name="author" content="Furu.Art">
+  <meta name="keywords" content="Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster">
+  <meta name="copyright" content="&copy; Furu.Art 2016">
+
+  <title>[#0] Gulp&#39;owanie z Furu</title>
+  <meta name="description" content="Gulp, czyli jak pchać w rury aby leniwy programista miał wygodne stanowisko do pracy! Ale tak właściwie to o co chodzi? Już tłumaczę, dzięki tylko jednemu po...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/gulp-0/">
+  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/scripts/js/prism/prism.css">
+
+  <script src="/assets/scripts/js/jquery.js"></script>
+  <script src="/assets/scripts/js/prism/prism.js"></script>
+</head>
+
+
+  <body class="body-custom">
+    <div class="htmlMask disable"></div>
+
+    <div class="container-fluid">
+
+      <div class="mobile-trigger"><i class="ion-android-menu"></i> <i class="ion-android-close closed"></i></div>
+<div class="mobile-navigation-bar">
+  <div class="navigation-bar">
+    <ul class="mini-navigation">
+      <header>
+        <header>
+
+  <nav id="drop">
+
+  <div class="trigger">
+    <i class="ion-android-arrow-back"></i>
+    <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+</nav>
+
+  <div class="brand">
+
+    <div class="logo">
+
+      <a href="/"></a>
+
+    </div>
+
+</div>
+
+  <h1 class="title">Blog w Pełni</h1>
+   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <div class="spacer"></div>
+
+</header>
+      </header>
+      <li><a href="/"><i class="ion-home"></i> Strona główna</a></li>
+      <li><a href="/about"><i class="ion-android-contact"></i> O mnie</a></li>
+      <li><a href="/search/category"><i class="ion-android-folder"></i> Kategorie</a></li>
+      <li><a href="/archive"><i class="ion-android-calendar"></i> Archiwum</a></li>
+    </ul>
+  </div>
+</div>
+      
+      <div class="col-3">
+
+      <div class="triggerInactive">
+  <i class="ion-android-arrow-forward"></i>
+  <p class="tip">Przywróc nawigację.</p>
+</div>
+
+<!-- Nerds: Experimental Functions(); -> Do not use!
+<div class="nightMode">
+  <i class="ion-android-bulb"></i>
+  <p class="tip">Uruchom tryb nocny, oszczędza wzrok.</p>
+</div> 
+
+<div class="trigger-tools">
+  <i class="ion-gear-b"></i>
+
+  <div class="tools-list">
+    <div class="trigger-readability">
+      <p><i class="ion-ios-glasses"></i></p> 
+    </div>
+    <div class="trigger-font-size">
+      <i class="ion-plus-round"></i>
+    </div>
+  </div>
+  
+</div>
+-->
+
+      <div class="navigation-bar">
+        
+        <header>
+
+  <nav id="drop">
+
+  <div class="trigger">
+    <i class="ion-android-arrow-back"></i>
+    <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+</nav>
+
+  <div class="brand">
+
+    <div class="logo">
+
+      <a href="/"></a>
+
+    </div>
+
+</div>
+
+  <h1 class="title">Blog w Pełni</h1>
+   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <div class="spacer"></div>
+
+</header>
+
+        <div class="aboutMe">
+
+  <h2 class="title"><strong>O Furu</strong> - czyli o mnie</h2>
+  
+  <div class="me">
+
+    <div class="photo">
+
+      <a href="/about"></a>
+
+    </div>
+
+  </div>
+
+  <div class="data">
+
+    <p class="info">Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
+
+    <div class="socials">
+
+      <ul>
+
+        <li><a href="https://fb.com/furu.art"><i class="ion-social-facebook"></i></a></li>
+
+        <li><a href="https://www.instagram.com/furu.art/"><i class="ion-social-instagram-outline"></i></a></li>
+
+        <li><a href="https://github.com/furuart/"><i class="ion-social-github"></i></a></li>
+      
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+        <div class="category">
+
+  <h2 class="title">Kategorie</h2>
+  <div class="data">
+      
+        <li><a href="/search/category/">Dla webdeveloper'a <i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="/search/category/">Dla webdesigner'a <i class="after ion-android-arrow-forward"></i></a></li>
+      
+  </div>
+</div>`
+
+        <div class="archive">
+  <h2 class="title">Archiwum</h2>
+  <div class="data">
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
+      
+    
+  
+  </div>
+</div>
+
+        <div class="ads">
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+</div>
+
+        <footer>
+
+</footer>
+
+
+      </div>
+
+      </div>
+
+      <div class="col-9">     
+           
+              <div class="navigator">
+    <span><a href="/">Strona główna</a></span>
+    <span><i class="ion-chevron-right"></i></span>
+    <span><a href="/gulp-0/">Obecny post</span>
+  </div>
+
+  <div class="row">
+
+    <article class="article">
+
+      <header class="article-header">
+          <div style="background-image: url('/uploads/images/gulpowanie.png');" class="headerImage">
+        <h2 class="article-title"><a href="#nope">[#0] Gulp'owanie z Furu</a></h2>
+        </div>
+         <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>20 Maja 2016</span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dla webdeveloper'a </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
+          </div>
+      </header>
+
+      <div class="article-content">
+        <h3 id="gulp-czyli-jak-pcha-w-rury-aby-leniwy-programista-mia-wygodne-stanowisko-do-pracy-ale-tak-waciwie-to-o-co-chodzi-ju-tumacz-dziki-tylko-jednemu-poleceniu-w-konsoli-otrzymamy-perfekcyjne-rodowisko-do-tworzenia-stron-www-aplikacji-czy-jakiejkolwiek-innej-formy-web-developmentu-brzmi-jak-czarna-magia-nie-taki-diabe-straszny-jak-go-pisz-o-czym-przekonacie-si-poniej">Gulp, czyli jak pchać w rury aby leniwy programista miał wygodne stanowisko do pracy! Ale tak właściwie to o co chodzi? Już tłumaczę, dzięki tylko jednemu poleceniu w konsoli otrzymamy perfekcyjne środowisko do tworzenia stron WWW, aplikacji czy jakiejkolwiek innej formy Web Development’u! Brzmi jak czarna magia? Nie taki diabeł straszny jak go piszą, o czym przekonacie się poniżej.</h3>
+<!--more-->
+
+<p>Dobrze, więc czym tak właściwie jest Gulp i co robi? Gulp to system budowania plików, tłumacząc łopatologicznie. A tak bardziej na nasze, jest narzędziem które pełni rolę kompilatora w tradycyjnym programowaniu, lecz dla języków web’owych. Gulp, posługuje się poleceniami, za pomocą których przetwarza zaimplementowane biblioteki rozszerzając swoje zdolności wedle naszych potrzeb. Mniej więcej już nakreśliłem czym jest Gulp, także teraz jakie istotne warunki musimy spełnić, aby móc korzystać z dobrodziejstwa jakim jest Gulp?</p>
+
+<ul>
+  <li>Komputer, laptop, mini-pc czy jakiekolwiek urządzenie komputero-podobne</li>
+  <li>Zainstalowaną aplikację NodeJS: <a href="https://nodejs.org/en">NodeJS</a> Instalacja przebiega wedle instrukcji podanych podczas pracy instalatora</li>
+  <li>Konsolę, CMD czy inne emulatory konsol</li>
+  <li>Edytor kodu, ja używam Visual Studio Code, może być jakikolwiek, byle nie notatnik</li>
+  <li>Dobre chęci i minimalną znajomość języka JavaScript</li>
+</ul>
+
+<p>Gdy spełniamy powyższe wymogi, jesteśmy w stanie przejść do sedna, czyli jak Gulp’a rozruszać! Tworzymy nowy folder w dowolnym miejscu, o nazwie jakiej nam się podoba, powinno to wyglądać mniej więcej tak:</p>
+
+<p><img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/13254207_1095100180549709_7017570604691708785_n.png?oh=23ee4ede9b6a1d957c17e6ca541f3618&amp;oe=57CBDDEB" alt="Gulp'owanie #0-1" /></p>
+
+<p>Oczywiście wszystko zależy od tego czego będziemy potrzebować, teraz w naszym folderze tworzymy nowy plik o nazwie ‘package.json’, wstawiamy 
+<code>
+{ }
+</code>
+i rozdzielamy klamry enterem, plik .json:</p>
+
+<p><img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/13265998_1095101533882907_8600345414029257017_n.png?oh=08dfa6c4a500e19e3a2473731b33ad29&amp;oe=5799E1E4" alt="Gulp'owanie #0-2" /></p>
+
+<p>po czym zapisujemy plik. Następnie w naszym folderze klikamy <code>SHIFT + Prawy Przycisk Myszy</code> i wybieramy ‘Otwórz okno polecenia tutaj’, po czym wewnątrz konsoli wpisujemy <code>npm install gulp --save-dev</code> (–save-dev zapisuje w pliku <code>package.json</code> informacje o zainstalowanym pakiecie npm, w tym przypadku Gulp’a)Gdy instalacja przebiegnie pomyślnie, wracamy do naszego folderu i tworzymy nowy plik o nazwie <code>gulpfile.js</code>, gdzie będziemy wydawać polecenia Gulp’owi, a on będzie je wykonywał. Wewnątrz pliku rozpoczynamy podstawową inicjację Gulp’a, właśnie tutaj przyda się minimalna wiedza na temat JS:</p>
+
+<p><img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/13237759_1095101817216212_1693573295641913201_n.png?oh=5c8a4b324fc391c7552c22d41b26a1fb&amp;oe=57D7C3C6" alt="Gulp'owanie #0-3" /></p>
+
+<pre><code class="language-javascript">var gulp = require('gulp');
+
+gulp.task('default');
+</code></pre>
+
+<p>Po czym zapisujemy nasz plik. A teraz co właściwie uczyniliśmy? Utworzyliśmy zmienną, która zaimportowała bibliotekę Gulp oraz wydaliśmy pierwsze polecenie do Gulp’a, którym jest domyślna funkcja, dzięki której inicjujemy Gulp’a oraz wszystkie biblioteki które będziemy wkrótce dodawać. Teraz po jakże trudnej lekcji programowania, wracamy do naszej konsoli i wpisujemy bardzo złożone (uwaga trudne, można się pomylić) polecenie: <code>gulp</code>, tak zgadza się to całe polecenie. Teraz naszym oczom powinien ukazać się taki obraz jeśli zrobiliśmy wszystko właściwie i nie mamy krzywych linijek w edytorze:</p>
+
+<p><img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/13221467_1095102290549498_6352568800704621852_n.png?oh=86a814ad6abcda84660c809380d83399&amp;oe=57CA563B" alt="Gulp'owanie #0-4" /></p>
+
+<p>Jak widać Gulp wykonał polecenie <code>default</code>, które oczywiście nie posiadało żadnych dodatkowych funkcji, przez co program zakończył natychmiastowo pracę (58 mikrosekund). Tak oto zaimplementowaliśmy do naszego folderu roboczego, Gulp’a który będzie przepychał nam pliki, kompilując je w wybrany przez nas sposób (o czym później). Dobrze, ale mam wrażenie że wyświetlenie komunikatu o prawidłowym wykonaniu polecenia, które nic nie robi, nie jest szczytem możliwości Gulp’a, wobec tego pokażę wam jeszcze w tej lekcji jak postawić przy pomocy wyłącznie Gulp’a serwer http, bez żadnych dodatkowych instalatorów! Cała magia tkwi w prostocie i możliwościach rozszerzenia Gulp’a, dzięki społeczności <code>npm</code>. Pozostając w naszej konsoli wpisujemy polecenie <code>npm install gulp-connect --save-dev</code>i czekamy, aż zostanie sfinalizowane. Teraz powracamy do edytora i wewnątrz pliku <code>gulpfile.js</code>, tworzymy dalsze cuda wianki, rozszerzając poprzedni twór:</p>
+
+<p><img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/13226950_1095102517216142_1196267638897465579_n.png?oh=a0a1917f6dd2677ad4afb31c6a0037b3&amp;oe=57CA7DCA" alt="Gulp'owanie #0-5" /></p>
+
+<pre><code class="language-javascript">var gulp = require('gulp'),
+
+connect = require('gulp-connect');
+
+gulp.task('connect', function() {
+
+  connect.server({
+
+    root: '',
+    livereload: true
+    
+  });
+
+});
+
+gulp.task('default', ['connect']);
+</code></pre>
+
+<p>A tym razem co za czary? Za pomocą kolejnej zmiennej (tak, leniwy web developer unika powtórzeń), importujemy bibliotekę Connect, odpowiedzialną za serwer http z różnymi możliwościami, następnie wydajemy polecenie Gulp’owi o nazwie ‘connect’, wywołując funkcję <code>connect.server</code>, wbudowaną bezpośrednio w bibliotekę, wewnątrz której ustawiamy folder domyślny dla serwera <code>root</code>, jako główny, można rzecz jasna w jakimś podfolderze umieścić serwer oraz odświeżanie strony w czasie rzeczywistym <code>livereload</code>, o którym opowiem później. Pod koniec rozszerzamy domyślnie polecenie, nakazując Gulp’owi zainicjowanie dodatkowo biblioteki connect. Teraz powracamy do naszej konsoli i wywołujemy komendę <code>gulp</code>, tak zawsze będziemy wywoływać Gulp’a w ten sposób, to polecenie ani trochę nie ulegnie zmianie i to właśnie piękno i prostota Gulp’a. Naszym oczom powinien się ukazać taki komunikat:</p>
+
+<p><img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/13260189_1095103173882743_6505485002938883474_n.png?oh=84761ced96f72ea8001c6af0a37816ad&amp;oe=57DBB806" alt="Gulp'owanie #0-6" /></p>
+
+<p>Zaś owoc naszej pracy jesteśmy w stanie podziwiać przechodząc na adres <code>localhost:8080</code>, gdzie w zależności od tego co mamy zawarte w <code>index.html</code>, wyświetli się:</p>
+
+<p><img src="https://scontent.fwaw3-1.fna.fbcdn.net/v/t1.0-9/13267839_1095103427216051_6199125224400548081_n.png?oh=98f6dabb5df296d2bcbb46af40fb9d55&amp;oe=57DDF4E0" alt="Gulp'owanie #0-7" /></p>
+
+<p>Co świadczy o tym, że nasz serwer http postawiony tylko i wyłącznie z pomocą Gulp’a funkcjonuje bardzo dobrze (jest bardzo szybki, ponieważ jest najprostszy o czym przekonacie się niebawem). Jak widać u mnie wszystko śmiga, a teraz skąd ja wiedziałem właściwie co napisać w <code>gulpfile.js</code>? Nie jestem cudotwórcą, wystarczyła mi podstawowa dokumentacja odnośnie biblioteki gulp-connect, znajdująca się tutaj: <a href="https://www.npmjs.com/package/gulp-connect">npm gulp-connect</a>, gdzie możecie przeczytać o innych dodatkowych opcjach i możliwościach. Szukając jakiejkolwiek biblioteki do Gulp’a wpisujecie na stronie głównej npmjs, <code>gulp-[szukana fraza]</code>, otrzymacie pełny wykaz bibliotek od społeczności npm, dzięki której Gulp jest tak potężnym narzędziem do wydajnej pracy web developer’a!</p>
+
+<p>Myślę, że jak na pokazową, lekcję startować o numerze #0, tyle starczy, w kolejnych lekcjach będzie wam tłumaczył jak działa Gulp’owe przepychanie w rury, dzięki którym będziemy kompilować dowolny język, mówiąc szybciej w tych lekcjach pokażę wam co można z Gulp’em stworzyć i jak to wszystko u mnie funkcjonuje robiąc ze mnie leniwego programistę, który rozkłada swoje stanowisko pracy przy pomocy wyłącznie jednej komendy! Trzymajcie się, liczę na pozytywny odbiór oraz że zechcecie spróbować własnych sił z Gulp’em! A tym czasem Do kolejnej lekcji w Pełni :)</p>
+
+<hr />
+
+<p>Prawa zastrzeżone <strong>Furu.ART</strong>, zakaz kopiowania na inne strony, fanpage czy blogi, bo nogi z <em>**</em> powyrywam!</p>
+
+        <div class="tags">
+            
+              <span>#code</span>
+            
+              <span>#console</span>
+            
+              <span>#developer</span>
+            
+              <span>#front-end</span>
+            
+              <span>#gulp</span>
+            
+              <span>#javascript</span>
+            
+              <span>#konsola</span>
+            
+              <span>#node</span>
+            
+              <span>#npm</span>
+            
+              <span>#pipes</span>
+            
+        </div>
+         
+        <div id="disqus_thread"></div>
+        <script>
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                
+                s.src = '//blogwpeni.disqus.com/embed.js';
+                
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+
+    <script src="/assets/scripts/js/functions.js"></script>
+    
+  </body>
+
+</html>

@@ -1,0 +1,73 @@
+---
+layout:   default
+title:    Kategorie
+---
+{% comment%}
+Here we generate all the categories.
+{% endcomment%}
+
+{% assign rawcats = "" %}
+{% for post in site.posts %}
+{% assign tcats = post.category | join:'|' | append:'|' %}
+{% assign rawcats = rawcats | append:tcats %}
+{% endfor %}
+
+{% assign rawcats = rawcats | split:'|' | sort %}
+
+{% assign cats = "" %}
+
+{% for cat in rawcats %}
+{% if cat != "" %}
+
+{% if cats == "" %}
+{% assign cats = cat | split:'|' %}
+{% endif %}
+
+{% unless cats contains cat %}
+{% assign cats = cats | join:'|' | append:'|' | append:cat | split:'|' %}
+{% endunless %}
+{% endif %}
+{% endfor %}
+
+
+<div class="row">
+  <div id="category">
+    <header>
+      <h3 class="page-title">
+        <i class="ion-ios-folder"></i> {{ page.title }}
+      </h3>
+    </header>
+  </div>
+    <div class="posts">
+
+    {% for ct in cats %}
+    <div id="category">
+      <h3 class="catName" id="{{ ct | slugify }}">{{ ct }}</h3>
+      <ul class="codinfox-category-list">
+        {% for post in site.posts %}
+        {% if post.category contains ct %}
+        <li>
+            <a href="{{ post.url }}">
+              {{ post.title }}
+            </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    <div id="category">
+      <h3 class="catName" id="no-category">Bez kategorii</h3>
+      <ul class="codinfox-category-list">
+        {% for post in site.posts %}
+        {% unless post.category %}
+        <li>
+            <a href="{{ post.url }}">
+              {{ post.title }}
+            </a>
+        </li>
+        {% endunless %}
+        {% endfor %}
+      </ul>
+    </div>
+</div>

@@ -1,33 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furu.ART</title>
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- .Favicons -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Trwają prace remontowe, niegdyś będzie tutaj stał wielki apartament z luksusowymi mieszkaniami... A tak bardziej serio, w przyszłości Portfolio tu zagości :></h1>
+---
+layout: default
+---
+
+<div class="posts">
+
+  <div class="row">
+
+  <ul class="post-list">
+  {% for post in paginator.posts %}
+      <li class="article">
+        <div class="article-body">
+            <div style="background-image: url('{{ post.image }}')" class="headerImage">
+
+            <h2 class="article-title">
+            
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+            </h2>
+          </div>
+          <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> {% include customDate.html %} </span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> {{ post.category }} </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> {{ site.author }} </span>
+          </div>
+
+          <div class="article-content">
+          
+            {{ post.excerpt }}
+
+          </div>
+
+          <div class="readmore"><a href="{{ post.url }}">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
+          
+        </div>
+      </li>
+  {% endfor %}
+  </ul>
+
+    <div class="pagination">
+    {% if paginator.previous_page %}
+    <div class="previousButton">
+      <a href="{{ paginator.previous_page_path }}" class="previous"><i class="ion-android-arrow-back"></i> Nowsze artykuły</a>
     </div>
-</body>
-</html>
+    {% else %}
+      <span class="previous"></span>
+    {% endif %}
+    {% if paginator.next_page %}
+    <div class="nextButton">
+      <a href="{{ paginator.next_page_path }}" class="next">Wcześniejsze artykuły <i class="ion-android-arrow-forward"></i></a>
+    </div>
+    {% else %}
+      <span class="next"></span>
+    {% endif %}
+    </div>
+
+  </div>
+
+</div>

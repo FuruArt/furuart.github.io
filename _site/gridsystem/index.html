@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="subject" content="Blogging">
+  <meta name="author" content="Furu.Art">
+  <meta name="keywords" content="Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster">
+  <meta name="copyright" content="&copy; Furu.Art 2016">
+
+  <title>Grid system - czyli jak siatka zmieniła podejście do mobilnej technologii</title>
+  <meta name="description" content="Dzisiaj zajmiemy się niewielkim narzędziem, które zrewolucjonizowało (trudny wyraz, musiałem sobie przeliterować) dzisiejsze strony internetowe, aplikacje or...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/gridsystem/">
+  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni" href="/feed.xml">
+  <link rel="stylesheet" href="/assets/scripts/js/prism/prism.css">
+
+  <script src="/assets/scripts/js/jquery.js"></script>
+  <script src="/assets/scripts/js/prism/prism.js"></script>
+</head>
+
+
+  <body class="body-custom">
+    <div class="htmlMask disable"></div>
+
+    <div class="container-fluid">
+
+      <div class="mobile-trigger"><i class="ion-android-menu"></i> <i class="ion-android-close closed"></i></div>
+<div class="mobile-navigation-bar">
+  <div class="navigation-bar">
+    <ul class="mini-navigation">
+      <header>
+        <header>
+
+  <nav id="drop">
+
+  <div class="trigger">
+    <i class="ion-android-arrow-back"></i>
+    <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+</nav>
+
+  <div class="brand">
+
+    <div class="logo">
+
+      <a href="/"></a>
+
+    </div>
+
+</div>
+
+  <h1 class="title">Blog w Pełni</h1>
+   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <div class="spacer"></div>
+
+</header>
+      </header>
+      <li><a href="/"><i class="ion-home"></i> Strona główna</a></li>
+      <li><a href="/about"><i class="ion-android-contact"></i> O mnie</a></li>
+      <li><a href="/search/category"><i class="ion-android-folder"></i> Kategorie</a></li>
+      <li><a href="/archive"><i class="ion-android-calendar"></i> Archiwum</a></li>
+    </ul>
+  </div>
+</div>
+      
+      <div class="col-3">
+
+      <div class="triggerInactive">
+  <i class="ion-android-arrow-forward"></i>
+  <p class="tip">Przywróc nawigację.</p>
+</div>
+
+<!-- Nerds: Experimental Functions(); -> Do not use!
+<div class="nightMode">
+  <i class="ion-android-bulb"></i>
+  <p class="tip">Uruchom tryb nocny, oszczędza wzrok.</p>
+</div> 
+
+<div class="trigger-tools">
+  <i class="ion-gear-b"></i>
+
+  <div class="tools-list">
+    <div class="trigger-readability">
+      <p><i class="ion-ios-glasses"></i></p> 
+    </div>
+    <div class="trigger-font-size">
+      <i class="ion-plus-round"></i>
+    </div>
+  </div>
+  
+</div>
+-->
+
+      <div class="navigation-bar">
+        
+        <header>
+
+  <nav id="drop">
+
+  <div class="trigger">
+    <i class="ion-android-arrow-back"></i>
+    <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+</nav>
+
+  <div class="brand">
+
+    <div class="logo">
+
+      <a href="/"></a>
+
+    </div>
+
+</div>
+
+  <h1 class="title">Blog w Pełni</h1>
+   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <div class="spacer"></div>
+
+</header>
+
+        <div class="aboutMe">
+
+  <h2 class="title"><strong>O Furu</strong> - czyli o mnie</h2>
+  
+  <div class="me">
+
+    <div class="photo">
+
+      <a href="/about"></a>
+
+    </div>
+
+  </div>
+
+  <div class="data">
+
+    <p class="info">Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
+
+    <div class="socials">
+
+      <ul>
+
+        <li><a href="https://fb.com/furu.art"><i class="ion-social-facebook"></i></a></li>
+
+        <li><a href="https://www.instagram.com/furu.art/"><i class="ion-social-instagram-outline"></i></a></li>
+
+        <li><a href="https://github.com/furuart/"><i class="ion-social-github"></i></a></li>
+      
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+        <div class="category">
+
+  <h2 class="title">Kategorie</h2>
+  <div class="data">
+      
+        <li><a href="/search/category/">Dla webdeveloper'a <i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="/search/category/">Dla webdesigner'a <i class="after ion-android-arrow-forward"></i></a></li>
+      
+  </div>
+</div>`
+
+        <div class="archive">
+  <h2 class="title">Archiwum</h2>
+  <div class="data">
+  
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
+      
+    
+  
+  </div>
+</div>
+
+        <div class="ads">
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+  <div class="loremAd">
+    <p>Here will be Google Ads</p>
+  </div>
+</div>
+
+        <footer>
+
+</footer>
+
+
+      </div>
+
+      </div>
+
+      <div class="col-9">     
+           
+              <div class="navigator">
+    <span><a href="/">Strona główna</a></span>
+    <span><i class="ion-chevron-right"></i></span>
+    <span><a href="/gridsystem/">Obecny post</span>
+  </div>
+
+  <div class="row">
+
+    <article class="article">
+
+      <header class="article-header">
+          <div style="background-image: url('');" class="headerImage">
+        <h2 class="article-title"><a href="#nope">Grid system - czyli jak siatka zmieniła podejście do mobilnej technologii</a></h2>
+        </div>
+         <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>31 Maja 2016</span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/">  </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
+          </div>
+      </header>
+
+      <div class="article-content">
+        <h3 id="dzisiaj-zajmiemy-si-niewielkim-narzdziem-ktre-zrewolucjonizowao-trudny-wyraz-musiaem-sobie-przeliterowa-dzisiejsze-strony-internetowe-aplikacje-oraz-przede-wszystkim-moliwo-rozwinicia-responsive-web-designu">Dzisiaj zajmiemy się niewielkim narzędziem, które zrewolucjonizowało (trudny wyraz, musiałem sobie przeliterować) dzisiejsze strony internetowe, aplikacje oraz przede wszystkim możliwość rozwinięcia Responsive Web design’u!</h3>
+
+<!--more-->
+
+<p>Grid system - (tutaj powinna pojawić się mądra definicja z wikipedii.org, jednakże znalazłem jedynie informację o tym, że <a href="https://pl.wikipedia.org/wiki/GRID_(medycyna)">GRID</a> było pierwotną nazwą dla choroby AIDS zaproponowaną w 1982 roku, czyli ja zajmę się definicją)</p>
+
+<blockquote>
+  <p>Siatka używana w projektowaniu oraz kodowaniu, umożliwiająca idealne rozłożenie elementów, tak aby na każdym urządzeniu strona prezentowała się dobrze, odstępy między sekcjami były równe, po prostu żeby wszystko było perfekcyjnie.</p>
+</blockquote>
+
+<p>Siatka powiadacie… <img src="http://www.solexogrodzenia.pl/produkty/3/images/products/53_182.jpg" alt="Grid #0-1" /></p>
+
+<p>Taka? Nie do końca… <code>Siatka</code>, czyli obszar składający się nieskończenie długich prostokątów o określonej szerokości, odsunięte od siebie o prostokąty o określonej, dużo mniejszej szerokości, a całość zamknięta jest w szerokości maksymalnej <code>960</code> (słownie dziewięćset sześćdziesiąt) pikseli. Z grubsza tak to właśnie wygląda:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/grid1.png" alt="Grid #0-2" /></p>
+
+<p>No dobrze, ale jakie szerokości mają poszczególne prostokąty, czemu <code>960 pikseli</code>? Szerokość jednej kolumny, bo ów prostokąty nazywamy kolumnami mają 80 pikseli, czemu 80? Prosta i szybka matematyka:</p>
+
+<pre><code class="language-javascript">var width = 80;
+var grid = 960;
+var count = grid/width;
+
+document.write(grid/count);
+</code></pre>
+
+<p>Co w końcowym rozrachunku daje nam odpowiedź, że <code>960 pikseli</code> podzielone przez <code>80 pikseli</code> daje liczbę <code>12</code> (piksele się skracają ze sobą [px/px]). Czyli jesteśmy w stanie wywnioskować że możemy utworzyć 12 kolumn, aby grid miał pełną szerokość. Jednakże, nie damy mu pełnych 80 pikseli, ponieważ nie byłoby miejsca na odstępy między kolumnami, wobec czego odejmujemy <code>20 pikseli</code> od <code>80 pikseli</code>, otrzymujemy w ten sposób <code>60 pikseli</code>. Dzięki czemu nasz Grid będzie wyglądał w następujący sposób:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/grid2.png" alt="Grid #0-3" /></p>
+
+<p>Powodując, że obszar naszego działania to <code>940 pikseli</code>. Tylko w ten sposób jesteśmy w stanie mieć <code>12 kolumn</code> po <code>20 pikseli</code> odstępu między nimi, no dobrze ale po co ten cały zachód i te złożone obliczenia? <code>960 pikseli</code> mieści się w obszarze <code>1024x768 px</code>, które jest uważane za standard rozdzielczości, jaką spełnia każdy monitor przeciętnego użytkownika internetu. Chwaląc się, powiem że <code>960</code> jest podzielne przez 2, 3, 4, 5, 6, 8, 10, 12, 15, 16, 20, 24, 30, 32, 40, 48, 60, 64, 80, 96, 120, 160, 192, 240, 320 oraz 480, co daje perfekcyjne rozłożenie pikseli na ekranie. Dobrze, to wytłumaczyłem już skąd pomysł na <code>Grid</code> (Grid to po angielsku siatka), jak wymyślono jej idealne wymiary oraz do czego służy, czas na powiedzenie: A na kij mi to w developerce? No właśnie i tutaj <code>Responsive Webdesign</code> przychodzi z wyjaśnieniami, ponieważ nie ma lepszego sposobu na skalowanie strony na różnych urządzeniach niż właśnie użycie perfekcyjnie odmierzonej siatki, która dostosowuje się sama do ekranu. Ale my tu pitu pitu, a przydałoby się pokazać jak to wygląda w praniu, no to do roboty! Odpalamy nasze środowisko pracy, tworzymy jakikolwiek dokument html i css lub dla ambitniejszych gulp’ujemy sobie Jade’a i Sass’a:</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="pl"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Grid system&lt;/title&gt;
+  &lt;link rel="stylesheet" href="css/main.css"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-12"&gt;
+        &lt;h1&gt;12&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-11"&gt;
+        &lt;h1&gt;11&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-1"&gt;
+        &lt;h1&gt;1    &lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-10"&gt;
+        &lt;h1&gt;10&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-2"&gt;
+        &lt;h1&gt;2&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;   
+      &lt;div class="col-9"&gt;
+        &lt;h1&gt;9&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-3"&gt;
+        &lt;h1&gt;3&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;   
+      &lt;div class="col-8"&gt;
+        &lt;h1&gt;8&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-4"&gt;
+        &lt;h1&gt;4&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;   
+      &lt;div class="col-7"&gt;
+        &lt;h1&gt;7&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-5"&gt;
+        &lt;h1&gt;5&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;   
+      &lt;div class="col-6"&gt;
+        &lt;h1&gt;6&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-6"&gt;
+        &lt;h1&gt;6&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;  
+      &lt;div class="col-5"&gt;
+        &lt;h1&gt;5&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-7"&gt;
+        &lt;h1&gt;7&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;   
+      &lt;div class="col-4"&gt;
+        &lt;h1&gt;4&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-8"&gt;
+        &lt;h1&gt;8&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;  
+      &lt;div class="col-3"&gt;
+        &lt;h1&gt;3&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-9"&gt;
+        &lt;h1&gt;9&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;   
+      &lt;div class="col-2"&gt;
+        &lt;h1&gt;2&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-10"&gt;
+        &lt;h1&gt;10&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;   
+      &lt;div class="col-1"&gt;
+        &lt;h1&gt; 1&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-11"&gt;
+        &lt;h1&gt;11&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-12"&gt;
+        &lt;h1&gt;12&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-3"&gt;
+        &lt;h1&gt;1&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-3"&gt;
+        &lt;h1&gt;2&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-3"&gt;
+        &lt;h1&gt;3&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-3"&gt;
+        &lt;h1&gt;4&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-4"&gt;
+        &lt;h1&gt;1&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-4"&gt;
+        &lt;h1&gt;2&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="col-4"&gt;
+        &lt;h1&gt;3&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-css">* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+  .row::after {
+    content: '';
+    clear: both;
+    display: block; }
+
+[class*='col-'] {
+  float: left;
+  border: 1px solid orange;
+  color: #111;
+  text-align: center;
+  vertical-align: center; }
+
+.col-1 {
+  width: calc(8.33%*1); }
+
+.col-2 {
+  width: calc(8.33%*2); }
+
+.col-3 {
+  width: calc(8.33%*3); }
+
+.col-4 {
+  width: calc(8.33%*4); }
+
+.col-5 {
+  width: calc(8.33%*5); }
+
+.col-6 {
+  width: calc(8.33%*6); }
+
+.col-7 {
+  width: calc(8.33%*7); }
+
+.col-8 {
+  width: calc(8.33%*8); }
+
+.col-9 {
+  width: calc(8.33%*9); }
+
+.col-10 {
+  width: calc(8.33%*10); }
+
+.col-11 {
+  width: calc(8.33%*11); }
+
+.col-12 {
+  width: calc(8.33%*12); }
+</code></pre>
+
+<p>Dzięki czemu powinniśmy otrzymać coś takiego:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/grid3.png" alt="Grid #0-4" /></p>
+
+<p>I teraz jeśli zaczniemy zmniejszać okno przeglądarki w poziomie, powinniśmy otrzymać:</p>
+
+<p><img src="https://blogwpelni.files.wordpress.com/2016/05/grid4.png" alt="Grid #0-5" /></p>
+
+<p>Co oznacza mniej więcej tyle, że nasz grid jest responsywny ponieważ skaluje się wraz z szerokością ekranu. Szerokość <code>8.33%</code>, wzięła się z podzielenia <code>100%</code> przez <code>12</code>, dokładniej na temat powyższego kodu, będę mówił podczas następnej lekcji z Gulp’a, gdzie będziemy już tworzyć responsywną stronę WWW. Pliki z dzisiejszej lekcji znajdą się również na <a href="https://github.com/FuruArt/GulpowanieZFuru">Github’ie</a>. Grid pozwala nam na szybkie ustawienie elementów, które będą się perfekcyjne skalować wraz z ekranem.</p>
+
+<p>Jeśli chodzi o temat samego Grid’u to myślę, że na tą lekcję wystarczy, nauczyliśmy się czym jest Grid, jak pomaga w życiu web designer’a oraz web developer’a, jakie niesie korzyści oraz jak go stworzyć w html i css, tymczasem jak zawsze jeśli podobał Ci się ten artykuł, zaciekawił Cię temat siatki, spróbowałeś zrobić własną siatkę wedle mojego kodu lub po prostu chcesz docenić moje publikacje zostaw ‘Lubię to!’, skomentuj, udostępnij, a na pewno będę Ci za to wdzięczny, do następnej lekcji w Pełni :&gt;</p>
+
+<hr />
+
+<p>Artykuł oraz grafiki w nim zawarte są moją własnością - <strong>Furu.Art</strong> - zakaz kopiowania treści na inne blogi, fanpage czy strony - bo nogi z <em>**</em> powyrywam!</p>
+
+        <div class="tags">
+            
+              <span>#ninesix</span>
+            
+              <span>#calc</span>
+            
+              <span>#code</span>
+            
+              <span>#css</span>
+            
+              <span>#design</span>
+            
+              <span>#development</span>
+            
+              <span>#Dla Webdesignera</span>
+            
+              <span>#Dla Webdevelopera</span>
+            
+              <span>#front-end</span>
+            
+              <span>#grid</span>
+            
+              <span>#gs</span>
+            
+              <span>#html</span>
+            
+              <span>#math</span>
+            
+              <span>#obliczenia</span>
+            
+              <span>#perfect</span>
+            
+              <span>#responsive</span>
+            
+              <span>#rwd</span>
+            
+              <span>#scale</span>
+            
+              <span>#siatka</span>
+            
+              <span>#system</span>
+            
+        </div>
+         
+        <div id="disqus_thread"></div>
+        <script>
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                
+                s.src = '//blogwpeni.disqus.com/embed.js';
+                
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+
+    <script src="/assets/scripts/js/functions.js"></script>
+    
+  </body>
+
+</html>

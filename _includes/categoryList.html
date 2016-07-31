@@ -1,0 +1,9 @@
+<div class="category">
+
+  <h2 class="title">Kategorie</h2>
+  <div class="data">
+      {% for category in site.categories %}
+        <li><a href="{{ site.github.url }}/search/category/">{{ category | first }} <i class="after ion-android-arrow-forward"></i></a></li>
+      {% endfor %}
+  </div>
+</div>`
