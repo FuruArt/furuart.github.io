@@ -10,13 +10,13 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ site.github.url }}{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ site.github.url }}{{ "/css/main.css" }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.github.url }}{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ site.github.url }}/{{ site.scripts }}prism/prism.css">
+  <link rel="stylesheet" href="{{ site.github.url }}{{ site.scripts }}prism/prism.css">
 
-  <script src="{{ site.github.url }}/{{ site.scripts }}jquery.js"></script>
-  <script src="{{ site.github.url }}/{{ site.scripts }}prism/prism.js"></script>
+  <script src="{{ site.github.url }}{{ site.scripts }}jquery.js"></script>
+  <script src="{{ site.github.url }}{{ site.scripts }}prism/prism.js"></script>
   
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="57x57" href="{{ site.github.url }}/assets/favicon/apple-icon-57x57.png">
