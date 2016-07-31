@@ -1,0 +1,37 @@
+@mixin size($width, $height) {
+  max-width: $width;
+  min-width: $width;
+  max-height: $height;
+  min-height: $height;
+}
+
+@mixin transition($element, $time, $effect) {
+  -webkit-transition: $element, $time, $effect;
+  -moz-transition: $element, $time, $effect;
+  -o-transition: $element, $time, $effect;
+  -ms-transition: $element, $time, $effect;
+  transition: $element, $time, $effect;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -o-transform: $transform;
+  -ms-transform: $transform;
+  transform: $transform;
+}
+
+@mixin roboto($size, $weight, $color) {
+  font-family: 'Roboto', sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin filter($filter) {
+  -webkit-filter: $filter;
+  -moz-filter: $filter;
+  -o-filter: $filter;
+  -ms-filter: $filter;
+  filter: $filter;
+}
