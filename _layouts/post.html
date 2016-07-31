@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+  <div class="navigator">
+    <span><a href="{{ site.homeurl }}">Strona główna</a></span>
+    <span><i class="ion-chevron-right"></i></span>
+    <span><a href="{{ page.url }}">Obecny post</span>
+  </div>
+
+  <div class="row">
+
+    <article class="article">
+
+      <header class="article-header">
+          <div style="background-image: url('{{ page.image }}');" class="headerImage">
+        <h2 class="article-title"><a href="#nope">{{ page.title }}</a></h2>
+        </div>
+         <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>{{ page.date | date: "%-d %B %Y" | replace:"January","Stycznia" | replace:"Februar","Lutego" | replace:"March","Märca" | replace: "April", "Kwietnia" | replace:"May","Maja" | replace:"June","Czerwca" | replace:"July","Lipca" | replace: "August","Sierpnia" | replace: "September", "Września" | replace "October", "Października" | replace: "November", "Listopada" | replace:"December","Grudnia" }}</span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> {{ page.category }} </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> {{ site.author }} </span>
+          </div>
+      </header>
+
+      <div class="article-content">
+        {{ content }}
+        <div class="tags">
+            {% for tags in page.tags %}
+              <span>#{{ tags }}</span>
+            {% endfor %}
+        </div>
+         {% if page.comments %}
+        <div id="disqus_thread"></div>
+        <script>
+            (function() {  // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                
+                s.src = '//blogwpeni.disqus.com/embed.js';
+                
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+      {% endif %}
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
