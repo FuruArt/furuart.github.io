@@ -822,3 +822,22 @@ code {
     }
   }
 }
+
+footer {
+    @include size(100%, 80px);
+    @include roboto(1rem, 400, $text);
+    text-align: center;
+    line-height: 80px;
+    margin-top: 80px;
+    background: #fff;
+    
+    a {
+        font-weight: 600;
+        color: $primary-violet;
+        @include transition(all, .4s, ease-in-out);
+        
+        &:hover {
+            color: $accent;
+        }
+    }
+}
