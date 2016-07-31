@@ -6,6 +6,7 @@ author: FuruArt
 comments: true
 categories: [Dla webdeveloper'a, Dla webdesigner'a]
 tags: [ninesix, calc, code, css, design, development, Dla Webdesignera, Dla Webdevelopera, front-end, grid, gs, html, math, obliczenia, perfect, responsive, rwd, scale, siatka, system]
+image: "/uploads/images/grid.png"
 ---
 ### Dzisiaj zajmiemy się niewielkim narzędziem, które zrewolucjonizowało (trudny wyraz, musiałem sobie przeliterować) dzisiejsze strony internetowe, aplikacje oraz przede wszystkim możliwość rozwinięcia Responsive Web design'u!
 

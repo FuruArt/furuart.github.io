@@ -6,6 +6,7 @@ author: FuruArt
 comments: true
 category: Dla webdesigner'a
 tags: [design, Dla Webdesignera, notepad, ołówek, pencil, projektowanie, sheet, sketch, szkic, web, wireframe]
+image: "/uploads/images/projektowanieNaKartce.png"
 ---
 ### Większość stron dobrze przemyślanych pod względem wizualnym, które widzimy w internecie zostały pierwotnie skonstruowane na kartce, white-board'zie, tablicy kredowej lub nawet za pomocą żółtych karteczek samoprzylepnych. No dobrze, fajnie, tylko co z tego? A no dokładnie tyle, że każdy dobry projekt zaczyna się z dala od komputera! A sam proces Design'u wygląda mniej więcej jak zabawa klockami Lego, o czym za chwilę się przekonacie.
 

@@ -6,6 +6,7 @@ author: FuruArt
 comments: true
 category: Dla webdesigner'a
 tags: [design, Dla Webdesignera, layers, narzędzia, photoshop, projektowanie, ps, psd, sketch, szkic, tools, warstwy, webdesign, wireframe]
+image: "/uploads/images/projektowanieNaKartce.png"
 ---
 ### Poprzednio nauczyliśmy się budować Szkielety stron WWW, rzecz jasna na kartce, przy pomocy ołówka, dzisiaj zajmiemy się następnym krokiem w procesie projektowania, czyli przetworzymy nasze bazgroły w programie graficznym, tworząc interaktywny Szkielet, który będziemy mogli modyfikować dowolnie gdy coś wizualnie nie będzie się zgadzało.
 

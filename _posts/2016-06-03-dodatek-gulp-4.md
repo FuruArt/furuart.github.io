@@ -6,6 +6,7 @@ author: FuruArt
 comments: false
 category: Dodatek
 tags: [design, designer, Dodatek, landing-page, material, photoshop, Image, projektowanie, psd]
+image: "/uploads/images/dodatek.png"
 ---
 ![Addon #1](https://blogwpelni.files.wordpress.com/2016/06/awesomepage.png)
 

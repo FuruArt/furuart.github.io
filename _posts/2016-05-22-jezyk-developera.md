@@ -6,6 +6,7 @@ author: FuruArt
 comments: true
 category: Dla webdeveloper'a
 tags: [code, css, Dla Webdevelopera, front-end, html, jade, leniwy, performance, preprocesor, sass, webdeveloper, webmaster]
+image: "/uploads/images/developerJezyk.png"
 ---
 ### Języki programowania to sprawa powszechna, mówi się o nich ciągle i nie jest to żadną tajemnicą, czy ktoś jest znawcą C++, C#, Python'a czy Javy, ale jakim dialektem porozumiewa się Webdeveloper w dzisiejszych czasach? Mówię tutaj oczywiście o Webdeveloperze, który zajmuje się wierzchnią częścią stron WWW (Front-end developer), na to pytanie postaram się odpowiedzieć niżej.
 
