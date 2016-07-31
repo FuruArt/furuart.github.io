@@ -12,14 +12,10 @@ author: Furu.Art
 lang: PL
 # Mail to contact
 email: grafikawpelni@gmail.com
-# Base url of page
-baseurl: ""
-# Url of page
-url: ""
 # Home Url of page
 homeurl: /
 # Scripts url 
-scripts: "assets/scripts/js/"
+scripts: "/assets/scripts/js/"
 # Keywords for SEO
 keywords: Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster
 # Information about me
@@ -37,7 +33,7 @@ bodyclass: body-custom
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 # Permalink
 permalink: :title/
 # Excerpt
@@ -52,3 +48,5 @@ paginate: 6
 paginate_path: "/strona-:num"
 
 timezone: null
+
+repository: FuruArt/blog

@@ -4,7 +4,6 @@ description: Wszystkie artykuły przedstawione na osi czasu.
 url: /archive
 layout: default
 ---
-
 <div class="row">
   <div id="archive">
     <header>
@@ -12,23 +11,25 @@ layout: default
       <p class="desc">{{ page.description }}</p>
     </header>
   </div>
+  
   <div id="archive">
-    {%for post in site.posts %}
-      {% unless post.next %}
-      {% assign month = post.date | date: '%B' | replace:"January","Styczeń" | replace:"Februar","Luty" | replace:"March","Marzec" | replace: "April", "Kwiecień" | replace:"May","Maj" | replace:"June","Czerwiec" | replace:"July","Lipiec" | replace: "August","Sierpień" | replace: "September", "Wrześień" | replace "October", "Październik" | replace: "November", "Listopad" | replace:"December","Grudzień" %}
-        <h3 class="month">{{ month }}</h3>
-        <ul class="this">
+    	{%for post in site.posts %}
+      	{% unless post.next %}
+      	{% assign month = post.date | date: '%B %Y' | replace:"January","Styczeń" | replace:"Februar","Luty" | replace:"March","Marzec" | replace: "April", "Kwiecień" | replace:"May","Maj" | replace:"June","Czerwiec" | replace:"July","Lipiec" | replace: "August","Sierpień" | replace: "September", "Wrześień" | replace "October", "Październik" | replace: "November", "Listopad" | replace:"December","Grudzień" %}
+      	<h3 class="month">{{ month }}</h3>
+  	    <ul class="this">
         {% else %}
-          {% capture year %}{{ post.date | date: '%B' }}{% endcapture %}
-          {% capture nyear %}{{ post.next.date | date: '%B' }}{% endcapture %}
+          {% capture year %}{{ post.date | date: '%B %Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%B %Y' }}{% endcapture %}
           {% if year != nyear %}
-          </ul>
+  </div>
+  <div id="archive">
+  	{% assign month = post.date | date: '%B %Y' | replace:"January","Styczeń" | replace:"Februar","Luty" | replace:"March","Marzec" | replace: "April", "Kwiecień" | replace:"May","Maj" | replace:"June","Czerwiec" | replace:"July","Lipiec" | replace: "August","Sierpień" | replace: "September", "Wrześień" | replace "October", "Październik" | replace: "November", "Listopad" | replace:"December","Grudzień" %}
           <h3 class="month">{{ month }}</h3>
-          <ul class="past">
+          <ul class="this">
           {% endif %}
       {% endunless %}
-        <li><time>{% include customDate.html %} <i class="ion-android-arrow-forward"></i></time><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a></li></time>
-
+        <li><time>{% include customDate.html %} <i class="ion-android-arrow-forward"></i></time><a href="{{ post.url }}">{{ post.title }}</a></li></time>
     {% endfor %}
     </ul>
   </div>
