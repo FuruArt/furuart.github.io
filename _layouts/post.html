@@ -14,7 +14,7 @@ layout: default
 
       <header class="article-header">
           <div style="background-image: url('{{ page.image }}');" class="headerImage">
-        <h2 class="article-title"><a href="#nope">{{ page.title }}</a></h2>
+        <h2 class="article-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
         </div>
          <div class="article-info">
             <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>{{ page.date | date: "%-d %B %Y" | replace:"January","Stycznia" | replace:"Februar","Lutego" | replace:"March","Märca" | replace: "April", "Kwietnia" | replace:"May","Maja" | replace:"June","Czerwca" | replace:"July","Lipca" | replace: "August","Sierpnia" | replace: "September", "Września" | replace "October", "Października" | replace: "November", "Listopada" | replace:"December","Grudnia" }}</span>
