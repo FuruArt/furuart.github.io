@@ -10,9 +10,9 @@ layout: default
   {% for post in paginator.posts %}
       <li class="article">
         <div class="article-body">
-            <div style="background-image: url('{{ post.image }}')" class="headerImage">
-
-            <h2 class="article-title">
+            <div class="headerImage">
+              <img class="" src="{{ post.image }}">
+              <h2 class="article-title">
             
               <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 
