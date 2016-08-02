@@ -396,7 +396,6 @@ header {
     @include transition(background-image, .4s, ease-in-out);
     position: relative;
     z-index: 1;
-    box-shadow: inset 0px -3px 7px 0px rgba(0, 0, 0, .25);
 
     &:hover { 
       -webkit-filter: contrast(1.5);
