@@ -15,7 +15,6 @@ layout: default
       <header class="article-header">
         <div class="headerImage" style="background-image: url({{ page.image }})">
           <a href="{{ post.url }}">
-            <img src="{{ page.image }}" style="visibility: hidden" class="">
             <h2 class="article-title"><a href="{{ post.url }}">{{ page.title }}</a></h2>
           </a>
         </div>
@@ -27,6 +26,7 @@ layout: default
       </header>
 
       <div class="article-content">
+        <img src="{{ page.image }}" style="visibility: hidden" class="">
         {{ content }}
         <div class="tags">
             {% for tags in page.tags %}
