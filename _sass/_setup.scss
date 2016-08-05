@@ -305,15 +305,16 @@ header {
 
 .ads {
   .loremAd {
-    @include size(70%, 180px);
-    margin: 40px auto;
+    @include size(70%, auto);
+    margin: 80px auto;
+    padding: 20px 0;
     text-align: center;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(255, 255, 255, .20);
 
     p {
       @include roboto(1rem, 500, $primary-violet);
-      line-height: 180px;
+      margin-bottom: 40px;
     }
   }
 }
