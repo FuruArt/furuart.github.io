@@ -49,7 +49,7 @@ function dynHeight() {
   $(window).resize(dynamicHeight);
 
   function dynamicHeight() {
-    var newHeight = $("html").height() + "px";
+    var newHeight = $(".article").height() + "px";
     $(".navigation-bar").css("height", newHeight);
   }
 }
