@@ -1,13 +1,12 @@
 ---
 layout: post
 title: "[#3] Javascript - Jak utrudniać sobie życie - czyli o potwornie długiej składni"
-date: 2016-08-10 15:00
+date: 2016-08-7 15:00
 author: FuruArt
 comments: true
 category: Dla webdeveloper'a
 tags: [javascript, js, script, developer, webdeveloper, front-end, kodowanie, skryptowanie, skrypt, dom, model, hierarchia, drzewo, window, składnia, syntax, error, problem, long, camelCase, jquery]
 image: "/uploads/images/js.png"
-published: false
 ---
 ### Tak samo jako wielbię Javascript za jego rozszerzalność, możliwości, masę udogodnień, sterowanie i pobieranie danych, tak samo nienawidzę go za diabelską składnię z piekła rodem, który nie raz i nie dwa spędziła mi sen z oczu, bo gdzieś zgubiłem średnik lub co gorsza APOSTROF!
 
