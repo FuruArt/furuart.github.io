@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[#3] Javascript - Jak utrudniać sobie życie - czyli o potwornie długiej składni"
-date: 2016-08-8 8:00
+date: 2016-08-10 15:00
 author: FuruArt
 comments: true
 category: Dla webdeveloper'a
