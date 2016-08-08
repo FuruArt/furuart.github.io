@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body class="{{ site.bodyclass }}">
+  <body onload="{{ site.github.url }}{{ site.scripts }}functions.js" class="{{ site.bodyclass }}">
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -47,8 +47,6 @@
       </div>
 
     </div>
-
-    <script src="{{ site.github.url }}{{ site.scripts }}functions.js"></script>
     
   </body>
 
