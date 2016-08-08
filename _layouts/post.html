@@ -14,9 +14,8 @@ layout: default
 
       <header class="article-header">
         <div class="headerImage" style="background-image: url({{ page.image }})">
-          <a href="{{ post.url }}">
-            <h2 class="article-title"><a href="{{ post.url }}">{{ page.title }}</a></h2>
-          </a>
+          <!-- <img src="{{ page.image }}" class=""> -->
+          <h2 class="article-title"><a href="{{ post.url }}">{{ page.title }}</a></h2>
         </div>
          <div class="article-info">
             <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>{{ page.date | date: "%-d %B %Y" | replace:"January","Stycznia" | replace:"Februar","Lutego" | replace:"March","Märca" | replace: "April", "Kwietnia" | replace:"May","Maja" | replace:"June","Czerwca" | replace:"July","Lipca" | replace: "August","Sierpnia" | replace: "September", "Września" | replace "October", "Października" | replace: "November", "Listopada" | replace:"December","Grudnia" }}</span>
@@ -26,27 +25,7 @@ layout: default
       </header>
 
       <div class="article-content">
-        <img src="{{ page.image }}" style="display: none" class="">
         {{ content }}
-        <div class="tags">
-            {% for tags in page.tags %}
-              <span>#{{ tags }}</span>
-            {% endfor %}
-        </div>
-         {% if page.comments %}
-        <div id="disqus_thread"></div>
-        <script>
-            (function() {  // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                
-                s.src = '//blogwpeni.disqus.com/embed.js';
-                
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      {% endif %}
       </div>
 
     </article>
