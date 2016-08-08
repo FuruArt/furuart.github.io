@@ -50,3 +50,5 @@ paginate_path: "/strona-:num"
 timezone: null
 
 repository: FuruArt/blog
+
+future: false
