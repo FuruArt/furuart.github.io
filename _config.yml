@@ -52,3 +52,5 @@ timezone: null
 repository: FuruArt/blog
 
 future: false
+
+exclude: [ ".rvmrc", ".rbenv-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock", "Vagrantfile", "provisioning", "publish.*" ]
