@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Info] Garść (end)wakacyjnych informacji"
-date: 2016-08-18 12:00 Europe/Warsaw
+date: 2016-08-17 12:00 Europe/Warsaw
 author: FuruArt
 comments: true
 category: Informacje
