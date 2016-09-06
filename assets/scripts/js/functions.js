@@ -52,7 +52,7 @@ function dynHeight() {
   var contentHeight = $('.col-9').height();
 
   function dynamicHeight() {
-    var newHeight = contentHeight + commentsHeight + 'px';
+    var newHeight = (contentHeight + commentsHeight) + 'px';
     $(".navigation-bar").css("height", newHeight);
   }
 }
