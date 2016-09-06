@@ -49,10 +49,11 @@ function dynHeight() {
   $(window).resize(dynamicHeight);
   
   var commentsHeight = $('.comments').height();
+  var htmlHeight = $('html').height();
 
   function dynamicHeight() {
-    var newHeight = $("html").height() + commentsHeight;
-    $(".navigation-bar").css("height", newHeight);
+    var newHeight = htmlHeight + commentsHeight;
+    $(".col-3").css("height", newHeight);
   }
 }
 
