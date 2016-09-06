@@ -9,12 +9,12 @@
 
 // Load created functions
 
-$(window).load($(function(){
+$(document).ready(function() {
   navigation();
   dynHeight();
   wtf();
   mobileMagic();
-}));
+});
 
 // Navigation triggered
 function navigation() {
