@@ -10,11 +10,11 @@ image: "/uploads/images/js.png"
 ---
 ### Tak samo jako wielbię Javascript za jego rozszerzalność, możliwości, masę udogodnień, sterowanie i pobieranie danych, tak samo nienawidzę go za diabelską składnię z piekła rodem, który nie raz i nie dwa spędziła mi sen z oczu, bo gdzieś zgubiłem średnik lub co gorsza APOSTROF!
 
-<!--more-->
-
 ![JS #2-1](http://classic.splurd.com/comics/images/1337794967.jpg)
 
 Dokładnie tak! Pamiętam czasy kiedy wykonywałem zlecenie i przy pomocy `Javascript` potrzebowałem zrobić dynamicznie zjeżdżają w dół nawigację po zescrollowaniu w dół i inne tego typu bajery, skrypt napisałem w około 15 minut, zapisuję, nie działa. Oho! Pewnie jakąś klasę czy identyfikator źle wpisałem i jest błąd, przeglądam kod, patrzę na nazwy w `index`, wszystko się zgadza. Kurde, coś innego musi być nie tak, więc przeleciałem szybko w sieci co jest nie tak w składni, coś źle napisałem? No nie, jest OK, no to co to może być? Mija 30 minut, widzę przedostatnią linijkę kodu z brakującym średnikiem `;`, wtedy wszystko stało się jasne! Cholerne średniki, zawsze uwalą kod, gdy człowiekowi coś za dobrze wychodzi. No dobrze, przykład z autopsji już był, to teraz czas na jakieś bardziej praktyczne przykłady do której żywię urazę. Odpalamy nasze środowisko pracy, bo będziecie walczyć ze średnikami razem ze mną. 
+
+<!--more-->
 
 Mam pomysł, wyrzućmy wszystko co wcześniej napisaliśmy w `functions.js`! Czemu? Bo taką mam wizję. Gdy nasz plik świeci pustkami, to możemy przy okazji wyczyścić `index.html` z elementów magicznych. Przy okazji nauczymy się też czegoś nowego w `JS`! Co chcemy zrobić? Na pewno utworzyć jakąś funkcję! Która będzie robić coś, póki co prymitywnego, czyli jakieś obliczenia, wartości i tym podobne. Chociaż nie, wiecie co, chrzanić! Zrobimy coś bardziej skomplikowanego, chciałem wrzucić pętle warunkowe i tym podobne jako osobną lekcję, ale jako że lubię łamać schematy, to wyjdźmy za listę artykułów i wrzućmy do kociołka `if`, `else`, `else if` tutaj, a co! Chcemy zrobić funkcję, która będzie sprawdzać formularz kontaktowy, czy wszystkie pola są wypełnione, czy się wszystko zgadza, będzie to na pewno bardziej praktyczny przykład niż `Licz deltę`, którym mnie katowano w szkole. Dobrze, to pierw nazwijmy sobie naszą funkcję:
 
