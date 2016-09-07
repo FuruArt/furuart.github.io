@@ -834,14 +834,19 @@ footer {
 
 .navigation-bar {
   &.close {
-    @include transform( translateX(-440px ) );
+    @include transform( translateX(-550px ) );
   }
 }
 
 .trigger {
   &.close {
-    @include transform( translate(-440px ) );
-    display: none;
+    @include transform( translateX(-550px ) );
+  }
+}
+
+.triggerClosed {
+  &.close {
+    @include transform( translateX( 550px ));
   }
 }
 
