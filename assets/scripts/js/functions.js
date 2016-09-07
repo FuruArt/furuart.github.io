@@ -13,7 +13,7 @@
 function navigation() {
 
   var trigger = $('#trigger');
-  var elements = $('.navigation-bar, .col-9, .trigger.close, .trigger');
+  var elements = $('.navigation-bar, .col-9, .trigger');
 
   $(trigger).on('click', function() {
 
