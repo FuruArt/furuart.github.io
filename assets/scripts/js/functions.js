@@ -28,6 +28,8 @@ function navigation() {
 
   });
 
+}
+
   /*$("#trigger").on("click", function() {
     
     $(".navigation-bar").toggleClass("closeMe");
@@ -47,8 +49,6 @@ function navigation() {
     });
 
   });*/
-
-}
 
 // Dynamic height of navigation bar
 function dynHeight() {
