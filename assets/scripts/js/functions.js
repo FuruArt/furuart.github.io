@@ -19,8 +19,8 @@ $(document).ready(function() {
 // Navigation triggered
 function navigation() {
 
-  var trigger = '#drop>#trigger, .trigger.close';
-  var elements = '.navigation-bar, .col-9, .trigger';
+  var trigger = '#drop>#trigger, .triggerClosed';
+  var elements = '.navigation-bar, .col-9, .triggerClosed, #drop>#trigger';
 
   $(trigger).on('click', function() {
 
