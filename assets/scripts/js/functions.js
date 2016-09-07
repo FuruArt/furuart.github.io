@@ -12,10 +12,10 @@
 // Navigation triggered
 function navigation() {
 
-  var $trigger = $('#trigger');
+  var trigger = '#trigger';
   var elements = '.navigation-bar, .col-9, .trigger';
 
-  $trigger.on('click', function() {
+  $(trigger).on('click', function() {
 
     $(elements).toggleClass('close');
 
