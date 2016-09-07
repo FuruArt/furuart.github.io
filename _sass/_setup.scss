@@ -368,13 +368,6 @@ header {
   @include transition(all, .4s, ease-in-out);
 }
 
-.positionMe {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
 .article-body {
   @include size(100%, auto);
   background: #fff;
@@ -834,4 +827,28 @@ footer {
             color: $accent;
         }
     }
+}
+
+
+// Navigation script setup
+
+.navigation-bar {
+  &.close {
+    @include transform( translateX(-440px ) );
+  }
+}
+
+.trigger {
+  &.close {
+    @include transform( translate(-440px ) );
+  }
+}
+
+.col-9 {
+  &.close {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 }

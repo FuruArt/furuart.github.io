@@ -19,7 +19,16 @@ $(document).ready(function() {
 // Navigation triggered
 function navigation() {
 
-  $(".trigger").on("click", function() {
+  var trigger = $('#trigger');
+  var elements = $('.navigation-bar, .col-9, .trigger.close');
+
+  $(trigger).on('click', function() {
+
+    $(elements).toggleClass('close');
+
+  });
+
+  /*$("#trigger").on("click", function() {
     
     $(".navigation-bar").toggleClass("closeMe");
 
@@ -37,16 +46,16 @@ function navigation() {
 
     });
 
-  });
+  });*/
 
 }
 
 // Dynamic height of navigation bar
 function dynHeight() {
   
-  $(document).ready(dynamicHeight);
+  $(document).ready(dynamicHeight());
 
-  $(window).resize(dynamicHeight);
+  $(window).resize(dynamicHeight());
   
   
   var htmlHeight = $('html').height();
@@ -72,33 +81,3 @@ function mobileMagic() {
     $("html").toggleClass("clicked");
   });
 }
-
-/* Nerds: Experimental Function(); --> Do not use, it will be implemented later.
-function betterRead() {
-  $(".trigger-readability").on("click", function() {
-    $(".article-content").toggleClass("betterRead");
-  });
-}
-
-function activeTools() {
-  $(".trigger-tools").on("click", function() {
-    $(".tools-list").toggleClass("active");
-  });
-}
-
-function fontSizeBigger() {
-  $("blabla").click(function() {
-    var fontSize = parseInt($(".article-content > p").css("font-size"));
-    var maxSize = 26;
-    var minSize = 18;
-    if( fontSize != maxSize ) {
-      fontSize = fontSize + 2 + "px";
-      $("blabla").css({"font-size":fontSize});
-    } 
-    else {
-      $("blabla").css("font-size", minSize + "px");
-    } 
-});
-}
-
-*/
