@@ -17,7 +17,7 @@ function navigation() {
 
   $(trigger).on('click', function() {
 
-    $(elements).toggleClass('close');
+    $(html).css('background-color', 'red');
 
   });
 
