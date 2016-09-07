@@ -19,7 +19,7 @@ $(document).ready(function() {
 // Navigation triggered
 function navigation() {
 
-  var trigger = '#trigger';
+  var trigger = '#drop>#trigger, .trigger.close';
   var elements = '.navigation-bar, .col-9, .trigger';
 
   $(trigger).on('click', function() {
