@@ -846,7 +846,8 @@ footer {
 
 .triggerClosed {
   &.close {
-    @include transform( translateX( 550px ));
+    @include transform( translateX( 0px ));
+    display: block;
   }
 }
 
