@@ -13,7 +13,7 @@
 function navigation() {
 
   var trigger = $('#trigger');
-  var elements = $('.navigation-bar, .col-9, .trigger.close');
+  var elements = $('.navigation-bar, .col-9, .trigger.close, #trigger');
 
   $(trigger).on('click', function() {
 
@@ -46,9 +46,9 @@ function navigation() {
 // Dynamic height of navigation bar
 function dynHeight() {
   
-  $(document).ready(dynamicHeight());
+  $(document).ready(dynamicHeight);
 
-  $(window).resize(dynamicHeight());
+  $(window).resize(dynamicHeight);
   
   
   var htmlHeight = $('html').height();
