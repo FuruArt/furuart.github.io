@@ -9,13 +9,6 @@
 
 // Load created functions
 
-$(document).ready(function() {
-  navigation();
-  dynHeight();
-  wtf();
-  mobileMagic();
-});
-
 // Navigation triggered
 function navigation() {
 
@@ -81,3 +74,10 @@ function mobileMagic() {
     $("html").toggleClass("clicked");
   });
 }
+
+$(function() {
+  navigation();
+  dynHeight();
+  wtf();
+  mobileMagic();
+});
