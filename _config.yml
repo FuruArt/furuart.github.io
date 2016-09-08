@@ -47,7 +47,7 @@ paginate: 6
 
 paginate_path: "/strona-:num"
 
-timezone: Europe/Warsaw
+timezone: +0100
 
 repository: FuruArt/blog
 
