@@ -53,4 +53,4 @@ timezone: +0100
 
 repository: FuruArt/blog
 
-future: true
+future: false
