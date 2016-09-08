@@ -1,9 +1,11 @@
 # Global settings about Page
 
+title: Blog w Pełni
+description: Od zera do Front-end developera w Pełni
 # Title of page
-title: Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego.
+titleSEO: Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego.
 # Description of page
-description: Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj :>
+descriptionSEO: Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj :>
 # Subject of page
 subject: Blogging
 # Author of page
