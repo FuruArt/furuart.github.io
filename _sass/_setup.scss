@@ -1002,6 +1002,6 @@ footer {
 
 html {
   &.night {
-    @include filter(sepia(0.6));
+    @include filter(invert(1));
   }
 }
