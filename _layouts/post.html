@@ -42,7 +42,7 @@ layout: default
 
     <div class="row">
       <div class="center">
-      <div class="col-4 related">
+      <div class="col-6 related">
         {% if page.previous.url %}
         <div class="article-body">
           <a class="prev" href="{{page.previous.url}}">
@@ -52,17 +52,28 @@ layout: default
         </div>
         {% endif %}
       </div>
-      <div class="col-4 related">
+      <div class="col-6 related">
         {% if page.next.url %}
         <div class="article-body">
           <a class="next" href="{{page.next.url}}">
             <div class="headerImage" style="background-image: url('{{ page.next.image }}')"></div>
              <h1 class="article-title">{{page.next.title}}</h1>
           </a>
-        </div>
-          
+        </div>    
         {% endif %}
       </div>
+      {% if page.next.url == "" %}
+        <div class="col-12 related">
+          {% if page.previous.url %}
+            <div class="article-body">
+          <a class="prev" href="{{page.previous.url}}">
+            <div class="headerImage" style="background-image: url('{{ page.previous.image }}')"></div>
+            <h1 class="article-title">{{page.previous.title}}</h1>
+           </a>
+        </div>
+          {% endif %}
+        </div>
+      {% endif %}
       </div>
     
     </div>
