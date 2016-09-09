@@ -964,6 +964,15 @@ footer {
   &.night {
     background-color: $text;
     color: $night-text;
+
+    .headerImage {
+      opacity: 0.8;
+    }
+
+    .article-info {
+      background-color: $text;
+      color: $night-text;
+    }
     .article-title {
       a {
         color: $text;
