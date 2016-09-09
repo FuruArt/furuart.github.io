@@ -37,15 +37,11 @@ function nightMode() {
       hours = currentDate.getHours(),
       body = "body";
 
-  if ( hours <= 6 && hours > 21 ) {
+  if ( hours < 6 || hours > 21 ) {
     $( body ).css('background', 'red');
   }
 
-  else if ( hours >= 6 && hours < 21 ) {
-    $( body ).css('background', '#7b1fa2');
-  }
-
-  else {
+  else if ( hours > 6 || hours < 21 ) {
     $( body ).css('background', '#7b1fa2');
   }
 }
