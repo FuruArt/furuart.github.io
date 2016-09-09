@@ -899,3 +899,10 @@ footer {
     padding: 0 20px;
   }
 }
+
+.center {
+  @include size(100%, auto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
