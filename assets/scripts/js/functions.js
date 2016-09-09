@@ -34,7 +34,8 @@ function navigation() {
 function nightMode() {
 
   var currentDate = new Date(),
-      hours = currentDate.getHours();
+      hours = currentDate.getHours(),
+      body = "body";
 
   if ( hours <= 6 && hours > 21 ) {
     $( body ).css('background', 'red');
