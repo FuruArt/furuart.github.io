@@ -1004,6 +1004,6 @@ footer {
 html {
   @include transition(all, .7s, linear);
   &.night {
-    @include filter(brightness(0.9) contrast(1.5) sepia(0.5));
+    @include filter( brightness(0.9) contrast(1.5) sepia(0.5) opacity(0.9) grayscale(0.3) );
   }
 }
