@@ -34,15 +34,18 @@ function navigation() {
 function nightMode() {
 
   var currentDate = new Date(),
-      hours = currentDate.getHours(),
-      navigationBar = '.navigation-bar';
+      hours = currentDate.getHours();
 
-  if ( hours < 6 || hours > 21 ) {
-    $( navigationBar ).css('background', 'red');
+  if ( hours <= 6 && hours > 21 ) {
+    $( body ).css('background', 'red');
   }
 
-  else if ( hours > 6 || hours < 21 ) {
-    $( navigationBar ).css('background', '#7b1fa2');
+  else if ( hours >= 6 && hours < 21 ) {
+    $( body ).css('background', '#7b1fa2');
+  }
+
+  else {
+    $( body ).css('background', '#7b1fa2');
   }
 }
 
