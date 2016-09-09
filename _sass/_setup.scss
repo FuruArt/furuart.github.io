@@ -960,7 +960,7 @@ footer {
   }
 }
 
-.article {
+.article, .article-body {
   &.night {
     background-color: $text;
     color: $night-text;
