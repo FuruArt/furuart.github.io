@@ -14,6 +14,7 @@ $(document).ready(function() {
   wtf();
   mobileMagic();
   dynHeight();
+  nightMode();
 });
 
 // Navigation triggered
@@ -30,25 +31,12 @@ function navigation() {
 
 }
 
-  /*$("#trigger").on("click", function() {
-    
-    $(".navigation-bar").toggleClass("closeMe");
+function nightMode() {
 
-    $(".col-9").toggleClass("positionMe");
+  var currentDate = { date() };
 
-    $(".triggerInactive").show();
-
-    $(".triggerInactive").on("click", function() {
-
-      $(".navigation-bar").removeClass("closeMe");
-
-      $(".col-9").removeClass("positionMe");
-
-      $(this).hide();
-
-    });
-
-  });*/
+  $("body").html( currentDate.getTime());
+}
 
 // Dynamic height of navigation bar
 function dynHeight() {
