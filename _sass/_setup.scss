@@ -910,6 +910,7 @@ footer {
 // NightMode settings
 
 body {
+  @include transition(all, .7s, linear);
   &.night {
     background-color: $text;
   }
@@ -1001,6 +1002,7 @@ footer {
 }
 
 html {
+  @include transition(all, .7s, linear);
   &.night {
     @include filter(brightness(0.9) contrast(1.5) sepia(0.5));
   }
