@@ -36,8 +36,10 @@ function nightMode() {
   var trigger = "#drop>#triggerNight",
       elements = ".body-custom, .logo, .navigation-bar, #drop, .data, .title, .description, footer, .article, .article-body";
 
+
       $(trigger).on('click', function() {
-        $(elements).toggleClass("night");
+        // $(elements).toggleClass("night");
+        $('html').toggleClass('night');
       });
 }
 
