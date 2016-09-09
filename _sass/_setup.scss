@@ -867,12 +867,12 @@ footer {
   margin-bottom: 40px;
   line-height: 80px;
   text-align: center;
-  background: $primaryViolet;
+  background: $primary-violet;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
 
   h1 {
-    @include roboto(24px, 400, $text);
+    @include roboto(24px, 400, #fff);
 
     i {
       margin-right: 5px;
