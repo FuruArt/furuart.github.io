@@ -918,6 +918,7 @@ body {
 .logo {
   &.night {
     background-color: $text;
+    opacity: 0.6;
   }
 }
 
@@ -944,6 +945,10 @@ body {
 
     .info, li, li a {
       color: $night-text;
+    }
+
+    .counter {
+      background-color: $night-primary-violet;
     }
   }
 }
