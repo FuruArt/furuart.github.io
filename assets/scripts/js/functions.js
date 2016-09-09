@@ -45,8 +45,6 @@ function nightMode() {
 
 // Dynamic height of navigation bar
 function dynHeight() {
-  
-  $(document).ready(dynamicHeight);
 
   $(window).resize(dynamicHeight);
   
@@ -54,8 +52,7 @@ function dynHeight() {
   var htmlHeight = $('html').height();
 
   function dynamicHeight() {
-    var newHeight = htmlHeight + 'px';
-    $(".navigation-bar").css("height", newHeight);
+    $(".navigation-bar").css("height", htmlHeight + "px");
   }
 }
 
