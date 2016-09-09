@@ -34,9 +34,20 @@ function navigation() {
 function nightMode() {
 
   var currentDate = new Date(),
-      hours = currentDate.getHours();
+      hours = currentDate.getHours(),
+      navigationBar = '.navigation-bar';
 
-  $('.title').html( hours );
+  if ( hours >= 20 ) {
+    $( navigationBar ).css('background', 'red');
+  }
+
+  else if ( hours >= 6 ) {
+    $( navigationBar ).css('background', '#7b1fa2');
+  }
+
+  else {
+    $( navigationBar ).css('background', '#7b1fa2');
+  }
 }
 
 // Dynamic height of navigation bar
