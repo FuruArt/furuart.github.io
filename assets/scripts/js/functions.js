@@ -13,6 +13,7 @@ $(document).ready(function() {
   navigation();
   wtf();
   mobileMagic();
+  dynHeight();
 });
 
 // Navigation triggered
