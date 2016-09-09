@@ -965,7 +965,13 @@ footer {
     background-color: $text;
     color: $night-text;
     .article-title {
-      color: $text;
+      a {
+        color: $text;
+      }
+    }
+
+    .article-content {
+      color: $night-text;
     }
   }
 }
