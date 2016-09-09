@@ -36,7 +36,7 @@ function nightMode() {
   var currentDate = new Date(),
       hours = currentDate.getHours();
 
-  alert.html( hours );
+  $('.title').html( hours );
 }
 
 // Dynamic height of navigation bar
