@@ -44,10 +44,6 @@ function nightMode() {
   else if ( hours >= 6 ) {
     $( navigationBar ).css('background', '#7b1fa2');
   }
-
-  else {
-    $( navigationBar ).css('background', '#7b1fa2');
-  }
 }
 
 // Dynamic height of navigation bar
