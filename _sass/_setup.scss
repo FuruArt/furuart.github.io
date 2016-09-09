@@ -859,3 +859,24 @@ footer {
     margin: 0 auto;
   }
 }
+
+// Related posts
+
+.related {
+  margin-left: 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .headerImage {
+    @include size(100%, 240px);
+  }
+
+  .article-title {
+    @include size(100%, 80px);
+    font-size: 24px;
+    background-color: #fff;
+    color: $text;
+  }
+}

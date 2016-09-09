@@ -34,22 +34,20 @@ layout: default
       <div class="col-4 related">
         {% if page.previous.url %}
         <div class="article-body">
-            <div class="headerImage" style="background-image: url('{{ page.previous.image }}')">
-              <h2 class="article-title">
-                <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-              </h2>
-            </div>
+            <div class="headerImage" style="background-image: url('{{ page.previous.image }}')"></div>
+            <h1 class="article-title">
+              <a class="prev" href="{{page.previous.url}}"> {{page.previous.title}}</a>
+            </h1>
         </div>
         {% endif %}
       </div>
       <div class="col-4 related">
         {% if page.next.url %}
         <div class="article-body">
-            <div class="headerImage" style="background-image: url('{{ page.next.image }}')">
-              <h2 class="article-title">
-                <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-              </h2>
-            </div>
+            <div class="headerImage" style="background-image: url('{{ page.next.image }}')"></div>
+             <h1 class="article-title">
+              <a class="next" href="{{page.next.url}}">{{page.next.title}}</a>
+            </h1>
         </div>
         {% endif %}
       </div>
