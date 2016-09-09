@@ -895,6 +895,6 @@ footer {
     @include roboto(20px, 400, $text);
     @include size(100%, 80px);
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
   }
 }
