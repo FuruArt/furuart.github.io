@@ -909,7 +909,13 @@ footer {
 
 // NightMode settings
 
-body, .logo {
+body {
+  &.night {
+    background-color: $text;
+  }
+}
+
+.brand .logo {
   &.night {
     background-color: $text;
   }
