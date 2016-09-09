@@ -909,7 +909,7 @@ footer {
 
 // NightMode settings
 
-body {
+body, .logo {
   &.night {
     background-color: $text;
   }
@@ -935,5 +935,9 @@ body {
   &.night {
     background-color: $text;
     color: $night-text;
+
+    .info {
+      color: $night-text;
+    }
   }
 }
