@@ -33,17 +33,12 @@ function navigation() {
 
 function nightMode() {
 
-  var currentDate = new Date(),
-      hours = currentDate.getHours(),
+  var trigger = "#triggerNight",
       elements = ".body-custom, .logo, .navigation-bar, #drop, .data, .title, .description, footer, .article, .article-body";
 
-  if ( hours < 6 || hours > 21 ) {
-    $( elements ).addClass('night');
-  }
-
-  else if ( hours > 6 || hours < 21 ) {
-    $( elements ).removeClass('night');
-  }
+      $(trigger).on('click', function() {
+        $(elements).toggleClass("night");
+      });
 }
 
 // Dynamic height of navigation bar
