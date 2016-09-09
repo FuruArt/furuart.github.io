@@ -933,9 +933,12 @@ body {
     }
   }
 
-  .title, .description {
-    color: $night-light-primary-violet;
+  &.night {
+    .title, .description {
+      color: $night-light-primary-violet;
+    }
   }
+  
 }
 
 .data {
@@ -995,8 +998,4 @@ footer {
 #triggerNight {
   float: right;
   margin-right: 20px;
-}
-
-.title, .description {
-  color: $light-primary-violet;
 }
