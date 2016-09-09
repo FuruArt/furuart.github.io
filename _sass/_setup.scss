@@ -965,6 +965,8 @@ footer {
     background-color: $text;
     color: $night-text;
 
+    a { color: $night-text; }
+
     .headerImage {
       opacity: 0.8;
     }
