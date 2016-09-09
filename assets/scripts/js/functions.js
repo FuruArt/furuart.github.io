@@ -33,7 +33,7 @@ function navigation() {
 
 function nightMode() {
 
-  var trigger = "#triggerNight",
+  var trigger = "#drop>#triggerNight",
       elements = ".body-custom, .logo, .navigation-bar, #drop, .data, .title, .description, footer, .article, .article-body";
 
       $(trigger).on('click', function() {
