@@ -952,3 +952,10 @@ body {
     }
   }
 }
+
+.footer {
+  &.night {
+    background-color: $text;
+    color: $night-text;
+  }
+}
