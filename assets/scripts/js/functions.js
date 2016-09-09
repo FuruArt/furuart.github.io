@@ -37,11 +37,11 @@ function nightMode() {
       hours = currentDate.getHours(),
       navigationBar = '.navigation-bar';
 
-  if ( hours >= 20 ) {
+  if ( hours < 6 || hours > 21 ) {
     $( navigationBar ).css('background', 'red');
   }
 
-  else if ( hours >= 6 ) {
+  else if ( hours > 6 || hours < 21 ) {
     $( navigationBar ).css('background', '#7b1fa2');
   }
 }
