@@ -936,7 +936,7 @@ body, .logo {
     background-color: $text;
     color: $night-text;
 
-    .info {
+    .info, li, li a {
       color: $night-text;
     }
   }

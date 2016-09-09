@@ -35,7 +35,7 @@ function nightMode() {
 
   var currentDate = new Date(),
       hours = currentDate.getHours(),
-      elements = ".body-custom, .navigation-bar, #drop, .data, .title, .description";
+      elements = ".body-custom, .logo, .navigation-bar, #drop, .data, .title, .description";
 
   if ( hours < 6 || hours > 21 ) {
     $( elements ).addClass('night');
