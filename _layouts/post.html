@@ -62,20 +62,19 @@ layout: default
         </div>    
         {% endif %}
       </div>
-      {% if page.next.url = 0 %}
         <div class="col-12 related">
-          {% if page.previous.url %}
+          {% if page.next.url = 0 %}
             <div class="article-body">
+              {% if page.previous.url %}
           <a class="prev" href="{{page.previous.url}}">
             <div class="headerImage" style="background-image: url('{{ page.previous.image }}')"></div>
             <h1 class="article-title">{{page.previous.title}}</h1>
            </a>
+           {% endif %}
            </div>
-          {% endif %}
+           {% endif %}
         </div>
-          {% endif %}
         </div>
-      {% endif %}
       </div>
     
     </div>
