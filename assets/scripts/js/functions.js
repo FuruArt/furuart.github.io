@@ -9,11 +9,13 @@
 
 // Load created functions
 
-$(window).on('load', function() {
-  navigation();
-  dynHeight();
-  wtf();
-  mobileMagic();
+$(document).ready(function() {
+  setTimeout(function(){
+    navigation();
+    dynHeight();
+    wtf();
+    mobileMagic();
+  }, 3000);
 });
 
 // Navigation triggered
