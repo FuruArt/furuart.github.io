@@ -925,6 +925,10 @@ body {
       background-color: $night-dark-primary-violet;
     }
   }
+
+  .title, .description {
+    color: $night-light-primary-violet;
+  }
 }
 
 .data {
