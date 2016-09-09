@@ -39,7 +39,7 @@ function nightMode() {
 
       $(trigger).on('click', function() {
         // $(elements).toggleClass("night");
-        $(elementS).toggleClass('night');
+        $(elementS).toggleClass('night', 1000);
       });
 }
 
