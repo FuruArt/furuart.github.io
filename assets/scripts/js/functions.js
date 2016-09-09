@@ -33,7 +33,7 @@ function navigation() {
 
 function nightMode() {
 
-  var currentDate = { date: date() };
+  var currentDate = new Date();
 
   $("body").html( currentDate.getTime());
 }
