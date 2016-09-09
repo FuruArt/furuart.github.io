@@ -9,7 +9,7 @@
 
 // Load created functions
 
-$(document).ready(function() {
+$(window).on('load', function() {
   navigation();
   dynHeight();
   wtf();
