@@ -38,8 +38,8 @@ function nightMode() {
       elementS = "html, .body-custom";
 
       $(trigger).on('click', function() {
-        $(elements).toggleClass("night");
-        // $(elementS).toggleClass('night', 1000);
+        // $(elements).toggleClass("night");
+        $(elementS).toggleClass('night');
       });
 }
 
