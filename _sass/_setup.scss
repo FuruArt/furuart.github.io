@@ -909,26 +909,26 @@ footer {
 
 // NightMode settings
 
-.body-custom {
-  .night {
+body {
+  &.night {
     background-color: $text;
   }
 }
 
 .navigation-bar {
-  .night {
+  &.night {
     background-color: $night-primary-violet;
   }
 
   #drop {
-    .night {
+    &.night {
       background-color: $night-dark-primary-violet;
     }
   }
 }
 
 .data {
-  .night {
+  &.night {
     background-color: $text;
     color: $night-text;
   }
