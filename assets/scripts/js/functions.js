@@ -10,12 +10,10 @@
 // Load created functions
 
 $(document).ready(function() {
-  setTimeout(function(){
-    navigation();
-    dynHeight();
-    wtf();
-    mobileMagic();
-  }, 3000);
+  navigation();
+  wtf();
+  mobileMagic();
+  dynHeight();
 });
 
 // Navigation triggered
