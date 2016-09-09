@@ -9,7 +9,7 @@
 
   <title>{{ post.title }}{{ site.titleSEO }}</title>
   <meta name="description" content="{{ site.descriptionSEO }}">
-  <meta name="og:description" content="{{ site.descriptionSEO }}">
+  <meta property="og:description" content="{{ site.descriptionSEO }}">
 
   <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">  
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
