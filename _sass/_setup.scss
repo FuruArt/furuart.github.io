@@ -959,3 +959,13 @@ footer {
     color: $night-text;
   }
 }
+
+.article {
+  &.night {
+    background-color: $text;
+    color: $night-text;
+    .article-title {
+      color: $text;
+    }
+  }
+}
