@@ -35,14 +35,14 @@ function nightMode() {
 
   var currentDate = new Date(),
       hours = currentDate.getHours(),
-      body = "body";
+      elements = "body, .navigation-bar, #drop, .data";
 
   if ( hours < 6 || hours > 21 ) {
-    $( body ).css('background', 'red');
+    $( elements ).addClass('night');
   }
 
   else if ( hours > 6 || hours < 21 ) {
-    $( body ).css('background', '#7b1fa2');
+    $( elements ).removeClass('night');
   }
 }
 
