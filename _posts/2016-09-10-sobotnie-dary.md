@@ -1,0 +1,73 @@
+---
+layout: post
+title: "[#1] Web view - dni wolne trzeba ucztować, a nie się katować!"
+date: 2016-09-10 10:00 +0100
+author: FuruArt
+comments: true
+category: Dodatki
+image: "/uploads/images/chillout.png"
+---
+### Pierwsza porcja sobotnich darów, które pojawiać się będą w każdą sobotę około godziny 14, a w nich kilka przydatnych odnośników do stronek ułatwiających życie Developerom, gotowych rozwiązań czy po prostu ciekawych materiałów, wtyczek, a nawet stron tak bardzo unikatowych że czemu ich nie dodać?! Zapraszam do pierwszego Web view!
+
+Większość przedstawionych stronek i narzędzi pochodzi z Githuba, bo przecież jest to miejsce Namber Łan dla wszystkich najróżniejszych dziwności Webdeveloperskich i nie tylko. Dobrze, ale nie po to jest ten wpis żeby biadolić od rzeczy `#5LinijkaSkończyłPier*olić`, czyli do dzieła!
+
+<!--more-->
+
+![addon #1-1](http://image.prntscr.com/image/b602ccf060584989b4667d49f42b05b3.png)
+
+### #1. Marp - Powerpoint dla Webdeveloperów
+
+Odnośnik do strony: [Marp](https://yhatt.github.io/marp/)
+
+Odnośnik do repozytorium: [Marp](https://github.com/yhatt/marp)
+
+Opis: Marp jest to narzędzie umożliwiające pisanie prezentacji w Markdown, jak wiemy nie jest to specjalnie trudne, a możliwość tworzenia w szybki sposób prezentacji bez konieczności dłubania w interfejsie graficznym, przeciągania elementów, ustawiania efektów i co najważniejsze nie trzeba płacić (patrząc na pakiet Microsoft Office) - Marp jest darmowy, więc jeśli macie potrzebę stworzyć prezentację, która nie będzie specjalnie wymagająca to Marp'a polecam!
+
+--- 
+
+### #2. Compressor.io - oszczędzaj na każdym obrazku
+
+![addon #1-2](http://image.prntscr.com/image/6dd455ed4cff4ae69ec37af1040e64c1.png)
+
+Odnośnik do strony: [Compressor.io](https://compressor.io/)
+
+Opis: Compressor to aplikacja, dzięki której możemy zaoszczędzić miejsce na serwerze dodając różne grafiki. Compressor w odpowiedni sposób zmniejszy ich rozmiar nie tracąc zbytnio lub wcale na jakości grafik. Wszystkie obecne grafiki w nagłówkach na moim blogu są potraktowane Compressorem, ponieważ wolę aby plik ważył 120 KB, zamiast 800 KB. Compressor pokazuje nam w jakim stopniu został zmniejszony rozmiar zdjęcia (w procentach) oraz pozwala na dodawanie dużej ilości zdjęć za pomocą przeciągnięcia do okna lub wybrania z folderu. Całość możemy zapisać jako `.zip` i otrzymujemy nasze skompresowane pliki, które odciążą znacząco proces ładowania strony. Przykładowo jeśli używamy grafik w rozmiarze 4000x6000 [px], to zabieg kompresji zdziała cuda. Aby dodać zdjęcia klikamy przycisk `TRY IT !`.
+
+---
+
+### #3. Typement - sprawdź jak twoja marka wygląda w innym foncie
+
+![addon #1-3](http://image.prntscr.com/image/1b2df7249f2b4f87ae597a33a30d4cfc.png)
+
+Odnośnik do strony: [Typement](http://typement.com)
+
+Opis: Typement pozwala na dobranie fontu idealnego dla naszej firmy, marki, działalności, umożliwiając nam wpisanie swojej nazwy i przeglądanie naszego tekstu pod każdym fontem istniejącym na Google Fonts (jeśli się nie mylę), dodatkowo pozwala wybrać krój fontu, czy ma być pisany tekstem odręcznym, szeryfowym, czy bezszeryfowym. Bardzo przydatne narzędzie, gdy nie mamy pomysłu na font idealny dla nas lub nie chce nam się pobierać każdego fontu, który potencjalnie wydaje nam się idealny. 
+
+---
+
+### #4. Buddy! - czyli przeglądarka komentuje to co przeglądasz w sieci, ba nawet drwi z Ciebie
+
+![addon #1-4](http://image.prntscr.com/image/74d2356747c047f78dec3eab5661f5d1.png)
+
+Odnośnik do strony: [Buddy](https://github.com/tholman/buddy)
+
+Opis: Buddy to upierdliwiec, który wtrąca się we wszystko co przeglądamy, marudzi gdy mamy otwarte za dużo zakładek, czyta tytułu niektórych filmów, po prostu jest gadatliwym marudą. Jest to rozszerzenie dla przeglądarek na silniku Chromium, samo rozszerzenie jest bardziej ciekawostką niż faktycznie spektakularnym osiągnięciem, osobiście nie do końca mi to działało, ale możecie sprawdzić sami na własnej skórze. A tak Buddy został zaprezentowany na konferencji: [tutaj](https://youtu.be/RY8aCIfERHU?t=904)
+
+---
+
+### #5. PixelArt w CSS - Pikachu, Mario i wiele więcej retro gwiazd
+
+![addon #1-5](http://image.prntscr.com/image/d0a1fbfb5d154065a4e50a75916c32b2.png)
+
+Odnośnik do strony: [CSS-Tricks](https://css-tricks.com/fun-times-css-pixel-art/)
+
+Opis: Pixel-art'y, czyli grafiki złożone z pojedynczych pikseli o różnej wielkości, tak że razem tworzą obraz. Styl ten wywodzi się z gatunku gier Retro i nie tylko. A teraz możemy zobaczyć jak bardzo ludziom nudzi się w domu, że stworzyli w CSS PixelArt Pikachu, Hellboy czy Mario, wykorzystując do tego na prawdę przedziwne techniki, związane z Macierzami?! Zobaczcie sami! Dodatkowo, macie tam również poradnik jak tworzyć tego typu Pixel-Arty.
+
+---
+
+Tak oto wygląda pierwszy przegląd internetowych zasobów dla Developerów i nie tylko, jutro pojawi się kolejna porcja, a tymczasem jeśli taka forma Artykułu Ci się podoba, pokazałem Ci ciekawe narzędzia do tworzenia i nie tylko lub po prostu chcesz docenić moją pracę, zostaw 'Lubię to!' na [Facebooku](https://fb.com/furuart), skomentuj, udostępnij i do następnego przeglądu w Pełni :>
+
+---
+
+Artykuł ten jest moją własnością - **Furu.Art** - zakaz kopiowania treści na inne blogi, fanpage czy strony bo nogi z dupy powyrywam!
+
