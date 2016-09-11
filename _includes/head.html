@@ -7,7 +7,7 @@
   <meta name="keywords" content="{{ site.keywords }}">
   <meta name="copyright" content="&copy; {{ site.author }} {{ site.time | date: "%Y" }}">
 
-  <title>{{ post.title }}{{ site.titleSEO }}</title>
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ site.descriptionSEO }}">
   <meta property="og:description" content="{{ site.descriptionSEO }}">
 
