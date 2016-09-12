@@ -64,15 +64,3 @@ layout: default
       </div>
         </div>
       </div>
-
-      <div class="row">
-        <article class="article">
-          <div class="tags">
-
-            {% for tag in page.tags %}
-              <a href="/search/tag/#{{tag | slugify}}">{{ tag }}</a>
-            {% endfor %}
-
-          </div>
-        </article>
-      </div>
