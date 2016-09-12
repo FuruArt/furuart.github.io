@@ -2,8 +2,8 @@
 
   <h2 class="title">Tagi</h2>
   <div class="data">
-    {% for tag in tags %}
-	    <a href="#{{ tag | slugify }}"> {{ tag }} </a>
+    {% for tag in page.tags %}
+	    <a href="/search/tag/#{{ tag | slugify }}"> {{ tag }} </a>
     {% endfor %}
   </div>
 </div>
