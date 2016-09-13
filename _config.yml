@@ -53,4 +53,4 @@ timezone: Europe/Warsaw
 
 repository: FuruArt/blog
 
-future: true
+future: false
