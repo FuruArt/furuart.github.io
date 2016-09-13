@@ -38,15 +38,25 @@ Dobrze to mniej więcej z takich miejsc możecie czerpać swoje Stress Balle, ja
 Teraz przyszedł czas na przeszukanie internetu w poszukiwaniu najciekawszych piłeczek antystresowych:
 
 * #10. ![Kiść winogron](http://www.szugizmo.pl/446-thickbox/kisc-winogron.jpg) Kiść winogron
+
 * #9. ![Rozciągliwy ser](http://zabawkiprogresywne.pl/84-180-large/szwajcarski-ser-z-myszkami-w-srodku.jpg) Rozciągliwy ser z myszami
-* #8. ![Zgniatalny ślimak](http://zabawkiprogresywne.pl/3009-squeezy-snail.html) Zgniatalny ślimak
+
+* #8. ![Zgniatalny ślimak](http://zabawkiprogresywne.pl/3009-4436-large/squeezy-snail.jpg) Zgniatalny ślimak
+
 * #7. ![Antystres komputer](http://www.antystresy.pl/media/DIR_123/DIR_17212/DIR_128011/680739_komputer_antystres.jpg) Antystresowy Komputer
+
 * #6. ![Antystres udko z kurczaka](http://www.antystresy.pl/media/DIR_123/DIR_17212/DIR_128011/680833_udko_antystresy.jpg) Antystresowe udko z kurczaka
+
 * #5. ![Antystres wibrująca świnka](http://www.antystresy.pl/media/Zwierzeta/680156_wibrujaca_swinka_antystresowy_.jpg) Antystresowa wibrująca świnka
+
 * #4. ![Zgniatalne twarze](http://i.ebayimg.com/images/g/HDAAAOSw3xJVbmxq/s-l1600.jpg) Zgniatalne twarze do formowania
+
 * #3. ![Jajko z żółtkiem](http://i.ebayimg.com/images/g/CRkAAOSwvg9XcjCX/s-l1600.jpg) Zgniatalne jajko z zółtkiem
+
 * #2. ![Wytrzeszcz z Batmanem](http://i.ebayimg.com/images/g/crYAAOSwAvJW87KQ/s-l500.jpg) Wytrzeszcz z Batmanem
+
 * #1. ![Ściskalny George Bush](http://i.ebayimg.com/images/g/0dUAAOSwpDdVdkDe/s-l1600.jpg) Ściskalny George Bush
+
 
 Link do tych wszystkich przedmiotów możecie łatwo znaleźć zaglądając do adresów obrazków :> 
 
