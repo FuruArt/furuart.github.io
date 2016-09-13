@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Stress Ball - czyli najlepszy gumowy przyjaciel programisty!"
-date: 2016-09-14 00:00 +0000
+date: 2016-09-14 08:00 +0000
 author: FuruArt
 comments: true
 category: Życiowe sentencje
