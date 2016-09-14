@@ -238,7 +238,7 @@ header {
   .title { margin-top: 0;}
 }
 
-.category, .archive, .tags {
+.category, .archive, .tags, .friends {
   @include size(100%, auto);
 
     .title { padding-bottom: 40px; }
