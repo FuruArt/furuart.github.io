@@ -264,26 +264,6 @@ header {
     margin: 0 auto;
     @include transition(all, .4s, ease-in-out);
 
-    &:hover {
-      background: lighten(#3F51B5, 5px);
-    }
-
-    #grafinity {
-      background-image: url(../assets/images/grafinity.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      width: 40px;
-      height: 40px;
-      display: block;
-      border-radius: 50%;
-      background-color: #080c1c;
-
-      &:hover {
-        background-color: lighten(#080c1c, 5px);
-      }
-    }
-
     i {
       color: #fff;
       width: 40px;
@@ -291,7 +271,26 @@ header {
       border-radius: 50%;
       text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     }
+
+    &:hover {
+      background: lighten(#3F51B5, 5px);
+    }
   }
+
+  #grafinity {
+    background-image: url(../assets/images/grafinity.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: block;
+    border-radius: 50%;
+    background-color: #080c1c;
+
+    &:hover {
+      background-color: lighten(#080c1c, 5px);
+    }
 }
 
 .category, .archive, .tags, .friends {
