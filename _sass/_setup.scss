@@ -238,6 +238,10 @@ header {
   .title { margin-top: 0;}
 }
 
+.friends {
+  .title { padding-top: 40px; }
+}
+
 .category, .archive, .tags, .friends {
   @include size(100%, auto);
 
