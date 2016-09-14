@@ -293,7 +293,7 @@ header {
     &:hover {
       background-color: lighten(#080c1c, 5px);
     }
-}
+  }
 
 .category, .archive, .tags, .friends {
   @include size(100%, auto);
