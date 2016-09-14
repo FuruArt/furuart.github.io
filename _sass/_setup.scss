@@ -61,7 +61,14 @@ a, a:hover, a:visited, a:active { text-decoration: none; }
   opacity: 0;
 }
 
-.data { background: #fff; padding: 40px 0px; }
+.data { 
+  background: #fff;
+  padding: 40px 0px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: center;
+}
 
 header {
 
@@ -259,11 +266,17 @@ header {
     @include transition(all, .4s, ease-in-out);
     @include transform(translateX(0px));
 
-    &:first-of-type {
-      padding-left: 7px;
-    }
+    &:hover { 
+      
+      @include transform(translateY(10px));
 
-    &:hover { @include transform(translateX(10px)); }
+      a {
+        color: $red; text-decoration: none; 
+          .after { opacity: 1; font-size: 18px; color: $red; }
+        }
+      }
+
+     }
 
     a, &:visited {
       @include roboto(1rem, 400, $text);
