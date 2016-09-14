@@ -257,15 +257,15 @@ header {
 
   li {
     display: block;
-    width: 100%;
+    width: 50%;
     height: auto;
     text-align: center;
     margin: 0 auto;
     font-size: 24px;
     color: $text;
     line-height: 2em;
-    @include transition(all, .4s, ease-in-out);
-    @include transform(translateX(0px));
+    @include transition(all, .2s, ease-in-out);
+    @include transform(translateY(0px));
 
     &:hover { 
       
