@@ -247,6 +247,8 @@ header {
 
 .friends {
   .title { padding-top: 20px; }
+
+  li { width: auto !important; }
 }
 
 .category, .archive, .tags, .friends {
