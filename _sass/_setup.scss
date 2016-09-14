@@ -262,6 +262,7 @@ header {
     text-align: center;
     vertical-align: middle;
     margin: 0 auto;
+    @include transition(all, .4s, ease-in-out);
 
     &:hover {
       background: lighten(#3F51B5, 10px);
