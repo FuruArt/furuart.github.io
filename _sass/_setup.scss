@@ -250,7 +250,7 @@ header {
 
   li { width: auto !important; }
 
-  #xal.icon {
+  #xal {
     position: relative;
     left: -20px;
     width: 40px;
@@ -268,8 +268,8 @@ header {
       background: lighten(#3F51B5, 5px);
     }
 
-    #grafinity.icon {
-      @extend .icon;
+    #grafinity {
+      @extend #xal;
       background-image: url('../assets/images/grafinity.png');
       background-repeat: no-repeat;
       background-color: #080c1c;
