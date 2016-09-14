@@ -265,7 +265,7 @@ header {
     @include transition(all, .4s, ease-in-out);
 
     &:hover {
-      background: lighten(#3F51B5, 10px);
+      background: lighten(#3F51B5, 5px);
     }
 
     i {
