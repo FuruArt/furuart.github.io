@@ -290,9 +290,10 @@ header {
     position: relative;
     left: -20px;
     vertical-align: middle;
+    @include transition(all, .4s, ease-in-out);
 
     &:hover {
-      background-color: lighten(#080c1c, 5px);
+      background-color: lighten(#080c1c, 10px);
     }
   }
 
