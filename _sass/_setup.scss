@@ -263,6 +263,10 @@ header {
     vertical-align: middle;
     margin: 0 auto;
 
+    &:hover {
+      background: lighten(#3F51B5, 10px);
+    }
+
     i {
       color: #fff;
       width: 40px;
