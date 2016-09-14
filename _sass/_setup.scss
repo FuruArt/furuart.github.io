@@ -270,12 +270,13 @@ header {
 
     #grafinity {
       @extend #xal;
+      display: block;
       background-image: url('../assets/images/grafinity.png');
       background-repeat: no-repeat;
       background-color: #080c1c;
 
       &:hover {
-        background: lighten(#080c1c, 5px);
+        background-color: lighten(#080c1c, 5px);
       }
     }
 
