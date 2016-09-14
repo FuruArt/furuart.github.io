@@ -295,6 +295,8 @@ header {
     }
   }
 
+}
+
 .category, .archive, .tags, .friends {
   @include size(100%, auto);
 
