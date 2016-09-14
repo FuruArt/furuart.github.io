@@ -269,10 +269,14 @@ header {
     }
 
     #grafinity {
-      @extend #xal;
-      display: block;
-      background-image: url('../assets/images/grafinity.png');
+      background-image: url(../assets/images/grafinity.png);
       background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 40px;
+      height: 40px;
+      display: block;
+      border-radius: 50%;
       background-color: #080c1c;
 
       &:hover {
