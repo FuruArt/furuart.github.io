@@ -1,40 +1,42 @@
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <meta name='subject' content='{{ site.subject }}'>
-  <meta name='author' content='{{ site.author }}'>
-  <meta name='keywords' content='{{ site.keywords }}'>
-  <meta name='copyright' content='&copy; {{ site.author }} {{ site.time | date: '%Y' }}'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="subject" content="{{ site.subject }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="keywords" content="{{ site.keywords }}">
+  <meta name="copyright" content="&copy; {{ site.author }} {{ site.time | date: "%Y" }}">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego{% endif %}</title>
-  <meta name='description' content='Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj'>
-  <meta property='og:description' content='Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj'>
-  <meta property='og:title' content='Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego'>
+  <meta name="description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:title" content="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego">
+  <meta name="robots" content="NOODP">
 
+Czytaj dalej: https://blog.performancemedia.pl/seo-sem/seo/dlaczego-google-nie-uzywa-znacznika-meta-description-moich-stron
 
-  <link rel='stylesheet' href='{{ site.github.url }}/css/main.css'>  
-  <link rel='canonical' href='{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}'>
-  <link rel='alternate' type='application/rss+xml' title='{{ site.title }}' href='{{ site.github.url }}{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}'>
+  <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">  
+  <link rel="canonical" href="{{ page.url | replace:"index.html","" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.github.url }}{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   
-  <link rel='image_src' href='{{ site.github.url }}/assets/logo/logo.jpg'>
-  <meta property='og:image' content='{{ site.github.url }}/assets/logo/logo.jpg'>
+  <link rel="image_src" href="{{ site.github.url }}/assets/logo/logo.jpg">
+  <meta property="og:image" content="{{ site.github.url }}/assets/logo/logo.jpg">
   
   <!-- Favicons -->
-  <link rel='apple-touch-icon' sizes='57x57' href='{{ site.github.url }}/assets/favicon/apple-icon-57x57.png'>
-  <link rel='apple-touch-icon' sizes='60x60' href='{{ site.github.url }}/assets/favicon/apple-icon-60x60.png'>
-  <link rel='apple-touch-icon' sizes='72x72' href='{{ site.github.url }}/assets/favicon/apple-icon-72x72.png'>
-  <link rel='apple-touch-icon' sizes='76x76' href='{{ site.github.url }}/assets/favicon/apple-icon-76x76.png'>
-  <link rel='apple-touch-icon' sizes='114x114' href='{{ site.github.url }}/assets/favicon/apple-icon-114x114.png'>
-  <link rel='apple-touch-icon' sizes='120x120' href='{{ site.github.url }}/assets/favicon/apple-icon-120x120.png'>
-  <link rel='apple-touch-icon' sizes='144x144' href='{{ site.github.url }}/assets/favicon/apple-icon-144x144.png'>
-  <link rel='apple-touch-icon' sizes='152x152' href='{{ site.github.url }}/assets/favicon/apple-icon-152x152.png'>
-  <link rel='apple-touch-icon' sizes='180x180' href='{{ site.github.url }}/assets/favicon/apple-icon-180x180.png'>
-  <link rel='icon' type='image/png' sizes='192x192'  href='{{ site.github.url }}/assets/favicon/android-icon-192x192.png'>
-  <link rel='icon' type='image/png' sizes='32x32' href='{{ site.github.url }}/assets/favicon/favicon-32x32.png'>
-  <link rel='icon' type='image/png' sizes='96x96' href='{{ site.github.url }}/assets/favicon/favicon-96x96.png'>
-  <link rel='icon' type='image/png' sizes='16x16' href='{{ site.github.url }}/assets/favicon/favicon-16x16.png'>
-  <meta name='msapplication-TileColor' content='#7b1fa2'>
-  <meta name='msapplication-TileImage' content='{{ site.github.url }}/assets/favicon/ms-icon-144x144.png'>
-  <meta name='theme-color' content='#7B1FA2'>
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.github.url }}/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.github.url }}/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.github.url }}/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.github.url }}/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.github.url }}/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.github.url }}/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.github.url }}/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.github.url }}/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.github.url }}/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.github.url }}/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.github.url }}/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ site.github.url }}/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.github.url }}/assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#7b1fa2">
+  <meta name="msapplication-TileImage" content="{{ site.github.url }}/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#7B1FA2">
 </head>
