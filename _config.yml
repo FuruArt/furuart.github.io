@@ -55,15 +55,4 @@ repository: FuruArt/blog
 
 future: false
 
-minibundle:
-  minifier_commands: 
-    js: uglifyjs
-
-source_dir: assets/scripts
-dest_ath: /assets/head
-assets: 
-  - jquery
-  - functions
-  - prism
-attributes: 
-  async: async
+style: sass/base.scss
