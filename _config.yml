@@ -3,9 +3,9 @@
 title: Blog w Pełni
 description: Od zera do Front-end developera w Pełni
 # Title of page
-titleSEO: Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego.
+titleSEO: 'Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego'
 # Description of page
-descriptionSEO: Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj :>
+descriptionSEO: 'Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj'
 # Subject of page
 subject: Blogging
 # Author of page
@@ -19,7 +19,7 @@ homeurl: /
 # Scripts url 
 scripts: "/assets/scripts/js/"
 # Keywords for SEO
-keywords: Design, Kodowanie, Front-end, Nauka, Projektowanie, Koder, Programista, Developer, Designer, Web, Webmaster
+keywords: `Design Kodowanie Frontend Nauka Projektowanie Koder Programista Developer Designer Web Webmaster`
 # Information about me
 info: 'Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a>'
 # Facebook URL
