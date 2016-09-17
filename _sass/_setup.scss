@@ -297,6 +297,16 @@ header {
     }
   }
 
+  #lisiePismo {
+    @extend #grafinity;
+    background-image: url(../assets/images/lisiepismo.png);
+    background-color: #fff;
+
+    &:hover {
+      @include filter(saturate(0.5));
+    }
+  }
+
 }
 
 .category, .archive, .tags, .friends {
