@@ -303,7 +303,7 @@ header {
     background-color: #fff;
 
     &:hover {
-      @include filter(saturate(0.5));
+      @include filter(saturate(1));
     }
   }
 
