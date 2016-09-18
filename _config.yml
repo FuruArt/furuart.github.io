@@ -54,5 +54,3 @@ timezone: +0100
 repository: FuruArt/blog
 
 future: false
-
-style: sass/base.scss

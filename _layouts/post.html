@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
   <!-- <div class="navigator">
@@ -66,7 +67,9 @@ layout: default
       </div>
 
       <div class="row">
+        {% if page.comments %}
         <article class="article">
           {% include comments.html %}
         </article>
+        {% endif %}
       </div>
