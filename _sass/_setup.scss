@@ -1085,12 +1085,19 @@ html {
   }
 }
 
-#disqus_thread {
-  padding: 20px;
-  height: 350px;
-  position: relative;
-  top: -40px;
-  a {
-    color: $accent;
+#comments { 
+  top: -80px;
+
+  #disqus_thread {
+    padding: 20px;
+    height: 360px;
+    position: relative;
+    top: 0;
+
+    a {
+      color: $accent;
+    }
+
   }
 }
+
