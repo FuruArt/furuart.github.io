@@ -1087,4 +1087,8 @@ html {
 
 #disqus_thread {
   padding: 20px;
+
+  a {
+    color: $accent;
+  }
 }
