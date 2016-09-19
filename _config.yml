@@ -13,7 +13,7 @@ author: Furu.Art
 # Language of page
 lang: PL
 # Mail to contact
-email: grafikawpelni@gmail.com
+email: kontakt@furuart.pl
 # Home Url of page
 homeurl: /
 # Scripts url 
@@ -21,7 +21,7 @@ scripts: "/assets/scripts/js/"
 # Keywords for SEO
 keywords: "Design, Kodowanie, Frontend, Nauka, Projektowanie, Koder, Programista, Developer, Designer, Web, Webmaster"
 # Information about me
-info: 'Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a>'
+info: 'Twórca, projektant, developer, zapaleniec o niepohamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a>'
 # Facebook URL
 facebook_url: https://fb.com/furu.art
 # Instagram URL
