@@ -1084,3 +1084,7 @@ html {
     @include filter( brightness(0.9) contrast(1.5) sepia(0.5) opacity(0.9) grayscale(0.3) );
   }
 }
+
+#disqus_thread {
+  padding: 20px;
+}
