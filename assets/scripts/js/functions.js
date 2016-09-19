@@ -47,11 +47,9 @@ function nightMode() {
 function dynHeight() {
 
   var htmlHeight = $('html').height(),
-      commentsHeight = $('#disqus_thread').height(),
-      newHeight = htmlHeight + commentsHeight,
       navigationBar = ".navigation-bar";
 
-  $(navigationBar).css('height', newHeight + 'px');
+  $(navigationBar).css('height', htmlHeight + 'px');
 }
 
 function wtf() {
