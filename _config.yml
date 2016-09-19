@@ -54,10 +54,3 @@ timezone: +0100
 repository: FuruArt/blog
 
 future: false
-
-categories:
-  - <i class="ion-code"></i> Dla webdeveloper'a
-  - Dla webdesigner'a
-  - Dodatek
-  - Informacje
-  - Życiowe sentencje
