@@ -1099,7 +1099,8 @@ html {
 
   #disqus_thread {
     padding: 20px;
-    height: 360px;
+    min-height: 360px;
+    max-height: auto;
     position: relative;
     top: 0;
 
