@@ -34,14 +34,6 @@ comments: true
     </div>
 
     <div class="row">
-        {% if page.comments %}
-        <article class="article">
-          {% include comments.html %}
-        </article>
-        {% endif %}
-      </div>
-
-    <div class="row">
 
     <header class="relatedHeader">
       <h1><i class="ion-ios-paper"></i>A po przeczytaniu... Czytaj dalej</h1>
@@ -72,4 +64,12 @@ comments: true
         {% endif %}
       </div>
         </div>
+      </div>
+
+      <div class="row">
+        {% if page.comments %}
+        <article class="article">
+          {% include comments.html %}
+        </article>
+        {% endif %}
       </div>
