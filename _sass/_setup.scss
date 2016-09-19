@@ -1085,14 +1085,14 @@ html {
   }
 }
 
+.commentsText {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #898989;
+}
+
 #comments { 
   margin-bottom: 0;
-
-  .commentsText {
-    font-size: 24px;
-    font-weight: 400;
-    color: #898989;
-  }
 
   #disqus_thread {
     padding: 20px;
