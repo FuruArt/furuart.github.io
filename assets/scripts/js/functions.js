@@ -49,7 +49,13 @@ function dynHeight() {
       newHeight = htmlHeight + disqusHeight,
       navigationBar = ".navigation-bar";
 
-  $(navigationBar).css('height', newHeight + 'px');
+      if ( disqusHeight === 0 ) {
+        $(navigationBar).css('height', htmlHeight + 'px');
+      }
+
+      else {
+        $(navigationBar).css('height', newHeight + 'px');
+      }
 }
 
 function wtf() {
