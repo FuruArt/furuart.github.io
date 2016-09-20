@@ -9,7 +9,7 @@
 
 // Load created functions
 
-$(document).load(function() {
+$(function() {
   navigation();
   wtf();
   mobileMagic();
