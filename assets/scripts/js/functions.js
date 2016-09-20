@@ -53,7 +53,7 @@ function dynHeight() {
         $(navigationBar).css('height', htmlHeight + 'px');
       }
 
-      else {
+      if ( disqusHeight > 0 ) {
         $(navigationBar).css('height', newHeight + 'px');
       }
 }
