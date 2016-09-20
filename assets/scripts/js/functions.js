@@ -50,7 +50,11 @@ function dynHeight() {
       navigationBar = ".navigation-bar";
 
       if ( disqusHeight == undefined ) {
-        $(navigationBar).css('background-color', 'red');
+        $(navigationBar).css('height', htmlHeight + 'px');
+      }
+
+      else if ( disqusHeight != undefined ) {
+        $(navigationBar).css('height', newHeight + 'px');
       }
 }
 
