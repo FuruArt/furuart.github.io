@@ -1121,6 +1121,10 @@ html {
   z-index: 99999;
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
 
+  &.success {
+    background: mediumseagreen;
+  }
+
   .message {
     @include roboto(1rem, 400, #fff);
     text-align: center;
