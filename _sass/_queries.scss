@@ -111,8 +111,8 @@
       @include size(100%, 40px);
       text-align: justify;
       margin: 0 auto;
-      line-height: 80px;
-      padding-left: 60px;
+      line-height: 40px;
+      padding-left: 20px;
       background: #fff;
       border-bottom: 2px solid rgba(0, 0, 0, .05);
 
@@ -146,6 +146,10 @@
       .logo {
         @include size(100px, 100px);
       }
+    }
+
+    .description {
+      font-size: 1rem;
     }
   }
 
