@@ -1112,13 +1112,14 @@ html {
 }
 
 .alert {
-  @include size(90%, 40px);
+  @include size(100%, 40px);
   display: block;
   margin: 0 auto;
   background: $accent;
   line-height: 40px;
   position: relative;
   z-index: 99999;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
 
   .message {
     @include roboto(1rem, 400, #fff);
@@ -1126,7 +1127,7 @@ html {
 
     i {
       padding-right: 10px;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.8);
       vertical-align: middle;
       font-size: 1rem;
     }
