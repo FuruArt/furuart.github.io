@@ -79,6 +79,6 @@ function alerting() {
   var alert = ".alert";
 
   $(alert).on('click', function() {
-    $(this).hide(1000);
+    $(this).slideUp(1000);
   });
 }
