@@ -15,6 +15,7 @@ $(function() {
   mobileMagic();
   dynHeight();
   nightMode();
+  alerting();
 });
 
 // Navigation triggered
@@ -71,5 +72,13 @@ function mobileMagic() {
     $(".mobile-trigger > i").toggleClass("closed");
     $(".htmlMask").toggleClass("disable");
     $("html").toggleClass("clicked");
+  });
+}
+
+function alerting() {
+  var alert = ".alert";
+
+  $(alert).on('click', function() {
+    $(this).hide(1000);
   });
 }
