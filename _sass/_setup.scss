@@ -1111,3 +1111,24 @@ html {
   }
 }
 
+.alert {
+  @include size(90%, 40px);
+  display: block;
+  margin: 0 auto;
+  background: $accent;
+  line-height: 40px;
+  position: relative;
+  z-index: 99999;
+
+  .message {
+    @include roboto(1rem, 400, #fff);
+    text-align: center;
+
+    i {
+      padding-right: 10px;
+      color: rgba(255, 255, 255, 0.5);
+      vertical-align: middle;
+      font-size: 1rem;
+    }
+  }
+}
