@@ -7,39 +7,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="subject" content="Blogging">
   <meta name="author" content="Furu.Art">
-  <meta name="keywords" content="Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster">
+  <meta name="keywords" content="Design, Kodowanie, Frontend, Nauka, Projektowanie, Koder, Programista, Developer, Designer, Web, Webmaster">
   <meta name="copyright" content="&copy; Furu.Art 2016">
 
   <title>[#2] Gulp&#39;owanie z Furu - szczyt leniwości i pierwsza strona</title>
-  <meta name="description" content="Wstęp dziś będzie krótki i zwięzły, ponieważ nie chcę tracić miejsca potrzebnego wytłumaczenia podstaw Jade/Html oraz Sass/Css, z wykorzystanych przepisów po...">
-
-  <link rel="stylesheet" href="/css/main.css">
+  <meta name="description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:title" content="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego">
+ 
   <link rel="canonical" href="/gulp-2/">
-  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni" href="/feed.xml">
-  <link rel="stylesheet" href="/assets/scripts/js/prism/prism.css">
-
-  <script src="/assets/scripts/js/jquery.js"></script>
-  <script src="/assets/scripts/js/prism/prism.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego" href="http://blog.furuart.pl/feed.xml">
+  
+  <link rel="image_src" href="http://blog.furuart.pl/assets/logo/logo.jpg">
+  <meta property="og:image" content="http://blog.furuart.pl/assets/logo/logo.jpg">
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://blog.furuart.pl/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://blog.furuart.pl/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://blog.furuart.pl/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://blog.furuart.pl/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://blog.furuart.pl/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://blog.furuart.pl/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://blog.furuart.pl/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://blog.furuart.pl/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://blog.furuart.pl/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="http://blog.furuart.pl/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://blog.furuart.pl/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="http://blog.furuart.pl/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://blog.furuart.pl/assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#7b1fa2">
+  <meta name="msapplication-TileImage" content="http://blog.furuart.pl/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#7B1FA2">
 </head>
 
 
   <body class="body-custom">
     <div class="htmlMask disable"></div>
 
+    <div class="alert success">
+      <p class="message"><i class="ion-checkmark"></i>Mobilna strona działa już poprawnie!</p>
+    </div>
+
     <div class="container-fluid">
 
-      <div class="mobile-trigger"><i class="ion-android-menu"></i> <i class="ion-android-close closed"></i></div>
+      <div class="mobile-trigger">
+  <i class="ion-android-menu"></i> <i class="ion-android-close closed"></i>
+</div>
 <div class="mobile-navigation-bar">
   <div class="navigation-bar">
     <ul class="mini-navigation">
-      <header>
         <header>
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -48,31 +76,37 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
-      </header>
       <li><a href="/"><i class="ion-home"></i> Strona główna</a></li>
       <li><a href="/about"><i class="ion-android-contact"></i> O mnie</a></li>
       <li><a href="/search/category"><i class="ion-android-folder"></i> Kategorie</a></li>
       <li><a href="/archive"><i class="ion-android-calendar"></i> Archiwum</a></li>
+      <li id="triggerNight" style="float: none;"><a><i class="ion-lightbulb"></i>Uruchom tryb nocny</a></li>
     </ul>
   </div>
 </div>
       
       <div class="col-3">
 
-      <div class="triggerInactive">
+      <div class="triggerClosed" id="trigger">
   <i class="ion-android-arrow-forward"></i>
   <p class="tip">Przywróc nawigację.</p>
+</div>
+
+<div class="triggerClosed" id="triggerNight">
+  <i class="ion-lightbulb"></i>
+  <p class="tip">Powróć do normalnych barw.</p>
 </div>
 
 <!-- Nerds: Experimental Functions(); -> Do not use!
@@ -102,9 +136,14 @@
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -113,14 +152,15 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
@@ -130,18 +170,16 @@
   <h2 class="title"><strong>O Furu</strong> - czyli o mnie</h2>
   
   <div class="me">
+      <a href="http://blog.furuart.pl/about">
+        
+        <img src="http://blog.furuart.pl/assets/images/me.jpg" class="photo">
 
-    <div class="photo">
-
-      <a href="/about"></a>
-
-    </div>
-
+      </a>
   </div>
 
   <div class="data">
 
-    <p class="info">Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
+    <p class="info">Twórca, projektant, developer, zapaleniec o niepohamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
 
     <div class="socials">
 
@@ -161,17 +199,25 @@
 
 </div>
 
+
         <div class="category">
 
   <h2 class="title">Kategorie</h2>
   <div class="data">
       
-        <li><a href="/search/category/">Dla webdeveloper'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdeveloper'a<i class="after ion-android-arrow-forward"></i></a></li>
       
-        <li><a href="/search/category/">Dla webdesigner'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdesigner'a<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Dodatek<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Informacje<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Życiowe sentencje<i class="after ion-android-arrow-forward"></i></a></li>
       
   </div>
 </div>`
+
 
         <div class="archive">
   <h2 class="title">Archiwum</h2>
@@ -227,29 +273,234 @@
     
     
     
-      <li><a href="/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#September 2016">Wrzesień 2016 <span class="counter">14</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#August 2016">Sierpień 2016 <span class="counter">8</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#June 2016">Czerwiec 2016 <span class="counter">11</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
       
     
   
   </div>
 </div>
 
+
+        <div class="friends">
+
+  <h2 class="title">Zaprzyjaźnione strony</h2>
+
+  <div class="data">
+
+    <ul>
+
+      <li><span class="icon" id="xal"><i class="ion-planet"></i></span><a href="http://xaal66.blogspot.com/" target="_blank" title="Blog hobbystyczny o astronomii, astrofotografii i...">Zapiski Xal'a</a></li>
+      
+      <li><span class="icon" id="grafinity"></span><a href="http://grafinity.pl" target="_blank" title="Grafinity Forum - forum graficzne">Grafinity Forum</a></li>
+
+      <li><span class="icon" id="lisiePismo"></span><a href="http://lisiepismo.pl" target="_blank" title=" LisiePismo – Blog osobisty 22-letniego Liska">LisiePismo</a></li>
+
+      <li><span class="icon" id="granos"></span><a href="http://granos.pl" target="_blank" title="Granos.pl - blog o nowych mediach, brandingu, marketingu i nie tylko">granos.pl</a></li>
+    </ul>
+
+  </div>
+  
+</div>
+
         <div class="ads">
   <div class="loremAd">
-    <p>Here will be Google Ads</p>
+    <p>Najlepszy hosting WWW w internecie, polecam w Pełni</p>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tani hosting WWW"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko1.jpg" /></a>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tanie domeny"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko2.jpg" /></a>
   </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
-  </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
+  <div class="adwert">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  
   </div>
 </div>
 
+
         <footer>
-
+  Wszelkie prawa zastrzeżone <a href="http://furuart.pl">Furu.Art</a> &copy; 2016
 </footer>
-
 
       </div>
 
@@ -257,19 +508,20 @@
 
       <div class="col-9">     
            
-              <div class="navigator">
+              <!-- <div class="navigator">
     <span><a href="/">Strona główna</a></span>
     <span><i class="ion-chevron-right"></i></span>
     <span><a href="/gulp-2/">Obecny post</span>
-  </div>
+  </div> -->
 
   <div class="row">
 
     <article class="article">
 
       <header class="article-header">
-          <div style="background-image: url('');" class="headerImage">
-        <h2 class="article-title"><a href="#nope">[#2] Gulp'owanie z Furu - szczyt leniwości i pierwsza strona</a></h2>
+        <div class="headerImage" style="background-image: url(/uploads/images/gulpowanie.png)">
+          <!-- <img src="/uploads/images/gulpowanie.png" class=""> -->
+          <h2 class="article-title"><a title="[#2] Gulp'owanie z Furu - szczyt leniwości i pierwsza strona" href="">[#2] Gulp'owanie z Furu - szczyt leniwości i pierwsza strona</a></h2>
         </div>
          <div class="article-info">
             <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>26 Maja 2016</span>
@@ -283,15 +535,15 @@
 
 <!--more-->
 
-<p>Ostatnim elementem, który pozwoli nam osiągnąć szczyt lenistwa będzie konfiguracja serwera <code>Livereload</code>, odpowiedzialnego za przetwarzanie w czasie rzeczywistym zmian plików bez konieczności odświeżania przeglądarki. Przechodzimy do <code>gulpfile.js</code>, gdzie w miejscu w którym mamy zapisane polecenie <code>Jade</code> i modyfikujemy je:</p>
+<p>Ostatnim elementem, który pozwoli nam osiągnąć szczyt lenistwa będzie konfiguracja serwera <code class="highlighter-rouge">Livereload</code>, odpowiedzialnego za przetwarzanie w czasie rzeczywistym zmian plików bez konieczności odświeżania przeglądarki. Przechodzimy do <code class="highlighter-rouge">gulpfile.js</code>, gdzie w miejscu w którym mamy zapisane polecenie <code class="highlighter-rouge">Jade</code> i modyfikujemy je:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-141.png" alt="Gulp'owanie #2-1" /></p>
 
-<p>Pod <code>gulp.dest</code> wstawiamy: <code>.pipe(connect.reload());</code> dzięki któremu nasz serwer będzie odświeżał automatycznie pliki Jade, robimy dokładnie to samo w poleceniu Sass. Usuwamy poprzednio utworzone polecenie <code>sass:watch</code>, ponieważ zastąpimy je zbiorowym poleceniem <code>watch</code>, które będzie się odnosiło do wszystkich naszych plików. Tworzymy je dokładnie tak jak powyżej, <code>gulp.watch(['lokalizaja folderu z plikami'], ['nazwa polecenia']);</code> oczywiście aby wszystko działało jak należy musimy jeszcze do gulp.task(‘default’) dodać nazwę polecenia <code>watch</code>. Jeśli wszystko zrobiliśmy jak należy, powinniśmy zobaczyć, po wpisaniu w konsolę polecenia <code>gulp</code>:</p>
+<p>Pod <code class="highlighter-rouge">gulp.dest</code> wstawiamy: <code class="highlighter-rouge">.pipe(connect.reload());</code> dzięki któremu nasz serwer będzie odświeżał automatycznie pliki Jade, robimy dokładnie to samo w poleceniu Sass. Usuwamy poprzednio utworzone polecenie <code class="highlighter-rouge">sass:watch</code>, ponieważ zastąpimy je zbiorowym poleceniem <code class="highlighter-rouge">watch</code>, które będzie się odnosiło do wszystkich naszych plików. Tworzymy je dokładnie tak jak powyżej, <code class="highlighter-rouge">gulp.watch(['lokalizaja folderu z plikami'], ['nazwa polecenia']);</code> oczywiście aby wszystko działało jak należy musimy jeszcze do gulp.task(‘default’) dodać nazwę polecenia <code class="highlighter-rouge">watch</code>. Jeśli wszystko zrobiliśmy jak należy, powinniśmy zobaczyć, po wpisaniu w konsolę polecenia <code class="highlighter-rouge">gulp</code>:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-15.png" alt="Gulp'owanie #2-2" /></p>
 
-<p>Przystępujemy do tworzenia naszej strony WWW, wchodzimy do folderu <code>jade</code> i w pliku <code>index.jade</code>:</p>
+<p>Przystępujemy do tworzenia naszej strony WWW, wchodzimy do folderu <code class="highlighter-rouge">jade</code> i w pliku <code class="highlighter-rouge">index.jade</code>:</p>
 
 <pre><code class="language-jade">doctype html
 
@@ -305,11 +557,11 @@ body
   p Zrobiona w Jade
 </code></pre>
 
-<p>Dobrze, ale co my tutaj mamy? <code>doctype html</code> to po prostu strona kodowa dokumentu, nie jest to zbyt istotne aby się zagłębiać czemu to służy, w skrócie definiuje że nasza strona to html, dalej <code>html</code> to znacznik oznaczający obszar naszej strony, zawiera w sobie wszystkie dalsze elementy, dodatkowo dodałem opcję <code>lang</code>, aby określić docelowy język naszej strony. <code>head</code> czyli znacznik nagłówka strony, tutaj zawarte są podstawowe ustawienia na temat strony, czyli tzw. <code>meta</code> tagi, pełną listę użytecznych meta tagów możecie sobie podejrzeć <a href="https://gist.github.com/kevinSuttle/1997924">Tutaj</a>, gdzie przekładając je na język Jade, będzie to wyglądać np. <code>meta(name='', content='')</code>. Dobrze, ale co robi <code>charset='utf-8'</code>, ustala kodowanie znaków na stronie, utf-8, czyli dzięki niemu strona będzie obsługiwać wszystkie znaki, w tym nasze litery z ogonkami. <code>title</code> czyli tytuł naszej strony wyświetlany na pasku karty w przeglądarce, <code>link</code> pozwala dołączyć do strony pliki związane z wyglądem, bądź rozszerzeniem funkcji strony, tutaj dodaję mój plik css zawarty w folderze <code>css</code>, gdzie <code>rel</code> oznacza relację między plikiem, a stroną (nie wymaga to większego wytłumaczenia, bo nie bardzo się przyda ta wiedza podczas tworzenia stron), a <code>href</code> to odnośnik gdzie znajduje się nasz plik do dodania. Tak oto opuszczamy sekcję <code>head</code> naszej strony i przechodzimy do ciała, czyli <code>body</code>, w tej sekcji są dopiero wyświetlane wprowadzane przez nas elementy na stronie, sekcja head oraz html jest niewidoczna na stronie. Na początek uznałem, że napiszemy sobie na stronie nagłówek tekstowy o największym rozmiarze czyli <code>h1</code>, a pod nim akapit <code>p</code> czyli wydzieloną linijkę tekstu o podstawowym dla przeglądarki kroju. Jeśli wszystko zrobiliśmy prawidłowo, zapisujemy nasz plik i otwieramy adres wskazany przez konsolę jako localhost wraz z portem, naszym oczom powinno się ukazać:</p>
+<p>Dobrze, ale co my tutaj mamy? <code class="highlighter-rouge">doctype html</code> to po prostu strona kodowa dokumentu, nie jest to zbyt istotne aby się zagłębiać czemu to służy, w skrócie definiuje że nasza strona to html, dalej <code class="highlighter-rouge">html</code> to znacznik oznaczający obszar naszej strony, zawiera w sobie wszystkie dalsze elementy, dodatkowo dodałem opcję <code class="highlighter-rouge">lang</code>, aby określić docelowy język naszej strony. <code class="highlighter-rouge">head</code> czyli znacznik nagłówka strony, tutaj zawarte są podstawowe ustawienia na temat strony, czyli tzw. <code class="highlighter-rouge">meta</code> tagi, pełną listę użytecznych meta tagów możecie sobie podejrzeć <a href="https://gist.github.com/kevinSuttle/1997924">Tutaj</a>, gdzie przekładając je na język Jade, będzie to wyglądać np. <code class="highlighter-rouge">meta(name='', content='')</code>. Dobrze, ale co robi <code class="highlighter-rouge">charset='utf-8'</code>, ustala kodowanie znaków na stronie, utf-8, czyli dzięki niemu strona będzie obsługiwać wszystkie znaki, w tym nasze litery z ogonkami. <code class="highlighter-rouge">title</code> czyli tytuł naszej strony wyświetlany na pasku karty w przeglądarce, <code class="highlighter-rouge">link</code> pozwala dołączyć do strony pliki związane z wyglądem, bądź rozszerzeniem funkcji strony, tutaj dodaję mój plik css zawarty w folderze <code class="highlighter-rouge">css</code>, gdzie <code class="highlighter-rouge">rel</code> oznacza relację między plikiem, a stroną (nie wymaga to większego wytłumaczenia, bo nie bardzo się przyda ta wiedza podczas tworzenia stron), a <code class="highlighter-rouge">href</code> to odnośnik gdzie znajduje się nasz plik do dodania. Tak oto opuszczamy sekcję <code class="highlighter-rouge">head</code> naszej strony i przechodzimy do ciała, czyli <code class="highlighter-rouge">body</code>, w tej sekcji są dopiero wyświetlane wprowadzane przez nas elementy na stronie, sekcja head oraz html jest niewidoczna na stronie. Na początek uznałem, że napiszemy sobie na stronie nagłówek tekstowy o największym rozmiarze czyli <code class="highlighter-rouge">h1</code>, a pod nim akapit <code class="highlighter-rouge">p</code> czyli wydzieloną linijkę tekstu o podstawowym dla przeglądarki kroju. Jeśli wszystko zrobiliśmy prawidłowo, zapisujemy nasz plik i otwieramy adres wskazany przez konsolę jako localhost wraz z portem, naszym oczom powinno się ukazać:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-16.png" alt="Gulp'owanie #2-3" /></p>
 
-<p>No dobrze, ale gdzie ta cała magia o której mówiłem, że nic nie trzeba odświeżać? Zmieńcie cokolwiek znajdującego się w sekcji body, np. tekst jaki znajduje się w <code>h1</code> i zapiszcie plik, gdy powrócicie do przeglądarki powinniście otrzymać tekst, który przed chwilą wpisaliście</p>
+<p>No dobrze, ale gdzie ta cała magia o której mówiłem, że nic nie trzeba odświeżać? Zmieńcie cokolwiek znajdującego się w sekcji body, np. tekst jaki znajduje się w <code class="highlighter-rouge">h1</code> i zapiszcie plik, gdy powrócicie do przeglądarki powinniście otrzymać tekst, który przed chwilą wpisaliście</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-17.png" alt="Gulp'owanie #2-4" /></p>
 
@@ -317,43 +569,44 @@ body
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-18.png" alt="Gulp'owanie #2-5" /></p>
 
-<p>Przechodzimy do pliku, który mamy w folderze <code>sass</code> i tutaj znacznik, który mamy w naszym pliku <code>index.jade</code>, czyli w moim przypadku body, ponieważ chcę aby tło całej strony było w takim kolorze, teksty w kolorze białym, zaś font należał do krojów bezszeryfowych (szerzej o krojach szeryfowych i bezszeryfowych <a href="https://pl.wikipedia.org/wiki/Krój_pisma">Tutaj</a>). W pliku wybieram selektor, który otwieram klamrą (selektor czyli nazwa elementu zawartego na stronie), następnie wewnątrz klamry umieszczam własności (nazwa predefiniowanej przez W3C funkcji(?), która odpowiada za dany efekt wizualny) <code>background</code> (czyli tło), <code>font-family</code> (czyli krój fontu), <code>color</code> (czyli kolor tekstu), po własnościach stawiam dwukropki i podaję ich cechy (parametr, który występuje dla danej funkcji, np. background: nazwa koloru/zapis koloru w rgb) <code>rebeccapurple</code>(zdefiniowana przez W3C nazwa koloru) <code>sans-serif</code>(font bezszeryfowy), <code>#fff</code>(kolor biały w skróconym zapisie <a href="https://pl.wikipedia.org/wiki/Kolory_w_Internecie#Zapis_szesnastkowy">heksadecymalnym</a>). Zapisuję mój plik <code>main.scss</code> i tak jak mógłbym się tego spodziewać:</p>
+<p>Przechodzimy do pliku, który mamy w folderze <code class="highlighter-rouge">sass</code> i tutaj znacznik, który mamy w naszym pliku <code class="highlighter-rouge">index.jade</code>, czyli w moim przypadku body, ponieważ chcę aby tło całej strony było w takim kolorze, teksty w kolorze białym, zaś font należał do krojów bezszeryfowych (szerzej o krojach szeryfowych i bezszeryfowych <a href="https://pl.wikipedia.org/wiki/Krój_pisma">Tutaj</a>). W pliku wybieram selektor, który otwieram klamrą (selektor czyli nazwa elementu zawartego na stronie), następnie wewnątrz klamry umieszczam własności (nazwa predefiniowanej przez W3C funkcji(?), która odpowiada za dany efekt wizualny) <code class="highlighter-rouge">background</code> (czyli tło), <code class="highlighter-rouge">font-family</code> (czyli krój fontu), <code class="highlighter-rouge">color</code> (czyli kolor tekstu), po własnościach stawiam dwukropki i podaję ich cechy (parametr, który występuje dla danej funkcji, np. background: nazwa koloru/zapis koloru w rgb) <code class="highlighter-rouge">rebeccapurple</code>(zdefiniowana przez W3C nazwa koloru) <code class="highlighter-rouge">sans-serif</code>(font bezszeryfowy), <code class="highlighter-rouge">#fff</code>(kolor biały w skróconym zapisie <a href="https://pl.wikipedia.org/wiki/Kolory_w_Internecie#Zapis_szesnastkowy">heksadecymalnym</a>). Zapisuję mój plik <code class="highlighter-rouge">main.scss</code> i tak jak mógłbym się tego spodziewać:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-19.png" alt="Gulp'owanie #2-6" /></p>
 
-<p>W dalszych lekcjach, gdzie będziemy bezpośrednio ostylowywali elementy, tak aby nasza strona była po prostu dobrze zrobiona, zalecam zapoznanie się z dostępnymi własnościami i ich cechami (ang: <a href="http://www.w3schools.com/css/default.asp">Tutaj</a>, pl: <a href="http://www.kurshtml.edu.pl/css/">Tutaj</a> ponieważ będzie to niezbędne przy dalszych operacjach. Teraz zajmiemy się stworzeniem tak zwanego kontenera, którego znaczenie opisywałem w jednej z poprzednich lekcji <a href="/jezyk-developera/">tutaj</a>, w nim zawrzemy najważniejsze elementy opisujące sekcje, wprowadzę pojęcie klasy elementu i zrobimy szybkie przygotowanie pod <code>RWD</code> (responsive web design - responsywny design strony - strona będzie wyświetlana tak samo dobrze na każdym urządzeniu). Do roboty!</p>
+<p>W dalszych lekcjach, gdzie będziemy bezpośrednio ostylowywali elementy, tak aby nasza strona była po prostu dobrze zrobiona, zalecam zapoznanie się z dostępnymi własnościami i ich cechami (ang: <a href="http://www.w3schools.com/css/default.asp">Tutaj</a>, pl: <a href="http://www.kurshtml.edu.pl/css/">Tutaj</a> ponieważ będzie to niezbędne przy dalszych operacjach. Teraz zajmiemy się stworzeniem tak zwanego kontenera, którego znaczenie opisywałem w jednej z poprzednich lekcji <a href="/jezyk-developera/">tutaj</a>, w nim zawrzemy najważniejsze elementy opisujące sekcje, wprowadzę pojęcie klasy elementu i zrobimy szybkie przygotowanie pod <code class="highlighter-rouge">RWD</code> (responsive web design - responsywny design strony - strona będzie wyświetlana tak samo dobrze na każdym urządzeniu). Do roboty!</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-20.png" alt="Gulp'owanie #2-7" /></p>
 
-<p>Wyrzucam poprzednie wypociny związane z wypisaniem prostego tekstu, takie <a href="https://pl.wikipedia.org/wiki/Hello_world">Hello world!</a> nas nie interesuje za bardzo… W sekcji <code>head</code> dodaję nowy znacznik meta, o nazwie <code>viewport</code> i treści <code>width=device-width, initial-scale=1.0</code>. Viewport czyli w jaki sposób strona jest wyświetlana w zależności od urządzenia, zaś w content umieszczam <code>width=device-width</code> czyli szerokość strony, w zależności od urządzenia dopasowuje się do szerokości urządzenia, zaś <code>initial-scale=1.0</code>, oznacza że skalowanie strony na urządzeniu będzie rzeczywiste <code>1:1</code>, czyli to co ustawimy sobie w przeglądarce i na komputerze u nas będzie wyglądało perfekcyjnie, na telefonie też będzie, gdy nie zrobimy tego, strona na telefonie zostanie pomniejszona do urządzenia przez co całość będzie wyglądać po prostu źle. Dobrze, teraz zajmiemy się nieco prawidłową segregacją w folderze <code>sass</code>, tak aby całość była jak najbardziej zorganizowana. Tutaj pomocnym będzie znajomość polecenia <code>@import</code>:</p>
+<p>Wyrzucam poprzednie wypociny związane z wypisaniem prostego tekstu, takie <a href="https://pl.wikipedia.org/wiki/Hello_world">Hello world!</a> nas nie interesuje za bardzo… W sekcji <code class="highlighter-rouge">head</code> dodaję nowy znacznik meta, o nazwie <code class="highlighter-rouge">viewport</code> i treści <code class="highlighter-rouge">width=device-width, initial-scale=1.0</code>. Viewport czyli w jaki sposób strona jest wyświetlana w zależności od urządzenia, zaś w content umieszczam <code class="highlighter-rouge">width=device-width</code> czyli szerokość strony, w zależności od urządzenia dopasowuje się do szerokości urządzenia, zaś <code class="highlighter-rouge">initial-scale=1.0</code>, oznacza że skalowanie strony na urządzeniu będzie rzeczywiste <code class="highlighter-rouge">1:1</code>, czyli to co ustawimy sobie w przeglądarce i na komputerze u nas będzie wyglądało perfekcyjnie, na telefonie też będzie, gdy nie zrobimy tego, strona na telefonie zostanie pomniejszona do urządzenia przez co całość będzie wyglądać po prostu źle. Dobrze, teraz zajmiemy się nieco prawidłową segregacją w folderze <code class="highlighter-rouge">sass</code>, tak aby całość była jak najbardziej zorganizowana. Tutaj pomocnym będzie znajomość polecenia <code class="highlighter-rouge">@import</code>:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-21.png" alt="Gulp'owanie #2-8" /></p>
 
-<pre><code class="language-css">@import 'setup';
-@import 'vars';
-@import 'mixins';
-@import 'rwd';
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">'setup'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'vars'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'mixins'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s2">'rwd'</span><span class="p">;</span>
 </code></pre>
+</div>
 
-<p>W naszym folderze <code>sass</code> dodaję pliki o nazwach: <code>_setup.scss</code>, <code>_vars.scss</code>, <code>_mixins.scss</code>, <code>_rwd.scss</code>. Teraz co dany plik ma za zadanie robić? <code>Setup</code>, będzie zawierał wszystkie właściwości podstawowe dla selektorów, związane z wymiarem (o czym kiedy indziej), będzie zawierał tak jakby właściwości opisujące szkielet naszej strony. <code>vars</code>, będzie przechowywał wszystkie przypisane przez nas zmienne, np. <code>kolory</code>, <code>fonty</code>, <code>wartości</code>. <code>Mixins</code>, zajmie się kolekcjonowaniem wszystkich rozbudowanych funkcji, które będziemy mogli przypisywać do poszczególnych selektorów w celu zaoszczędzenia miejsca i czasu przede wszystkim. Zaś <code>rwd</code>, to wszystkie ustawienia potrzebne do stworzenia strony responsywnej. Wszystkie te pliki importujemy poprzez <code>main.scss</code>, poleceniem <code>@import 'nazwaPliku';</code> jak widzicie nie istotne jest rozszerzenie tego pliku, Sass’a to nie obchodzi, ważne żeby plik, który chcemy dodać był z potocznie nazywaną podłogą lub prawidłowo <code>Makronem dolnym</code>. Jako, że lekcja wygląda już na dosyć długą, dorzucę jeszcze podstawowe elementy na stronie w pliku <code>index.jade</code>, które już w następnej lekcji będziemy ustawiać odpowiednio:</p>
+<p>W naszym folderze <code class="highlighter-rouge">sass</code> dodaję pliki o nazwach: <code class="highlighter-rouge">_setup.scss</code>, <code class="highlighter-rouge">_vars.scss</code>, <code class="highlighter-rouge">_mixins.scss</code>, <code class="highlighter-rouge">_rwd.scss</code>. Teraz co dany plik ma za zadanie robić? <code class="highlighter-rouge">Setup</code>, będzie zawierał wszystkie właściwości podstawowe dla selektorów, związane z wymiarem (o czym kiedy indziej), będzie zawierał tak jakby właściwości opisujące szkielet naszej strony. <code class="highlighter-rouge">vars</code>, będzie przechowywał wszystkie przypisane przez nas zmienne, np. <code class="highlighter-rouge">kolory</code>, <code class="highlighter-rouge">fonty</code>, <code class="highlighter-rouge">wartości</code>. <code class="highlighter-rouge">Mixins</code>, zajmie się kolekcjonowaniem wszystkich rozbudowanych funkcji, które będziemy mogli przypisywać do poszczególnych selektorów w celu zaoszczędzenia miejsca i czasu przede wszystkim. Zaś <code class="highlighter-rouge">rwd</code>, to wszystkie ustawienia potrzebne do stworzenia strony responsywnej. Wszystkie te pliki importujemy poprzez <code class="highlighter-rouge">main.scss</code>, poleceniem <code class="highlighter-rouge">@import 'nazwaPliku';</code> jak widzicie nie istotne jest rozszerzenie tego pliku, Sass’a to nie obchodzi, ważne żeby plik, który chcemy dodać był z potocznie nazywaną podłogą lub prawidłowo <code class="highlighter-rouge">Makronem dolnym</code>. Jako, że lekcja wygląda już na dosyć długą, dorzucę jeszcze podstawowe elementy na stronie w pliku <code class="highlighter-rouge">index.jade</code>, które już w następnej lekcji będziemy ustawiać odpowiednio:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-22.png" alt="Gulp'owanie #2-9" /></p>
 
 <ul>
-  <li><code>.container</code> - czyli nasz kontener, który będzie zawierał wszystkie elementy na stronie</li>
-  <li><code>.row</code> - nieodłączny kompan kontenera</li>
-  <li><code>header</code> - nagłówek strony</li>
-  <li><code>h1</code> - nagłówek najwyższego rzędu</li>
-  <li><code>nav</code> - element zawierający nawigację (menu) na stronie</li>
-  <li><code>a</code> - odnośnik, link z miejscem docelowym pustym ‘#’</li>
-  <li><code>section</code> - sekcja, służy do łatwego rozeznania co znajduje się na stronie</li>
-  <li><code>.hero</code> - klasa elementu blokowego, która będzie wiadomością powitalną na stronie</li>
-  <li><code>p</code> - akapit tekstowy</li>
-  <li><code>button</code> - przycisk akcji, tutaj z klasą check, która będzie odpowiedzialna za przejście do sekcji Galerii / Portfolio</li>
-  <li><code>.about</code> - klasa elementu blokowego, która będzie zawierała informacje o autorze takie ikonki i krótkie informacje o usługach</li>
-  <li><code>.aboutIcon</code> - klasa elementu blokowego, która będzie zawierała bezpośrednio elementy ‘O mnie’</li>
-  <li><code>img</code> - element obrazkowy, graficzny, src - miejsce i nazwa pliku gdzie się znajduje, alt - tekst wyświetlany w przypadku braku grafiki</li>
-  <li><code>.col-4</code> - klasa elementu blokowego, który w naszym rwd będzie odpowiedzialny za rozmieszczenie na stronie (dokładniej w następnej lekcji)</li>
+  <li><code class="highlighter-rouge">.container</code> - czyli nasz kontener, który będzie zawierał wszystkie elementy na stronie</li>
+  <li><code class="highlighter-rouge">.row</code> - nieodłączny kompan kontenera</li>
+  <li><code class="highlighter-rouge">header</code> - nagłówek strony</li>
+  <li><code class="highlighter-rouge">h1</code> - nagłówek najwyższego rzędu</li>
+  <li><code class="highlighter-rouge">nav</code> - element zawierający nawigację (menu) na stronie</li>
+  <li><code class="highlighter-rouge">a</code> - odnośnik, link z miejscem docelowym pustym ‘#’</li>
+  <li><code class="highlighter-rouge">section</code> - sekcja, służy do łatwego rozeznania co znajduje się na stronie</li>
+  <li><code class="highlighter-rouge">.hero</code> - klasa elementu blokowego, która będzie wiadomością powitalną na stronie</li>
+  <li><code class="highlighter-rouge">p</code> - akapit tekstowy</li>
+  <li><code class="highlighter-rouge">button</code> - przycisk akcji, tutaj z klasą check, która będzie odpowiedzialna za przejście do sekcji Galerii / Portfolio</li>
+  <li><code class="highlighter-rouge">.about</code> - klasa elementu blokowego, która będzie zawierała informacje o autorze takie ikonki i krótkie informacje o usługach</li>
+  <li><code class="highlighter-rouge">.aboutIcon</code> - klasa elementu blokowego, która będzie zawierała bezpośrednio elementy ‘O mnie’</li>
+  <li><code class="highlighter-rouge">img</code> - element obrazkowy, graficzny, src - miejsce i nazwa pliku gdzie się znajduje, alt - tekst wyświetlany w przypadku braku grafiki</li>
+  <li><code class="highlighter-rouge">.col-4</code> - klasa elementu blokowego, który w naszym rwd będzie odpowiedzialny za rozmieszczenie na stronie (dokładniej w następnej lekcji)</li>
 </ul>
 
 <pre><code class="language-jade">doctype html
@@ -416,73 +669,129 @@ body
 
 <p>Artykuł oraz grafiki w nim zawarte są moją własnością - <strong>Furu.Art</strong> - zakaz kopiowania treści na inne blogi, fanpage czy strony - bo nogi z <em>**</em> powyrywam!</p>
 
-        <div class="tags">
-            
-              <span>#code</span>
-            
-              <span>#console</span>
-            
-              <span>#css</span>
-            
-              <span>#developer</span>
-            
-              <span>#Dla Webdevelopera</span>
-            
-              <span>#front-end</span>
-            
-              <span>#gulp</span>
-            
-              <span>#html</span>
-            
-              <span>#jade</span>
-            
-              <span>#javascript</span>
-            
-              <span>#konsola</span>
-            
-              <span>#node</span>
-            
-              <span>#npm</span>
-            
-              <span>#pipes</span>
-            
-              <span>#sass</span>
-            
-              <span>#web</span>
-            
-              <span>#webdeveloper</span>
-            
-              <span>#webmaster</span>
-            
-        </div>
-         
-        <div id="disqus_thread"></div>
-        <script>
-            (function() {  // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                
-                s.src = '//blogwpeni.disqus.com/embed.js';
-                
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      
       </div>
 
     </article>
 
-  </div>
+    </div>
 
+    <div class="row">
+        <h1 class="commentsText">Zachęcam do komentowania</h1>
+        
+        <article class="article" id="comments">
+          <div id="disqus_thread">
+  <a href=""></a>
 </div>
+        </article>
+        
+      </div>
+
+    <div class="row">
+
+    <header class="relatedHeader">
+      <h1><i class="ion-ios-paper"></i>A po przeczytaniu... Czytaj dalej</h1>
+    </header>
+
+    </div>
+
+    <div class="row">
+      <div class="center">
+      <div class="col-6 related">
+        
+        <div class="article-body">
+          <a class="prev" href="/design-na-kartce-1/">
+            <div class="headerImage" style="background-image: url('/uploads/images/projektowanieNaKartce.png')"></div>
+            <h1 class="article-title">Przenosimy szkice do programu graficznego - header + article</h1>
+           </a>
+        </div>
+        
+      </div>
+      <div class="col-6 related">
+        
+        <div class="article-body">
+          <a class="next" href="/material-2/">
+            <div class="headerImage" style="background-image: url('/uploads/images/materialDesign.png')"></div>
+             <h1 class="article-title">[#2] Rozkładamy Materiał na czynniki pierwsze</h1>
+          </a>
+        </div>    
+        
+      </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="adwertajsment">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+        </div>
+        <div class="adwertajsment">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+        </div>
+      </div>
+
 
       </div>
 
     </div>
 
-    <script src="/assets/scripts/js/functions.js"></script>
-    
   </body>
 
 </html>
+
+<link rel="stylesheet" href="http://blog.furuart.pl/css/main.css"> 
+<style>
+  @import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,500,600&subset=latin,latin-ext");
+  @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700&subset=latin,latin-ext");
+</style>
+<script src="http://blog.furuart.pl/assets/scripts/js/jquery.js"></script>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//furuartpl.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<link rel="stylesheet" href="http://blog.furuart.pl/assets/scripts/js/prism/prism.css">
+<script src="http://blog.furuart.pl/assets/scripts/js/prism/prism.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83889767-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<script defer="true" src="http://blog.furuart.pl/assets/scripts/js/functions.js"></script>

@@ -7,39 +7,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="subject" content="Blogging">
   <meta name="author" content="Furu.Art">
-  <meta name="keywords" content="Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster">
+  <meta name="keywords" content="Design, Kodowanie, Frontend, Nauka, Projektowanie, Koder, Programista, Developer, Designer, Web, Webmaster">
   <meta name="copyright" content="&copy; Furu.Art 2016">
 
   <title>Kategorie</title>
-  <meta name="description" content="Projektowanie i Kodowanie w Pełni">
-
-  <link rel="stylesheet" href="/css/main.css">
+  <meta name="description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:title" content="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego">
+ 
   <link rel="canonical" href="/search/category/">
-  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni" href="/feed.xml">
-  <link rel="stylesheet" href="/assets/scripts/js/prism/prism.css">
-
-  <script src="/assets/scripts/js/jquery.js"></script>
-  <script src="/assets/scripts/js/prism/prism.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego" href="http://blog.furuart.pl/feed.xml">
+  
+  <link rel="image_src" href="http://blog.furuart.pl/assets/logo/logo.jpg">
+  <meta property="og:image" content="http://blog.furuart.pl/assets/logo/logo.jpg">
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://blog.furuart.pl/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://blog.furuart.pl/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://blog.furuart.pl/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://blog.furuart.pl/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://blog.furuart.pl/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://blog.furuart.pl/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://blog.furuart.pl/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://blog.furuart.pl/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://blog.furuart.pl/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="http://blog.furuart.pl/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://blog.furuart.pl/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="http://blog.furuart.pl/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://blog.furuart.pl/assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#7b1fa2">
+  <meta name="msapplication-TileImage" content="http://blog.furuart.pl/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#7B1FA2">
 </head>
 
 
   <body class="body-custom">
     <div class="htmlMask disable"></div>
 
+    <div class="alert success">
+      <p class="message"><i class="ion-checkmark"></i>Mobilna strona działa już poprawnie!</p>
+    </div>
+
     <div class="container-fluid">
 
-      <div class="mobile-trigger"><i class="ion-android-menu"></i> <i class="ion-android-close closed"></i></div>
+      <div class="mobile-trigger">
+  <i class="ion-android-menu"></i> <i class="ion-android-close closed"></i>
+</div>
 <div class="mobile-navigation-bar">
   <div class="navigation-bar">
     <ul class="mini-navigation">
-      <header>
         <header>
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -48,31 +76,37 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
-      </header>
       <li><a href="/"><i class="ion-home"></i> Strona główna</a></li>
       <li><a href="/about"><i class="ion-android-contact"></i> O mnie</a></li>
       <li><a href="/search/category"><i class="ion-android-folder"></i> Kategorie</a></li>
       <li><a href="/archive"><i class="ion-android-calendar"></i> Archiwum</a></li>
+      <li id="triggerNight" style="float: none;"><a><i class="ion-lightbulb"></i>Uruchom tryb nocny</a></li>
     </ul>
   </div>
 </div>
       
       <div class="col-3">
 
-      <div class="triggerInactive">
+      <div class="triggerClosed" id="trigger">
   <i class="ion-android-arrow-forward"></i>
   <p class="tip">Przywróc nawigację.</p>
+</div>
+
+<div class="triggerClosed" id="triggerNight">
+  <i class="ion-lightbulb"></i>
+  <p class="tip">Powróć do normalnych barw.</p>
 </div>
 
 <!-- Nerds: Experimental Functions(); -> Do not use!
@@ -102,9 +136,14 @@
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -113,14 +152,15 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
@@ -130,18 +170,16 @@
   <h2 class="title"><strong>O Furu</strong> - czyli o mnie</h2>
   
   <div class="me">
+      <a href="http://blog.furuart.pl/about">
+        
+        <img src="http://blog.furuart.pl/assets/images/me.jpg" class="photo">
 
-    <div class="photo">
-
-      <a href="/about"></a>
-
-    </div>
-
+      </a>
   </div>
 
   <div class="data">
 
-    <p class="info">Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
+    <p class="info">Twórca, projektant, developer, zapaleniec o niepohamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
 
     <div class="socials">
 
@@ -161,17 +199,25 @@
 
 </div>
 
+
         <div class="category">
 
   <h2 class="title">Kategorie</h2>
   <div class="data">
       
-        <li><a href="/search/category/">Dla webdeveloper'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdeveloper'a<i class="after ion-android-arrow-forward"></i></a></li>
       
-        <li><a href="/search/category/">Dla webdesigner'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdesigner'a<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Dodatek<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Informacje<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Życiowe sentencje<i class="after ion-android-arrow-forward"></i></a></li>
       
   </div>
 </div>`
+
 
         <div class="archive">
   <h2 class="title">Archiwum</h2>
@@ -227,29 +273,234 @@
     
     
     
-      <li><a href="/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#September 2016">Wrzesień 2016 <span class="counter">14</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#August 2016">Sierpień 2016 <span class="counter">8</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#June 2016">Czerwiec 2016 <span class="counter">11</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
       
     
   
   </div>
 </div>
 
+
+        <div class="friends">
+
+  <h2 class="title">Zaprzyjaźnione strony</h2>
+
+  <div class="data">
+
+    <ul>
+
+      <li><span class="icon" id="xal"><i class="ion-planet"></i></span><a href="http://xaal66.blogspot.com/" target="_blank" title="Blog hobbystyczny o astronomii, astrofotografii i...">Zapiski Xal'a</a></li>
+      
+      <li><span class="icon" id="grafinity"></span><a href="http://grafinity.pl" target="_blank" title="Grafinity Forum - forum graficzne">Grafinity Forum</a></li>
+
+      <li><span class="icon" id="lisiePismo"></span><a href="http://lisiepismo.pl" target="_blank" title=" LisiePismo – Blog osobisty 22-letniego Liska">LisiePismo</a></li>
+
+      <li><span class="icon" id="granos"></span><a href="http://granos.pl" target="_blank" title="Granos.pl - blog o nowych mediach, brandingu, marketingu i nie tylko">granos.pl</a></li>
+    </ul>
+
+  </div>
+  
+</div>
+
         <div class="ads">
   <div class="loremAd">
-    <p>Here will be Google Ads</p>
+    <p>Najlepszy hosting WWW w internecie, polecam w Pełni</p>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tani hosting WWW"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko1.jpg" /></a>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tanie domeny"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko2.jpg" /></a>
   </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
-  </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
+  <div class="adwert">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  
   </div>
 </div>
 
+
         <footer>
-
+  Wszelkie prawa zastrzeżone <a href="http://furuart.pl">Furu.Art</a> &copy; 2016
 </footer>
-
 
       </div>
 
@@ -283,6 +534,72 @@
     <div id="category">
       <h3 class="catName" id="dla-webdesigner-a">Dla webdesigner'a</h3>
       <ul class="codinfox-category-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -336,11 +653,239 @@
       <ul class="codinfox-category-list">
         
         
+        <li>
+            <a href="/zerojs-9/">
+              [#9] JavascriptZero - Przełączniki i pozostałe wieszaki
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/zerojs-8/">
+              [#8] Javascript Zero - Kondycja naszego skryptu jest bardzo ważna!
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/zerojs-7/">
+              [#7] Javascript Zero - Tabliczki moje kochane! Trochę Boola no i porównania
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/sass-3/">
+              [#3] Sass - rozsuwana nawigacja w samym CSS/Sass na życzenie!
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/zerojs-6/">
+              [#6] Javascript Zero - królowa wszelkich nauk i pytamy, która godzina?
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/zerojs-5/">
+              [#5] Javascript Zero - zdarzenia, metody stringowe i liczbowe
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="/zerojs-4/">
+              [#4] Javascript Zero - funkcje w funkcji, funkcjocepcja + obiekty!
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/zerojs-3/">
+              [#3] Javascript Zero - najlepiej wszystko zamknijmy w komentarzach
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="/zerojs-2/">
+              [#2] Javascript Zero - savoir-vivre Javascriptu
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/zerojs-1/">
+              [#1] Javascript Zero - początki bywają trudne
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="/javascript-3/">
+              [#3] Javascript - Jak utrudniać sobie życie - czyli o potwornie długiej składni
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/liquid-1/">
+              [#1] Liquid - Porozmawiajmy o płynach - pisanie przyjaźnie wyglądających skryptów
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/jekyll-1/">
+              [#1] Jekyll - Na czym stoi mój blog?
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/sass-2/">
+              [#2] Sass - Bo na co komu jakiekolwiek wartości? Kochajmy zmienne
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/sass-1/">
+              [#1] Sass - Minifikacja, pisanie wszystkiego w jednej linijce - słów kilka
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/javascript-2/">
+              [#2] Javascript - DOM - Jak początki to początki! Hello Javascript!
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/javascript-1/">
+              [#1] Javascript - DOM - jak paczy Javascript?
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/gulp-8/">
+              [#8] Gulp'owanie z Furu - finalizujemy wdrażanie projektu
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/queries/">
+              Media Queries - złoty środek w Responsive Webdesign
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/gulp-7/">
+              [#7] Gulp'owanie z Furu - montujemy galerię
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/devtrick-3/">
+              [#3] Szybki Devtrick - opis zdjęcia po najechaniu
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/gulp-6/">
+              [#6] Gulp'owanie z Furu - webdeveloper to leniwe stworzenie
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/gulp-5/">
+              [#5] Gulp'owanie z Furu -wdrażania ciąg dalszy
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/devtrick-2/">
+              [#2] Szybki devtrick - względnie absolutne ustawianie elementów
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/gulp-4/">
+              [#4] Gulp'owanie z Furu - kodujemy design
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        <li>
+            <a href="/devtrick-1/">
+              [#1] Szybki devtrick - 4 stany przycisków przy użyciu Sass
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/gulp-3/">
+              [#3] Gulp'owanie z Furu - koniec biadolenia, czas na sass *wink wink*
+            </a>
+        </li>
+        
+        
+        
         
         
         <li>
             <a href="/github-1/">
-              Kot z mackami jako źródło nieskończonej inwencji twórczej - GitHub[#1]
+              [#1] GitHub - Kot z mackami jako źródło nieskończonej inwencji twórczej
             </a>
         </li>
         
@@ -389,8 +934,389 @@
     </div>
     
     <div id="category">
+      <h3 class="catName" id="dodatek">Dodatek</h3>
+      <ul class="codinfox-category-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="/web-view-2/">
+              [#2] Web view - Kto o 12 wstaje, ten artykułu na 14 nie daje...
+            </a>
+        </li>
+        
+        
+        
+        <li>
+            <a href="/web-view-1/">
+              [#1] Web view - dni wolne trzeba ucztować, a nie się katować!
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="/dodatek-gulp-4/">
+              Dodatek: Projekt do Gulp'owanie z Furu
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+    
+    <div id="category">
+      <h3 class="catName" id="informacje">Informacje</h3>
+      <ul class="codinfox-category-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="/wakacyjne-informacje/">
+              [Info] Garść (end)wakacyjnych informacji
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+    
+    <div id="category">
+      <h3 class="catName" id="Życiowe-sentencje">Życiowe sentencje</h3>
+      <ul class="codinfox-category-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="/stress-ball/">
+              Stress Ball - czyli najlepszy gumowy przyjaciel programisty!
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            <a href="/dobrze-jest-byc-do-dupy/">
+              Czasem dobrze jest zdać sobie sprawę z tego, że jest się do dupy!
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </ul>
+    </div>
+    
+    <div id="category">
       <h3 class="catName" id="no-category">Bez kategorii</h3>
       <ul class="codinfox-category-list">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         <li>
@@ -426,8 +1352,47 @@
 
     </div>
 
-    <script src="/assets/scripts/js/functions.js"></script>
-    
   </body>
 
 </html>
+
+<link rel="stylesheet" href="http://blog.furuart.pl/css/main.css"> 
+<style>
+  @import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,500,600&subset=latin,latin-ext");
+  @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700&subset=latin,latin-ext");
+</style>
+<script src="http://blog.furuart.pl/assets/scripts/js/jquery.js"></script>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//furuartpl.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<link rel="stylesheet" href="http://blog.furuart.pl/assets/scripts/js/prism/prism.css">
+<script src="http://blog.furuart.pl/assets/scripts/js/prism/prism.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83889767-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<script defer="true" src="http://blog.furuart.pl/assets/scripts/js/functions.js"></script>

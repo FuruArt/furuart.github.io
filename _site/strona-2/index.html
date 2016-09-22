@@ -7,39 +7,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="subject" content="Blogging">
   <meta name="author" content="Furu.Art">
-  <meta name="keywords" content="Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster">
+  <meta name="keywords" content="Design, Kodowanie, Frontend, Nauka, Projektowanie, Koder, Programista, Developer, Designer, Web, Webmaster">
   <meta name="copyright" content="&copy; Furu.Art 2016">
 
-  <title>Blog w Pełni</title>
-  <meta name="description" content="Projektowanie i Kodowanie w Pełni">
-
-  <link rel="stylesheet" href="/css/main.css">
+  <title>Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego</title>
+  <meta name="description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:title" content="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego">
+ 
   <link rel="canonical" href="/strona-2/">
-  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni" href="/feed.xml">
-  <link rel="stylesheet" href="/assets/scripts/js/prism/prism.css">
-
-  <script src="/assets/scripts/js/jquery.js"></script>
-  <script src="/assets/scripts/js/prism/prism.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego" href="http://blog.furuart.pl/feed.xml">
+  
+  <link rel="image_src" href="http://blog.furuart.pl/assets/logo/logo.jpg">
+  <meta property="og:image" content="http://blog.furuart.pl/assets/logo/logo.jpg">
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://blog.furuart.pl/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://blog.furuart.pl/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://blog.furuart.pl/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://blog.furuart.pl/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://blog.furuart.pl/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://blog.furuart.pl/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://blog.furuart.pl/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://blog.furuart.pl/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://blog.furuart.pl/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="http://blog.furuart.pl/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://blog.furuart.pl/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="http://blog.furuart.pl/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://blog.furuart.pl/assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#7b1fa2">
+  <meta name="msapplication-TileImage" content="http://blog.furuart.pl/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#7B1FA2">
 </head>
 
 
   <body class="body-custom">
     <div class="htmlMask disable"></div>
 
+    <div class="alert success">
+      <p class="message"><i class="ion-checkmark"></i>Mobilna strona działa już poprawnie!</p>
+    </div>
+
     <div class="container-fluid">
 
-      <div class="mobile-trigger"><i class="ion-android-menu"></i> <i class="ion-android-close closed"></i></div>
+      <div class="mobile-trigger">
+  <i class="ion-android-menu"></i> <i class="ion-android-close closed"></i>
+</div>
 <div class="mobile-navigation-bar">
   <div class="navigation-bar">
     <ul class="mini-navigation">
-      <header>
         <header>
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -48,31 +76,37 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
-      </header>
       <li><a href="/"><i class="ion-home"></i> Strona główna</a></li>
       <li><a href="/about"><i class="ion-android-contact"></i> O mnie</a></li>
       <li><a href="/search/category"><i class="ion-android-folder"></i> Kategorie</a></li>
       <li><a href="/archive"><i class="ion-android-calendar"></i> Archiwum</a></li>
+      <li id="triggerNight" style="float: none;"><a><i class="ion-lightbulb"></i>Uruchom tryb nocny</a></li>
     </ul>
   </div>
 </div>
       
       <div class="col-3">
 
-      <div class="triggerInactive">
+      <div class="triggerClosed" id="trigger">
   <i class="ion-android-arrow-forward"></i>
   <p class="tip">Przywróc nawigację.</p>
+</div>
+
+<div class="triggerClosed" id="triggerNight">
+  <i class="ion-lightbulb"></i>
+  <p class="tip">Powróć do normalnych barw.</p>
 </div>
 
 <!-- Nerds: Experimental Functions(); -> Do not use!
@@ -102,9 +136,14 @@
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -113,14 +152,15 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
@@ -130,18 +170,16 @@
   <h2 class="title"><strong>O Furu</strong> - czyli o mnie</h2>
   
   <div class="me">
+      <a href="http://blog.furuart.pl/about">
+        
+        <img src="http://blog.furuart.pl/assets/images/me.jpg" class="photo">
 
-    <div class="photo">
-
-      <a href="/about"></a>
-
-    </div>
-
+      </a>
   </div>
 
   <div class="data">
 
-    <p class="info">Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
+    <p class="info">Twórca, projektant, developer, zapaleniec o niepohamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
 
     <div class="socials">
 
@@ -161,17 +199,25 @@
 
 </div>
 
+
         <div class="category">
 
   <h2 class="title">Kategorie</h2>
   <div class="data">
       
-        <li><a href="/search/category/">Dla webdeveloper'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdeveloper'a<i class="after ion-android-arrow-forward"></i></a></li>
       
-        <li><a href="/search/category/">Dla webdesigner'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdesigner'a<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Dodatek<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Informacje<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Życiowe sentencje<i class="after ion-android-arrow-forward"></i></a></li>
       
   </div>
 </div>`
+
 
         <div class="archive">
   <h2 class="title">Archiwum</h2>
@@ -227,29 +273,234 @@
     
     
     
-      <li><a href="/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#September 2016">Wrzesień 2016 <span class="counter">14</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#August 2016">Sierpień 2016 <span class="counter">8</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#June 2016">Czerwiec 2016 <span class="counter">11</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
       
     
   
   </div>
 </div>
 
+
+        <div class="friends">
+
+  <h2 class="title">Zaprzyjaźnione strony</h2>
+
+  <div class="data">
+
+    <ul>
+
+      <li><span class="icon" id="xal"><i class="ion-planet"></i></span><a href="http://xaal66.blogspot.com/" target="_blank" title="Blog hobbystyczny o astronomii, astrofotografii i...">Zapiski Xal'a</a></li>
+      
+      <li><span class="icon" id="grafinity"></span><a href="http://grafinity.pl" target="_blank" title="Grafinity Forum - forum graficzne">Grafinity Forum</a></li>
+
+      <li><span class="icon" id="lisiePismo"></span><a href="http://lisiepismo.pl" target="_blank" title=" LisiePismo – Blog osobisty 22-letniego Liska">LisiePismo</a></li>
+
+      <li><span class="icon" id="granos"></span><a href="http://granos.pl" target="_blank" title="Granos.pl - blog o nowych mediach, brandingu, marketingu i nie tylko">granos.pl</a></li>
+    </ul>
+
+  </div>
+  
+</div>
+
         <div class="ads">
   <div class="loremAd">
-    <p>Here will be Google Ads</p>
+    <p>Najlepszy hosting WWW w internecie, polecam w Pełni</p>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tani hosting WWW"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko1.jpg" /></a>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tanie domeny"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko2.jpg" /></a>
   </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
-  </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
+  <div class="adwert">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  
   </div>
 </div>
 
+
         <footer>
-
+  Wszelkie prawa zastrzeżone <a href="http://furuart.pl">Furu.Art</a> &copy; 2016
 </footer>
-
 
       </div>
 
@@ -265,116 +516,178 @@
   
       <li class="article">
         <div class="article-body">
-            <div style="background-image: url('')" class="headerImage">
-
-            <h2 class="article-title">
+            <div class="headerImage" style="background-image: url('/uploads/images/stressBall.png')">
+              <h2 class="article-title">
             
-              <a class="post-link" href="/material-1/">[#1] Material design jako krok w przód w projektowaniu - wprowadzenie</a>
+              <a class="post-link" href="/stress-ball/">Stress Ball - czyli najlepszy gumowy przyjaciel programisty!</a>
 
             </h2>
           </div>
           <div class="article-info">
-            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 23 Maja 2016 </span>
-            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dla webdesigner'a </a></span>
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 14 Września 2016 </span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Życiowe sentencje </a></span>
             <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
           </div>
 
           <div class="article-content">
           
-            <h3 id="kady-kto-posiada-smartfon-z-systemem-android-w-wersji-44-lub-wyszej-jest-w-stanie-zauway-e-styl-w-jakim-tworzone-s-aplikacje-jest-mocno-schematyczny-i-mona-by-rzecz-powtarzalny-owszem-tylko-co-z-tego-ot-to-e-dziki-tej-standaryzacji-googlewypracowao-swj-wasny-odrbny-design-ktry-mimo-e-pierwotnie-by-skierowany-wycznie-na-smartfony-z-powodzeniem-moe-suy-na-stronach-www">Każdy kto posiada smartfon z systemem Android w wersji 4.4 lub wyższej jest w stanie zauważyć, że styl w jakim tworzone są aplikacje jest mocno schematyczny i można by rzecz powtarzalny. Owszem, tylko co z tego? Otóż to, że dzięki tej standaryzacji Google wypracowało swój własny, odrębny design, który mimo że pierwotnie był skierowany wyłącznie na smartfony z powodzeniem może służyć na stronach WWW!</h3>
+            <h3 id="stress-ball-gniotka-czy-pieczka-antystresowa-wiele-ma-imion-przedmiot-ktry-jest-drugim-nieodcznym-przedmiotem-prawdziwego-programisty-prcz-kubka-z-napojem-pobudzajcym-neurony---dzi-wytumacz-czym-s-po-co-ich-uywa-czy-faktycznie-co-daj-podam-linki-do-sklepw-z-nimi-oraz-wybior-top-10-najdziwniejszychnajbardziej-unikatowych-pieczek-no-i-pochwal-si-moim-stress-ballem-">Stress ball, Gniotka czy Piłeczka antystresowa, wiele ma imion przedmiot który jest drugim nieodłącznym przedmiotem prawdziwego programisty prócz kubka z napojem pobudzającym neurony - dziś wytłumaczę czym są, po co ich używać czy faktycznie coś dają? Podam linki do sklepów z nimi oraz wybiorę TOP 10 najdziwniejszych/najbardziej unikatowych piłeczek. No i pochwalę się moim stress ballem :&gt;</h3>
+
+<p>Stress Ball - piłeczka antystresowa, która ma za zadanie redukować poziom stresu, pomagać w skupieniu na danej czynności czy po prostu fajnie piszczeć i się ugniatać. Dodatkowo tego typu sprzęt można stosować przy rehabilitacji związanej ze wszystkimi uszkodzeniami dłoni lub ręki. Po krótce tak mógłbym zdefiniować pojęcie Stress Ball, dodam jeszcze że programistom pozwala zachować równowagę psychiczną (tak, programista to taki psychopata przed komputerem).</p>
 
 
 
           </div>
 
-          <div class="readmore"><a href="/material-1/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
+          <div class="readmore"><a href="/stress-ball/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
           
         </div>
       </li>
   
       <li class="article">
         <div class="article-body">
-            <div style="background-image: url('')" class="headerImage">
-
-            <h2 class="article-title">
+            <div class="headerImage" style="background-image: url('/uploads/images/jsZero.png')">
+              <h2 class="article-title">
             
-              <a class="post-link" href="/jezyk-developera/">Po jakiemu gada współczesny webdeveloper?</a>
+              <a class="post-link" href="/zerojs-4/">[#4] Javascript Zero - funkcje w funkcji, funkcjocepcja + obiekty!</a>
 
             </h2>
           </div>
           <div class="article-info">
-            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 22 Maja 2016 </span>
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 13 Września 2016 </span>
             <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dla webdeveloper'a </a></span>
             <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
           </div>
 
           <div class="article-content">
           
-            <h3 id="jzyki-programowania-to-sprawa-powszechna-mwi-si-o-nich-cigle-i-nie-jest-to-adn-tajemnic-czy-kto-jest-znawc-c-c-pythona-czy-javy-ale-jakim-dialektem-porozumiewa-si-webdeveloper-w-dzisiejszych-czasach-mwi-tutaj-oczywicie-o-webdeveloperze-ktry-zajmuje-si-wierzchni-czci-stron-www-front-end-developer-na-to-pytanie-postaram-si-odpowiedzie-niej">Języki programowania to sprawa powszechna, mówi się o nich ciągle i nie jest to żadną tajemnicą, czy ktoś jest znawcą C++, C#, Python’a czy Javy, ale jakim dialektem porozumiewa się Webdeveloper w dzisiejszych czasach? Mówię tutaj oczywiście o Webdeveloperze, który zajmuje się wierzchnią częścią stron WWW (Front-end developer), na to pytanie postaram się odpowiedzieć niżej.</h3>
+            <h3 id="w-javascript-ani-rusz-z-bardziej-zoonymi-skryptami-jeli-nie-poznamy-podstawowego-narzdzia-do-przechowywania-zoonych-operacji-czyli-funkcji-czym-jest-jak-jej-uywa-ile-parametrw-moe-zawiera-kiedy-jej-uywa-jak-nie-zamieca-funkcji-oraz-jak-je-wczytywa-po-zaadowaniu-caej-strony-wszystkie-odpowiedzi-na-te-wszystkie-nurtujce-pytania-w-tym-artykule-dodatkowo-omwi-jeszcze-obiekty---zapraszam-do-czytania">W Javascript ani rusz z bardziej złożonymi skryptami, jeśli nie poznamy podstawowego narzędzia do przechowywania złożonych operacji czyli funkcji. Czym jest? Jak jej używać? Ile parametrów może zawierać? Kiedy jej używać? Jak nie zaśmiecać funkcji oraz jak je wczytywać po załadowaniu całej strony? Wszystkie odpowiedzi na te wszystkie nurtujące pytania w tym artykule, dodatkowo omówię jeszcze Obiekty - zapraszam do czytania.</h3>
+
+<p>Zdefinujmy sobie pierw pojęcie tajemniczej <code class="highlighter-rouge">Funkcji</code>, z którą doczynienia miał każdy kto był na matematyce i widział funkcje, tyle że nie będziemy tutaj machać wykresów, szurać nimi czy odczytywać danych po milimetrach w kratkach. W Javascripcie funkcja (<code class="highlighter-rouge">function</code>) to blok kodu, który ma za zadanie wykonanie pewnych określonych działań, niekoniecznie matematycznych, funkcja musi zostać wywołana przez polecenie. Samoczynnie nic nie robi.</p>
 
 
 
           </div>
 
-          <div class="readmore"><a href="/jezyk-developera/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
+          <div class="readmore"><a href="/zerojs-4/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
           
         </div>
       </li>
   
       <li class="article">
         <div class="article-body">
-            <div style="background-image: url('')" class="headerImage">
-
-            <h2 class="article-title">
+            <div class="headerImage" style="background-image: url('/uploads/images/jsZero.png')">
+              <h2 class="article-title">
             
-              <a class="post-link" href="/design-na-kartce-0/">Projektowanie na kartce? Z czym to się je? - Podstawy</a>
+              <a class="post-link" href="/zerojs-3/">[#3] Javascript Zero - najlepiej wszystko zamknijmy w komentarzach</a>
 
             </h2>
           </div>
           <div class="article-info">
-            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 21 Maja 2016 </span>
-            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dla webdesigner'a </a></span>
-            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
-          </div>
-
-          <div class="article-content">
-          
-            <h3 id="wikszo-stron-dobrze-przemylanych-pod-wzgldem-wizualnym-ktre-widzimy-w-internecie-zostay-pierwotnie-skonstruowane-na-kartce-white-boardzie-tablicy-kredowej-lub-nawet-za-pomoc-tych-karteczek-samoprzylepnych-no-dobrze-fajnie-tylko-co-z-tego-a-no-dokadnie-tyle-e-kady-dobry-projekt-zaczyna-si-z-dala-od-komputera-a-sam-proces-designu-wyglda-mniej-wicej-jak-zabawa-klockami-lego-o-czym-za-chwil-si-przekonacie">Większość stron dobrze przemyślanych pod względem wizualnym, które widzimy w internecie zostały pierwotnie skonstruowane na kartce, white-board’zie, tablicy kredowej lub nawet za pomocą żółtych karteczek samoprzylepnych. No dobrze, fajnie, tylko co z tego? A no dokładnie tyle, że każdy dobry projekt zaczyna się z dala od komputera! A sam proces Design’u wygląda mniej więcej jak zabawa klockami Lego, o czym za chwilę się przekonacie.</h3>
-
-
-
-          </div>
-
-          <div class="readmore"><a href="/design-na-kartce-0/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
-          
-        </div>
-      </li>
-  
-      <li class="article">
-        <div class="article-body">
-            <div style="background-image: url('/uploads/images/gulpowanie.png')" class="headerImage">
-
-            <h2 class="article-title">
-            
-              <a class="post-link" href="/gulp-0/">[#0] Gulp'owanie z Furu</a>
-
-            </h2>
-          </div>
-          <div class="article-info">
-            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 20 Maja 2016 </span>
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 12 Września 2016 </span>
             <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dla webdeveloper'a </a></span>
             <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
           </div>
 
           <div class="article-content">
           
-            <h3 id="gulp-czyli-jak-pcha-w-rury-aby-leniwy-programista-mia-wygodne-stanowisko-do-pracy-ale-tak-waciwie-to-o-co-chodzi-ju-tumacz-dziki-tylko-jednemu-poleceniu-w-konsoli-otrzymamy-perfekcyjne-rodowisko-do-tworzenia-stron-www-aplikacji-czy-jakiejkolwiek-innej-formy-web-developmentu-brzmi-jak-czarna-magia-nie-taki-diabe-straszny-jak-go-pisz-o-czym-przekonacie-si-poniej">Gulp, czyli jak pchać w rury aby leniwy programista miał wygodne stanowisko do pracy! Ale tak właściwie to o co chodzi? Już tłumaczę, dzięki tylko jednemu poleceniu w konsoli otrzymamy perfekcyjne środowisko do tworzenia stron WWW, aplikacji czy jakiejkolwiek innej formy Web Development’u! Brzmi jak czarna magia? Nie taki diabeł straszny jak go piszą, o czym przekonacie się poniżej.</h3>
+            <h3 id="dalsze-podstawy-podstaw-zwizane-z-javascriptem-dzisiaj-zajmiemy-si-problematyk-komentowania-kodu-po-co-to-robi-kiedy-to-robi-czy-warto-to-robi-oraz-jak-to-robi-dobrze-prcz-tego-dokadnie-wyjani-jak-dziaaj-operatory-wraz-z-przykadami-przypisania-oraz-typy-danych-no-by-moe-jeszcze-liniemy-funkcji">Dalsze podstawy podstaw związane z Javascriptem, dzisiaj zajmiemy się problematyką komentowania kodu, po co to robić? Kiedy to robić? Czy warto to robić? Oraz jak to robić dobrze, prócz tego dokładnie wyjaśnię jak działają operatory wraz z przykładami, przypisania oraz typy danych (no być może jeszcze liźniemy funkcji).</h3>
+
+<p>Zacznijmy pierw od tego, czym te legendarne komentarze są. Komentarze to tekst, który nie zostaje wykonany, mówiąc prościej komputer kompletnie olewa to co zapiszemy w komentarzach, jest to wyłącznie pomoc dla człowieka, aby mógł organizować swój kod i dbać o porządek. Komentarze stanowią nieodłączny element każdego języka programowania, nawet te najbardziej prymitywne posiadają możliwość dodawania komentarzy. Wszystko po to, aby developerom było łatwiej i nie musieli pisać oddzielnie dokumentacji, w której opisywaliby każdą funkcję po kolei. Dodatkowe generowanie papierków czy dokumentów nigdy nie było dobre…</p>
 
 
 
           </div>
 
-          <div class="readmore"><a href="/gulp-0/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
+          <div class="readmore"><a href="/zerojs-3/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
+          
+        </div>
+      </li>
+  
+      <li class="article">
+        <div class="article-body">
+            <div class="headerImage" style="background-image: url('/uploads/images/chillout.png')">
+              <h2 class="article-title">
+            
+              <a class="post-link" href="/web-view-2/">[#2] Web view - Kto o 12 wstaje, ten artykułu na 14 nie daje...</a>
+
+            </h2>
+          </div>
+          <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 11 Września 2016 </span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dodatek </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
+          </div>
+
+          <div class="article-content">
+          
+            <h3 id="dzi-niedziela-dosy-specyficzna-niedziela-bo-i-data-te-specyficzna-z-niczym-miym-si-nie-kojarzy-w-sumie-niedziela-nigdy-z-niczym-dobrym-mi-si-utosamiaa-poniewa-by-to-ostatni-dzie-wolnego-przed-okrutnym-poniedziakiem-ktrego-nikt-nie-lubi-ale-zaraz-zaraz-mamy-niedziel-wic-radujmy-si---zapraszam-na-drugi-przegld-internetowych-przydatnoci-i-nie-tylko">Dziś niedziela, dosyć specyficzna niedziela bo i data też specyficzna, z niczym miłym się nie kojarzy, w sumie niedziela nigdy z niczym dobrym mi się utożsamiała, ponieważ był to ostatni dzień wolnego przed okrutnym poniedziałkiem, którego nikt nie lubi! Ale zaraz, zaraz, mamy niedzielę, więc radujmy się - zapraszam na drugi przegląd internetowych przydatności i nie tylko.</h3>
+
+
+
+          </div>
+
+          <div class="readmore"><a href="/web-view-2/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
+          
+        </div>
+      </li>
+  
+      <li class="article">
+        <div class="article-body">
+            <div class="headerImage" style="background-image: url('/uploads/images/chillout.png')">
+              <h2 class="article-title">
+            
+              <a class="post-link" href="/web-view-1/">[#1] Web view - dni wolne trzeba ucztować, a nie się katować!</a>
+
+            </h2>
+          </div>
+          <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 10 Września 2016 </span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dodatek </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
+          </div>
+
+          <div class="article-content">
+          
+            <h3 id="pierwsza-porcja-sobotnich-darw-ktre-pojawia-si-bd-w-kad-sobot-okoo-godziny-14-a-w-nich-kilka-przydatnych-odnonikw-do-stronek-uatwiajcych-ycie-developerom-gotowych-rozwiza-czy-po-prostu-ciekawych-materiaw-wtyczek-a-nawet-stron-tak-bardzo-unikatowych-e-czemu-ich-nie-doda-zapraszam-do-pierwszego-web-view">Pierwsza porcja sobotnich darów, które pojawiać się będą w każdą sobotę około godziny 14, a w nich kilka przydatnych odnośników do stronek ułatwiających życie Developerom, gotowych rozwiązań czy po prostu ciekawych materiałów, wtyczek, a nawet stron tak bardzo unikatowych że czemu ich nie dodać?! Zapraszam do pierwszego Web view!</h3>
+
+<p>Większość przedstawionych stronek i narzędzi pochodzi z Githuba, bo przecież jest to miejsce Namber Łan dla wszystkich najróżniejszych dziwności Webdeveloperskich i nie tylko. Dobrze, ale nie po to jest ten wpis żeby biadolić od rzeczy <code class="highlighter-rouge">#5LinijkaSkończyłPier*olić</code>, czyli do dzieła!</p>
+
+
+
+          </div>
+
+          <div class="readmore"><a href="/web-view-1/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
+          
+        </div>
+      </li>
+  
+      <li class="article">
+        <div class="article-body">
+            <div class="headerImage" style="background-image: url('/uploads/images/jsZero.png')">
+              <h2 class="article-title">
+            
+              <a class="post-link" href="/zerojs-2/">[#2] Javascript Zero - savoir-vivre Javascriptu</a>
+
+            </h2>
+          </div>
+          <div class="article-info">
+            <span class="info-date" title="Data"><i class="ion-ios-calendar"></i> 9 Września 2016 </span>
+            <span class="info-cat" title="Kategoria"><i class="ion-ios-photos"></i><a href="/search/category/"> Dla webdeveloper'a </a></span>
+            <span class="info-author" title="Autor"><i class="ion-ios-contact"></i> Furu.Art </span>
+          </div>
+
+          <div class="article-content">
+          
+            <h3 id="niby-jzyk-programowania-a-dzi-si-swoimi-prawami-ba-posiada-nawet-swoje-dobre-zwyczaje-i-zasady-jakich-najlepiej-przestrzega-eby-wszystko-w-naszym-kodzie-byo-cacy-zapytacie-ale-jak-to-przecie-to-tylko-gupi-jzyk-skryptw-a-ja-odpowiem-wam-tym-wpisem---zapraszam">Niby język programowania, a żądzi się swoimi prawami, ba posiada nawet swoje dobre zwyczaje i zasady jakich najlepiej przestrzegać, żeby wszystko w naszym kodzie było cacy, zapytacie “Ale jak to?! Przecież to tylko głupi język skryptów!”, a ja odpowiem wam tym wpisem - zapraszam.</h3>
+
+<p>No dobrze, to zacznijmy od początku czym ten tytułowy <code class="highlighter-rouge">Savoir-vivre</code> dla Javascriptu jest, bo przecież nie chodzi tutaj o to że aby nasz kod był zgodny z zasadami musimy siedzieć na biurku wykonanym z takiego drewna, na krześle z takim profilem czy mieć kręgosłup ułożony w odpowiednim kącie lub co gorsza żebyśmy nie klikali o kilka decybeli za głośno bo to nie przystoi! Nie, nie takie zasady, tamtymi to conajwyżej może się zainteresować jakiś Fachmajster z BHP (prawie PHP :&gt;). Nam chodzi o reguły związane z prawidłowym pisaniem kodu, o to jak robić to najoptymalniej, najdokładniej po prostu najlepiej, tak jak sami mistrzowie z Netscape(twórcy JS) uznali.</p>
+
+
+
+          </div>
+
+          <div class="readmore"><a href="/zerojs-2/">Czytaj dalej <i class="ion-android-arrow-forward"></i></a></div>
           
         </div>
       </li>
@@ -388,7 +701,9 @@
     </div>
     
     
-      <span class="next"></span>
+    <div class="nextButton">
+      <a href="/strona-3" class="next">Wcześniejsze artykuły <i class="ion-android-arrow-forward"></i></a>
+    </div>
     
     </div>
 
@@ -401,8 +716,47 @@
 
     </div>
 
-    <script src="/assets/scripts/js/functions.js"></script>
-    
   </body>
 
 </html>
+
+<link rel="stylesheet" href="http://blog.furuart.pl/css/main.css"> 
+<style>
+  @import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,500,600&subset=latin,latin-ext");
+  @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700&subset=latin,latin-ext");
+</style>
+<script src="http://blog.furuart.pl/assets/scripts/js/jquery.js"></script>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//furuartpl.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<link rel="stylesheet" href="http://blog.furuart.pl/assets/scripts/js/prism/prism.css">
+<script src="http://blog.furuart.pl/assets/scripts/js/prism/prism.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83889767-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<script defer="true" src="http://blog.furuart.pl/assets/scripts/js/functions.js"></script>

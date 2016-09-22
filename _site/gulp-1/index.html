@@ -7,39 +7,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="subject" content="Blogging">
   <meta name="author" content="Furu.Art">
-  <meta name="keywords" content="Design Kodowanie Projektowanie Koder Programista Developer Designer Web Webmaster">
+  <meta name="keywords" content="Design, Kodowanie, Frontend, Nauka, Projektowanie, Koder, Programista, Developer, Designer, Web, Webmaster">
   <meta name="copyright" content="&copy; Furu.Art 2016">
 
   <title>[#1] Gulp&#39;owanie z Furu - nauka języka</title>
-  <meta name="description" content="Przyszła pora na kolejną lekcję Gulp’owania z Furu! Dzisiaj będzie już stricte praktycznie, pojawi się dużo kodu oraz sporo tłumaczeń co się dzieje w danej s...">
-
-  <link rel="stylesheet" href="/css/main.css">
+  <meta name="description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:description" content="Nauka w sposób przyjemny i zabawny, jeżeli marzysz o zostaniu front-end developerem, ale za bardzo nie wiesz jak - zapraszam tutaj">
+  <meta property="og:title" content="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego">
+ 
   <link rel="canonical" href="/gulp-1/">
-  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni" href="/feed.xml">
-  <link rel="stylesheet" href="/assets/scripts/js/prism/prism.css">
-
-  <script src="/assets/scripts/js/jquery.js"></script>
-  <script src="/assets/scripts/js/prism/prism.js"></script>
+  <link rel="alternate" type="application/rss+xml" title="Blog w Pełni - Od zera do Front-end developera! Ze szczyptą projektowania graficznego" href="http://blog.furuart.pl/feed.xml">
+  
+  <link rel="image_src" href="http://blog.furuart.pl/assets/logo/logo.jpg">
+  <meta property="og:image" content="http://blog.furuart.pl/assets/logo/logo.jpg">
+  
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="http://blog.furuart.pl/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://blog.furuart.pl/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://blog.furuart.pl/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://blog.furuart.pl/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://blog.furuart.pl/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://blog.furuart.pl/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://blog.furuart.pl/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://blog.furuart.pl/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://blog.furuart.pl/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="http://blog.furuart.pl/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="http://blog.furuart.pl/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="http://blog.furuart.pl/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="http://blog.furuart.pl/assets/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#7b1fa2">
+  <meta name="msapplication-TileImage" content="http://blog.furuart.pl/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#7B1FA2">
 </head>
 
 
   <body class="body-custom">
     <div class="htmlMask disable"></div>
 
+    <div class="alert success">
+      <p class="message"><i class="ion-checkmark"></i>Mobilna strona działa już poprawnie!</p>
+    </div>
+
     <div class="container-fluid">
 
-      <div class="mobile-trigger"><i class="ion-android-menu"></i> <i class="ion-android-close closed"></i></div>
+      <div class="mobile-trigger">
+  <i class="ion-android-menu"></i> <i class="ion-android-close closed"></i>
+</div>
 <div class="mobile-navigation-bar">
   <div class="navigation-bar">
     <ul class="mini-navigation">
-      <header>
         <header>
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -48,31 +76,37 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
-      </header>
       <li><a href="/"><i class="ion-home"></i> Strona główna</a></li>
       <li><a href="/about"><i class="ion-android-contact"></i> O mnie</a></li>
       <li><a href="/search/category"><i class="ion-android-folder"></i> Kategorie</a></li>
       <li><a href="/archive"><i class="ion-android-calendar"></i> Archiwum</a></li>
+      <li id="triggerNight" style="float: none;"><a><i class="ion-lightbulb"></i>Uruchom tryb nocny</a></li>
     </ul>
   </div>
 </div>
       
       <div class="col-3">
 
-      <div class="triggerInactive">
+      <div class="triggerClosed" id="trigger">
   <i class="ion-android-arrow-forward"></i>
   <p class="tip">Przywróc nawigację.</p>
+</div>
+
+<div class="triggerClosed" id="triggerNight">
+  <i class="ion-lightbulb"></i>
+  <p class="tip">Powróć do normalnych barw.</p>
 </div>
 
 <!-- Nerds: Experimental Functions(); -> Do not use!
@@ -102,9 +136,14 @@
 
   <nav id="drop">
 
-  <div class="trigger">
+  <div class="trigger" id="trigger">
     <i class="ion-android-arrow-back"></i>
     <p class="tip">Ukryj nawigację, aby skupić się wyłącznie na treści.</p>
+  </div>
+
+  <div class="trigger" id="triggerNight">
+    <i class="ion-lightbulb"></i>
+    <p class="tip">Pozwól odpocząć oczom, jeśli czytasz w nocy.</p>
   </div>
 
 </nav>
@@ -113,14 +152,15 @@
 
     <div class="logo">
 
-      <a href="/"></a>
+      <a href="http://blog.furuart.pl/"></a>
 
     </div>
 
 </div>
 
+
   <h1 class="title">Blog w Pełni</h1>
-   <p class="description">Projektowanie i Kodowanie w Pełni</p>
+   <p class="description">Od zera do Front-end developera w Pełni</p>
    <div class="spacer"></div>
 
 </header>
@@ -130,18 +170,16 @@
   <h2 class="title"><strong>O Furu</strong> - czyli o mnie</h2>
   
   <div class="me">
+      <a href="http://blog.furuart.pl/about">
+        
+        <img src="http://blog.furuart.pl/assets/images/me.jpg" class="photo">
 
-    <div class="photo">
-
-      <a href="/about"></a>
-
-    </div>
-
+      </a>
   </div>
 
   <div class="data">
 
-    <p class="info">Twórca, projektant, developer, zapaleniec o niepochamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
+    <p class="info">Twórca, projektant, developer, zapaleniec o niepohamowanych ambicjach, kreatywny, samouk, perfekcjonista no i rzecz jasna wszystko robi w <a href="/about">Pełni!</a></p>
 
     <div class="socials">
 
@@ -161,17 +199,25 @@
 
 </div>
 
+
         <div class="category">
 
   <h2 class="title">Kategorie</h2>
   <div class="data">
       
-        <li><a href="/search/category/">Dla webdeveloper'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdeveloper'a<i class="after ion-android-arrow-forward"></i></a></li>
       
-        <li><a href="/search/category/">Dla webdesigner'a <i class="after ion-android-arrow-forward"></i></a></li>
+        <li><a href="http://blog.furuart.pl/search/category/">Dla webdesigner'a<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Dodatek<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Informacje<i class="after ion-android-arrow-forward"></i></a></li>
+      
+        <li><a href="http://blog.furuart.pl/search/category/">Życiowe sentencje<i class="after ion-android-arrow-forward"></i></a></li>
       
   </div>
 </div>`
+
 
         <div class="archive">
   <h2 class="title">Archiwum</h2>
@@ -227,29 +273,234 @@
     
     
     
-      <li><a href="/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#September 2016">Wrzesień 2016 <span class="counter">14</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#August 2016">Sierpień 2016 <span class="counter">8</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#June 2016">Czerwiec 2016 <span class="counter">11</span></a></li>
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      <li><a href="http://blog.furuart.pl/archive/#May 2016">Maj 2016 <span class="counter">10</span></a></li>
       
     
   
   </div>
 </div>
 
+
+        <div class="friends">
+
+  <h2 class="title">Zaprzyjaźnione strony</h2>
+
+  <div class="data">
+
+    <ul>
+
+      <li><span class="icon" id="xal"><i class="ion-planet"></i></span><a href="http://xaal66.blogspot.com/" target="_blank" title="Blog hobbystyczny o astronomii, astrofotografii i...">Zapiski Xal'a</a></li>
+      
+      <li><span class="icon" id="grafinity"></span><a href="http://grafinity.pl" target="_blank" title="Grafinity Forum - forum graficzne">Grafinity Forum</a></li>
+
+      <li><span class="icon" id="lisiePismo"></span><a href="http://lisiepismo.pl" target="_blank" title=" LisiePismo – Blog osobisty 22-letniego Liska">LisiePismo</a></li>
+
+      <li><span class="icon" id="granos"></span><a href="http://granos.pl" target="_blank" title="Granos.pl - blog o nowych mediach, brandingu, marketingu i nie tylko">granos.pl</a></li>
+    </ul>
+
+  </div>
+  
+</div>
+
         <div class="ads">
   <div class="loremAd">
-    <p>Here will be Google Ads</p>
+    <p>Najlepszy hosting WWW w internecie, polecam w Pełni</p>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tani hosting WWW"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko1.jpg" /></a>
+    <a href="http://www.hekko.pl/?ref=67785" title="Tanie domeny"><img style="display: inline-block" src="http://blog.furuart.pl/assets/images/hekko2.jpg" /></a>
   </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
-  </div>
-  <div class="loremAd">
-    <p>Here will be Google Ads</p>
+  <div class="adwert">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  
   </div>
 </div>
 
+
         <footer>
-
+  Wszelkie prawa zastrzeżone <a href="http://furuart.pl">Furu.Art</a> &copy; 2016
 </footer>
-
 
       </div>
 
@@ -257,19 +508,20 @@
 
       <div class="col-9">     
            
-              <div class="navigator">
+              <!-- <div class="navigator">
     <span><a href="/">Strona główna</a></span>
     <span><i class="ion-chevron-right"></i></span>
     <span><a href="/gulp-1/">Obecny post</span>
-  </div>
+  </div> -->
 
   <div class="row">
 
     <article class="article">
 
       <header class="article-header">
-          <div style="background-image: url('');" class="headerImage">
-        <h2 class="article-title"><a href="#nope">[#1] Gulp'owanie z Furu - nauka języka</a></h2>
+        <div class="headerImage" style="background-image: url(/uploads/images/gulpowanie.png)">
+          <!-- <img src="/uploads/images/gulpowanie.png" class=""> -->
+          <h2 class="article-title"><a title="[#1] Gulp'owanie z Furu - nauka języka" href="">[#1] Gulp'owanie z Furu - nauka języka</a></h2>
         </div>
          <div class="article-info">
             <span class="info-date" title="Data"><i class="ion-ios-calendar"></i>24 Maja 2016</span>
@@ -287,48 +539,50 @@
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-7.png" alt="Gulp'owanie #1-1" /></p>
 
-<p>Tworzymy w folderze jade, plik z rozszerzeniem .jade, a w folderze sass plik z rozszerzeniem, tutaj jak komu wygodniej ja wybrałem .scss, lecz może być .sass, różnice zostały przedstawione w wyżej podlinkowanym wpisie. Dobrze, wypadałoby teraz nauczyć Gulp’a rozumienia kodu Jade oraz Sass, w tym celu otwieramy konsolę w naszym folderze (<code>SHIFT</code> + <code>Prawy przycisk myszy</code> - <code>Otwórz okno polecenia tutaj</code>) i wpisujemy:</p>
+<p>Tworzymy w folderze jade, plik z rozszerzeniem .jade, a w folderze sass plik z rozszerzeniem, tutaj jak komu wygodniej ja wybrałem .scss, lecz może być .sass, różnice zostały przedstawione w wyżej podlinkowanym wpisie. Dobrze, wypadałoby teraz nauczyć Gulp’a rozumienia kodu Jade oraz Sass, w tym celu otwieramy konsolę w naszym folderze (<code class="highlighter-rouge">SHIFT</code> + <code class="highlighter-rouge">Prawy przycisk myszy</code> - <code class="highlighter-rouge">Otwórz okno polecenia tutaj</code>) i wpisujemy:</p>
 
-<p><code>npm install gulp-jade --save-dev</code></p>
+<p><code class="highlighter-rouge">npm install gulp-jade --save-dev</code></p>
 
 <p>Parametry znajdujące się przy poleceniu omawiałem w [#0] lekcji z Gulp’em, gdy wszystko wykonaliśmy poprawnie, przystępujemy do wprowadzenia drugiego języka, wpisujemy:</p>
 
-<p><code>npm install gulp-sass --save-dev</code></p>
+<p><code class="highlighter-rouge">npm install gulp-sass --save-dev</code></p>
 
-<p>A teraz, jak sprawdzić czy nasze biblioteki zainstalowały się na pewno poprawnie? Wchodzimy w nasz tajemniczy plik <code>package.json</code> i naszym oczom powinno się ukazać takie coś:</p>
+<p>A teraz, jak sprawdzić czy nasze biblioteki zainstalowały się na pewno poprawnie? Wchodzimy w nasz tajemniczy plik <code class="highlighter-rouge">package.json</code> i naszym oczom powinno się ukazać takie coś:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-8.png" alt="Gulp'owanie #1-2" /></p>
 
-<p>Jak widać, nasz początkowo pusty plik, który zawierał wyłącznie nawiasy klamrowe, zawiera teraz nazwy poszczególnych bibliotek jakie instalowaliśmy przy pomocy polecenia npm install wraz z ich wersjami, no dobrze, tylko po co? Mniej więcej po to, aby wiedzieć że pracujemy na pewno na najnowszej wersji danej biblioteki i dla upewnienia, czy faktycznie została prawidłowo dodana do <code>node_modules</code>, jakim cudem pakiety które instalowaliśmy zagnieździły się w tym pliku? Tutaj swoją rolę odgrywa parametr –save-dev, czy zapis dla programisty, tłumacząc łopatologicznie. Właśnie do tego służy niepozorny plik <code>package.json</code>. Jeśli wszystko zrobiliście poprawnie, powinno to wyglądać tak jak u mnie, teraz zajmiemy się nauką Gulp’a, aby zrozumiał co my do niego wklepujemy. Otwieramy nasz plik ‘gulpfile.js’ (którego znaczenie tłumaczyłem również w [#0] lekcji) i robimy takie czary mary:</p>
+<p>Jak widać, nasz początkowo pusty plik, który zawierał wyłącznie nawiasy klamrowe, zawiera teraz nazwy poszczególnych bibliotek jakie instalowaliśmy przy pomocy polecenia npm install wraz z ich wersjami, no dobrze, tylko po co? Mniej więcej po to, aby wiedzieć że pracujemy na pewno na najnowszej wersji danej biblioteki i dla upewnienia, czy faktycznie została prawidłowo dodana do <code class="highlighter-rouge">node_modules</code>, jakim cudem pakiety które instalowaliśmy zagnieździły się w tym pliku? Tutaj swoją rolę odgrywa parametr –save-dev, czy zapis dla programisty, tłumacząc łopatologicznie. Właśnie do tego służy niepozorny plik <code class="highlighter-rouge">package.json</code>. Jeśli wszystko zrobiliście poprawnie, powinno to wyglądać tak jak u mnie, teraz zajmiemy się nauką Gulp’a, aby zrozumiał co my do niego wklepujemy. Otwieramy nasz plik ‘gulpfile.js’ (którego znaczenie tłumaczyłem również w [#0] lekcji) i robimy takie czary mary:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-9.png" alt="Gulp'owanie #1-3" /></p>
 
-<pre><code class="language-javascript">var jade = require('gulp-jade');
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">jade</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-jade'</span><span class="p">);</span>
 
-gulp.task('jade', function() {
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'jade'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 
-});
+<span class="p">});</span>
 </code></pre>
+</div>
 
-<p>Do poprzedniego kodu dodajemy nową zmienną, importującą bibliotekę Jade oraz tworzymy nowe polecenie dla Gulp’a o nazwie <code>jade</code>, dodatkowo dodałem komentarze dla lepszego rozeznania w kodzie (komentarze czyli tekst który nie jest wyświetlany na stronie ani nie jest rozpoznawany przez program jako kod do wykonania, można nim oddzielać dane sekcje kodu i opisywać co robią). Teraz sprawimy, żeby nasze polecenie <code>jade</code>, potrafiło odnaleźć, rozpoznać i skompilować język <code>jade</code> na zwykły <code>html</code> (kompilowanie czyli proces przetwarzania kodu pisanego w danym języku na kod zrozumiały dla komputera, w tym przypadku przeglądarki), więc do dzieła:</p>
+<p>Do poprzedniego kodu dodajemy nową zmienną, importującą bibliotekę Jade oraz tworzymy nowe polecenie dla Gulp’a o nazwie <code class="highlighter-rouge">jade</code>, dodatkowo dodałem komentarze dla lepszego rozeznania w kodzie (komentarze czyli tekst który nie jest wyświetlany na stronie ani nie jest rozpoznawany przez program jako kod do wykonania, można nim oddzielać dane sekcje kodu i opisywać co robią). Teraz sprawimy, żeby nasze polecenie <code class="highlighter-rouge">jade</code>, potrafiło odnaleźć, rozpoznać i skompilować język <code class="highlighter-rouge">jade</code> na zwykły <code class="highlighter-rouge">html</code> (kompilowanie czyli proces przetwarzania kodu pisanego w danym języku na kod zrozumiały dla komputera, w tym przypadku przeglądarki), więc do dzieła:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-101.png" alt="Gulp'owanie #1-4" /></p>
 
-<pre><code class="language-javascript">gulp.task('jade', function() {
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'jade'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     
-return gulp.src('./jade/**/*.jade')
+<span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'./jade/**/*.jade'</span><span class="p">)</span>
         
-  .pipe(jade({
-    pretty: true
-  }))
+  <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">jade</span><span class="p">({</span>
+    <span class="na">pretty</span><span class="p">:</span> <span class="kc">true</span>
+  <span class="p">}))</span>
         
-  .pipe(gulp.dest('./'))
-});
+  <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'./'</span><span class="p">))</span>
+<span class="p">});</span>
 
-gulp.task('default', ['connect', 'jade']);
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'default'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'connect'</span><span class="p">,</span> <span class="s1">'jade'</span><span class="p">]);</span>
 </code></pre>
+</div>
 
-<p>A teraz cóż ja tutaj uczynił? Pierw rozszerzyłem polecenie <code>jade</code>, dodając funkcję która zawiera polecenie gulp.src, którego zadaniem jest wyszukanie plików w języku <code>jade</code>, precyzyjniej, <code>gulp.src</code> służy do wyszukiwania miejsca źródłowego skąd pochodzi plik który ma zostać skompilowany, tak jak u mnie gulp ma rozglądać się za plikami <code>jade</code> znajdującymi się w folderze jade, a co oznaczają te wszystkie gwiazdki? Gwiazdki podwójne, mówią Gulp’owi że powinien szukać plików z rozszerzeniem jade w każdym podfolderze zawartym w folderze <code>jade</code>, ponieważ w którymkolwiek z podfolderów może pojawiać się dowolnie nazwany (tutaj pojedyncza gwiazdka plik) plik w języku jade, następnie Gulp, ‘wpycha’ znalezione pliki do rury (<code>.pipe</code>, gulp posługuje się rurami), gdzie wewnętrzne polecenie biblioteki jade, zawiera opcję <code>pretty: true</code>, dzięki czemu nie muszę martwić się o to czy podczas pisania kodu nie wstawiłem za dużo spacji, tabulatorów czy enterów ponieważ opcja pretty uporządkuje mój kod automatycznie, zaoszczędzając tym samym cenny czas. Następnie, gdy Gulp zakończy wpychanie do rury ma za zadanie czekać, aż zawartość rury wyleci i jego zadaniem jest otrzymany produkt wrzucić do katalogu, w którym powinien znaleźć się plik docelowy ( .pipe(gulp.dest(‘./’)), gdzie (‘./’) oznacza katalog główny czyli nasz folder). Lecz, aby finalnie Gulp zrozumiał, że nauczył się właśnie Jade’a, musimy jeszcze nakazać mu domyślnie ładowanie polecenia <code>jade</code>, co robimy dopisując w gulp.task(‘default’), nazwę <code>jade</code>. W ten oto sposób powinniśmy otrzymać wpisując polecenie gulp:</p>
+<p>A teraz cóż ja tutaj uczynił? Pierw rozszerzyłem polecenie <code class="highlighter-rouge">jade</code>, dodając funkcję która zawiera polecenie gulp.src, którego zadaniem jest wyszukanie plików w języku <code class="highlighter-rouge">jade</code>, precyzyjniej, <code class="highlighter-rouge">gulp.src</code> służy do wyszukiwania miejsca źródłowego skąd pochodzi plik który ma zostać skompilowany, tak jak u mnie gulp ma rozglądać się za plikami <code class="highlighter-rouge">jade</code> znajdującymi się w folderze jade, a co oznaczają te wszystkie gwiazdki? Gwiazdki podwójne, mówią Gulp’owi że powinien szukać plików z rozszerzeniem jade w każdym podfolderze zawartym w folderze <code class="highlighter-rouge">jade</code>, ponieważ w którymkolwiek z podfolderów może pojawiać się dowolnie nazwany (tutaj pojedyncza gwiazdka plik) plik w języku jade, następnie Gulp, ‘wpycha’ znalezione pliki do rury (<code class="highlighter-rouge">.pipe</code>, gulp posługuje się rurami), gdzie wewnętrzne polecenie biblioteki jade, zawiera opcję <code class="highlighter-rouge">pretty: true</code>, dzięki czemu nie muszę martwić się o to czy podczas pisania kodu nie wstawiłem za dużo spacji, tabulatorów czy enterów ponieważ opcja pretty uporządkuje mój kod automatycznie, zaoszczędzając tym samym cenny czas. Następnie, gdy Gulp zakończy wpychanie do rury ma za zadanie czekać, aż zawartość rury wyleci i jego zadaniem jest otrzymany produkt wrzucić do katalogu, w którym powinien znaleźć się plik docelowy ( .pipe(gulp.dest(‘./’)), gdzie (‘./’) oznacza katalog główny czyli nasz folder). Lecz, aby finalnie Gulp zrozumiał, że nauczył się właśnie Jade’a, musimy jeszcze nakazać mu domyślnie ładowanie polecenia <code class="highlighter-rouge">jade</code>, co robimy dopisując w gulp.task(‘default’), nazwę <code class="highlighter-rouge">jade</code>. W ten oto sposób powinniśmy otrzymać wpisując polecenie gulp:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-11.png" alt="Gulp'owanie #1-5" /></p>
 
@@ -336,23 +590,24 @@ gulp.task('default', ['connect', 'jade']);
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-121.png" alt="Gulp'owanie #1-6" /></p>
 
-<pre><code class="language-javascript">var sass = require('gulp-sass');
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">sass</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'gulp-sass'</span><span class="p">);</span>
 
-gulp.task('sass', function() {
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'sass'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 
-  return gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
-  });
+  <span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="s1">'./sass/**/*.scss'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">sass</span><span class="p">().</span><span class="nx">on</span><span class="p">(</span><span class="s1">'error'</span><span class="p">,</span> <span class="nx">sass</span><span class="p">.</span><span class="nx">logError</span><span class="p">))</span>
+    <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="s1">'./css'</span><span class="p">));</span>
+  <span class="p">});</span>
 
-gulp.task('sass:watch', function() {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-});
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'sass:watch'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">(</span><span class="s1">'./sass/**/*.scss'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'sass'</span><span class="p">]);</span>
+<span class="p">});</span>
 
-gulp.task('default', ['connect', 'jade', 'sass']);
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'default'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'connect'</span><span class="p">,</span> <span class="s1">'jade'</span><span class="p">,</span> <span class="s1">'sass'</span><span class="p">]);</span>
 </code></pre>
+</div>
 
-<p>Analogicznie jak poprzednio dodajemy nową zmienną z biblioteką Sass, następnie wydajemy polecenie Gulp’owi o nazwie <code>sass</code> (nazwa może być dowolna, nie musi tutaj być sass, może być np. style, wtedy w <code>default</code> zmieniamy <code>sass</code> na <code>style</code>), w której funkcja zwraca (return, polecenie służące do zwracania danych, wartości w językach programowania) polecenie <code>gulp.src</code>, które szuka plików Sass, następnie Gulp wpycha do rury znalezione pliki, po czym przy wykorzystaniu polecenia z biblioteki Sass, jeżeli nasz kod będzie zawierał błędy, np. gdzieś zjedliśmy klamrę albo pomyliliśmy literę, otrzymamy w naszej konsoli błąd z dokładnym położeniem (sass.logError, zwraca błędy spotkane podczas kompilacji), następnie z rury nasze pliki trafiają do folderu o nazwie <code>css</code>. Następne polecenie, które wydaliśmy Gulp’owi ma za zadanie obserwowanie plików sass na bieżąco, dzięki czemu jest w stanie po każdym zapisie pliku rozpoznać czy nie występują błędy w naszym kodzie(<code>sass:watch</code>), co wywołujemy wpisując polecenie <code>gulp.watch</code>, miejsce obserwowania plików oraz nazwa naszego polecenia zawierającego rozpoznawanie Sass. Na sam koniec trzeba jeszcze pokazać Gulp’owi, że już potrafi obsługiwać Sass, więc analogicznie dodajemy po przecinku <code>sass</code>. Jeśli wszystko zrobiliśmy jak należy, otrzymamy po wpisaniu w konsolę <code>gulp</code>:</p>
+<p>Analogicznie jak poprzednio dodajemy nową zmienną z biblioteką Sass, następnie wydajemy polecenie Gulp’owi o nazwie <code class="highlighter-rouge">sass</code> (nazwa może być dowolna, nie musi tutaj być sass, może być np. style, wtedy w <code class="highlighter-rouge">default</code> zmieniamy <code class="highlighter-rouge">sass</code> na <code class="highlighter-rouge">style</code>), w której funkcja zwraca (return, polecenie służące do zwracania danych, wartości w językach programowania) polecenie <code class="highlighter-rouge">gulp.src</code>, które szuka plików Sass, następnie Gulp wpycha do rury znalezione pliki, po czym przy wykorzystaniu polecenia z biblioteki Sass, jeżeli nasz kod będzie zawierał błędy, np. gdzieś zjedliśmy klamrę albo pomyliliśmy literę, otrzymamy w naszej konsoli błąd z dokładnym położeniem (sass.logError, zwraca błędy spotkane podczas kompilacji), następnie z rury nasze pliki trafiają do folderu o nazwie <code class="highlighter-rouge">css</code>. Następne polecenie, które wydaliśmy Gulp’owi ma za zadanie obserwowanie plików sass na bieżąco, dzięki czemu jest w stanie po każdym zapisie pliku rozpoznać czy nie występują błędy w naszym kodzie(<code class="highlighter-rouge">sass:watch</code>), co wywołujemy wpisując polecenie <code class="highlighter-rouge">gulp.watch</code>, miejsce obserwowania plików oraz nazwa naszego polecenia zawierającego rozpoznawanie Sass. Na sam koniec trzeba jeszcze pokazać Gulp’owi, że już potrafi obsługiwać Sass, więc analogicznie dodajemy po przecinku <code class="highlighter-rouge">sass</code>. Jeśli wszystko zrobiliśmy jak należy, otrzymamy po wpisaniu w konsolę <code class="highlighter-rouge">gulp</code>:</p>
 
 <p><img src="https://blogwpelni.files.wordpress.com/2016/05/screen-gulp-13.png" alt="Gulp'owanie #1-6" /></p>
 
@@ -364,67 +619,129 @@ gulp.task('default', ['connect', 'jade', 'sass']);
 
 <p>Artykuł oraz grafiki w nim zawarte są moją własnościa - <strong>Furu.ART</strong>, zakaz kopiowania treści na inne blogi, fanpage czy strony - Bo nogi z <em>**</em> powyrywam!</p>
 
-        <div class="tags">
-            
-              <span>#code</span>
-            
-              <span>#console</span>
-            
-              <span>#developer</span>
-            
-              <span>#Dla Webdevelopera</span>
-            
-              <span>#front-end</span>
-            
-              <span>#gulp</span>
-            
-              <span>#jade</span>
-            
-              <span>#javascript</span>
-            
-              <span>#konsola</span>
-            
-              <span>#node</span>
-            
-              <span>#npm</span>
-            
-              <span>#pipes</span>
-            
-              <span>#sass</span>
-            
-              <span>#web</span>
-            
-              <span>#webdeveloper</span>
-            
-        </div>
-         
-        <div id="disqus_thread"></div>
-        <script>
-            (function() {  // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                
-                s.src = '//blogwpeni.disqus.com/embed.js';
-                
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-      
       </div>
 
     </article>
 
-  </div>
+    </div>
 
+    <div class="row">
+        <h1 class="commentsText">Zachęcam do komentowania</h1>
+        
+        <article class="article" id="comments">
+          <div id="disqus_thread">
+  <a href=""></a>
 </div>
+        </article>
+        
+      </div>
+
+    <div class="row">
+
+    <header class="relatedHeader">
+      <h1><i class="ion-ios-paper"></i>A po przeczytaniu... Czytaj dalej</h1>
+    </header>
+
+    </div>
+
+    <div class="row">
+      <div class="center">
+      <div class="col-6 related">
+        
+        <div class="article-body">
+          <a class="prev" href="/material-1/">
+            <div class="headerImage" style="background-image: url('/uploads/images/materialDesign.png')"></div>
+            <h1 class="article-title">[#1] Material design jako krok w przód w projektowaniu - wprowadzenie</h1>
+           </a>
+        </div>
+        
+      </div>
+      <div class="col-6 related">
+        
+        <div class="article-body">
+          <a class="next" href="/design-na-kartce-1/">
+            <div class="headerImage" style="background-image: url('/uploads/images/projektowanieNaKartce.png')"></div>
+             <h1 class="article-title">Przenosimy szkice do programu graficznego - header + article</h1>
+          </a>
+        </div>    
+        
+      </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="adwertajsment">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+        </div>
+        <div class="adwertajsment">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Reklamy FuruArt -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-5573522015272112"
+        data-ad-slot="1251158388"
+        data-ad-format="auto"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+        </div>
+      </div>
+
 
       </div>
 
     </div>
 
-    <script src="/assets/scripts/js/functions.js"></script>
-    
   </body>
 
 </html>
+
+<link rel="stylesheet" href="http://blog.furuart.pl/css/main.css"> 
+<style>
+  @import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,500,600&subset=latin,latin-ext");
+  @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700&subset=latin,latin-ext");
+</style>
+<script src="http://blog.furuart.pl/assets/scripts/js/jquery.js"></script>
+<script>
+
+/**
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables */
+/*
+var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//furuartpl.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<link rel="stylesheet" href="http://blog.furuart.pl/assets/scripts/js/prism/prism.css">
+<script src="http://blog.furuart.pl/assets/scripts/js/prism/prism.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-83889767-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<script defer="true" src="http://blog.furuart.pl/assets/scripts/js/functions.js"></script>

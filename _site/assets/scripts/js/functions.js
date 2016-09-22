@@ -9,49 +9,54 @@
 
 // Load created functions
 
-$(window).load($(function(){
+$(function() {
   navigation();
-  dynHeight();
   wtf();
   mobileMagic();
-}));
+  dynHeight();
+  nightMode();
+  alerting();
+});
 
 // Navigation triggered
 function navigation() {
 
-  $(".trigger").on("click", function() {
-    
-    $(".navigation-bar").toggleClass("closeMe");
+  var trigger = '#drop>#trigger, .triggerClosed';
+  var elements = '.navigation-bar, .col-9, .triggerClosed, #drop>#trigger';
 
-    $(".col-9").toggleClass("positionMe");
+  $(trigger).on('click', function() {
 
-    $(".triggerInactive").show();
-
-    $(".triggerInactive").on("click", function() {
-
-      $(".navigation-bar").removeClass("closeMe");
-
-      $(".col-9").removeClass("positionMe");
-
-      $(this).hide();
-
-    });
+    $(elements).toggleClass('close');
 
   });
 
 }
 
+function nightMode() {
+
+  var trigger = "#drop>#triggerNight, .mini-navigation>#triggerNight",
+      elementS = "html, .body-custom";
+
+      $(trigger).on('click', function() {
+        $(elementS).toggleClass('night');
+      });
+}
+
 // Dynamic height of navigation bar
 function dynHeight() {
-  
-  $(document).ready(dynamicHeight);
 
-  $(window).resize(dynamicHeight);
+  var htmlHeight = $('html').height(),
+      disqusHeight = $('#disqus_thread').height(),
+      newHeight = htmlHeight + disqusHeight,
+      navigationBar = ".navigation-bar";
 
-  function dynamicHeight() {
-    var newHeight = $("html").height() + "px";
-    $(".navigation-bar").css("height", newHeight);
-  }
+      if ( disqusHeight == undefined ) {
+        $(navigationBar).css('height', htmlHeight + 'px');
+      }
+
+      else if ( disqusHeight != undefined ) {
+        $(navigationBar).css('height', newHeight + 'px');
+      }
 }
 
 function wtf() {
@@ -70,32 +75,10 @@ function mobileMagic() {
   });
 }
 
-/* Nerds: Experimental Function(); --> Do not use, it will be implemented later.
-function betterRead() {
-  $(".trigger-readability").on("click", function() {
-    $(".article-content").toggleClass("betterRead");
+function alerting() {
+  var alert = ".alert";
+
+  $(alert).on('click', function() {
+    $(this).hide(1000);
   });
 }
-
-function activeTools() {
-  $(".trigger-tools").on("click", function() {
-    $(".tools-list").toggleClass("active");
-  });
-}
-
-function fontSizeBigger() {
-  $("blabla").click(function() {
-    var fontSize = parseInt($(".article-content > p").css("font-size"));
-    var maxSize = 26;
-    var minSize = 18;
-    if( fontSize != maxSize ) {
-      fontSize = fontSize + 2 + "px";
-      $("blabla").css({"font-size":fontSize});
-    } 
-    else {
-      $("blabla").css("font-size", minSize + "px");
-    } 
-});
-}
-
-*/
