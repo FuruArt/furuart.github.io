@@ -6,4 +6,5 @@
    gem "github-pages"
    gem "jekyll-github-metadata"
    gem "jekyll-minibundle"
+   gem "jekyll-admin"
  end
