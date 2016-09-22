@@ -307,6 +307,19 @@ header {
     }
   }
 
+  #granos {
+    @extend #lisiePismo;
+    background-image: url(../assets/images/granos.pl);
+    background-color: #fff;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:hover {
+      @include filter( contrast(1.3) );
+    }
+  }
+
 }
 
 .category, .archive, .tags, .friends {
