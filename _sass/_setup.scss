@@ -476,11 +476,11 @@ header {
     z-index: 1;
 
     &:hover { 
-      -webkit-filter: contrast(1.5);
-      -moz-filter: contrast(1.5);
-      -o-filter: contrast(1.5);
-      -ms-filter: contrast(1.5);
-      filter: contrast(1.5);
+      -webkit-filter: contrast(1.2);
+      -moz-filter: contrast(1.2);
+      -o-filter: contrast(1.2);
+      -ms-filter: contrast(1.2);
+      filter: contrast(1.2);
     }
 
     .article-title {

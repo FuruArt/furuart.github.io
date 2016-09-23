@@ -5,13 +5,173 @@
     <description>Od zera do Front-end developera w Pełni</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 22 Sep 2016 20:47:35 +0000</pubDate>
-    <lastBuildDate>Thu, 22 Sep 2016 20:47:35 +0000</lastBuildDate>
+    <pubDate>Fri, 23 Sep 2016 09:29:06 +0000</pubDate>
+    <lastBuildDate>Fri, 23 Sep 2016 09:29:06 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
         <title>[#9] JavascriptZero - Przełączniki i pozostałe wieszaki</title>
-        <description>&lt;h3 id=&quot;switch---czyli-gdy-tworzenie-dziesitego-z-rzdu-else-if-zaczyna-by&quot;&gt;Switch - czyli gdy tworzenie dziesiątego z rzędu &lt;code class=&quot;highlighter-rouge&quot;&gt;else if&lt;/code&gt; zaczyna by&lt;/h3&gt;
+        <description>&lt;h3 id=&quot;switch---czyli-gdy-tworzenie-dziesitego-z-rzdu-else-if-zaczyna-by-frustrujce-a-my-przestajemy-rozumie-co-waciwie-si-dzieje-w-warunkach-wszystkie-zapytania-tacz-makaren-i-logika-zaczyna-dziaa-w-stron-przeciwn---stanowczo-wtedy-najlepiej-uy-przecznika-ktrym-dzisiejsza-lekcja-jest-powicona-dodatkowo-uzupenimy-brakujce-ptle-o-for-i-while---zapraszam-w-peni-&quot;&gt;Switch - czyli gdy tworzenie dziesiątego z rzędu &lt;code class=&quot;highlighter-rouge&quot;&gt;else if&lt;/code&gt; zaczyna być frustrujące, a my przestajemy rozumieć co właściwie się dzieje w warunkach, wszystkie zapytania tańczą makarenę i logika zaczyna działać w stronę przeciwną - stanowczo wtedy najlepiej użyć przełącznika, którym dzisiejsza lekcja jest poświęcona, dodatkowo uzupełnimy brakujące pętle o &lt;code class=&quot;highlighter-rouge&quot;&gt;For&lt;/code&gt; i &lt;code class=&quot;highlighter-rouge&quot;&gt;While&lt;/code&gt; - zapraszam w Pełni :&amp;gt;&lt;/h3&gt;
+
+&lt;p&gt;No dobrze, ale tak właściwie to o czym ja plotę? Co to jest switch? Jak go używać? Po co? &lt;code class=&quot;highlighter-rouge&quot;&gt;Switch&lt;/code&gt; inaczej Przełącznik to tak jakby menu z opcjami do wyboru, które mają zostać wywołane gdy zdarzy się dany przypadek. Co może bardzo kojarzyć się z pętlą warunkową, jednakże &lt;code class=&quot;highlighter-rouge&quot;&gt;Switch&lt;/code&gt; składa się z &lt;code class=&quot;highlighter-rouge&quot;&gt;case&lt;/code&gt; czyli dosłownie &lt;code class=&quot;highlighter-rouge&quot;&gt;skrzynek&lt;/code&gt;. Co istotne, Switch, sprawdza wszystkie przypadki wyłącznie raz i porównuje je z zawartością każdego przypadku. Wiem, że teraz brzmi to jak kompletna abstrakcja, ale z praktycznymi przykładami idzie przełknąć…&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Switch nazywa się switchem nie dlatego, że można go pstrykać tak jak przełącznik, ale mniej więcej jego działanie na tym polega - sprawdza dany przypadek i jeśli w danym przypadku nie jest to zgodne przeskakuje/przełącza się do następnego przypadku, aż znajdzie pasujące dane. Gdybym miał jednoznacznie określić czym jest Switch, powiem że jest to Blok instrukcji, a jak wygląda?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getDay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Niedziela&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Poniedziałek&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Wtorek&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Środa&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Czwartek&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Piątek&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Sobota&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dziś jest &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Łoo luju! Co żeś naskrobał mądralo?! Spokojnie, zachowajcie smołę i pierze na inne okoliczności. Biorę się za wytłumaczenia.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;#1.&lt;/strong&gt; Pierw tworzę dwie zmienne, jedna to obiekt Daty, zaś druga to pusta zmienna typu ciąg znaków.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;#2.&lt;/strong&gt; Wywołuję &lt;code class=&quot;highlighter-rouge&quot;&gt;Switch&lt;/code&gt; odpowiednim słowem kluczowym &lt;code class=&quot;highlighter-rouge&quot;&gt;switch&lt;/code&gt;, gdzie w nawiasie znajduje się metoda jaka ma zostać wykonana dla zmiennej &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt;, czyli pobranie aktualnego dnia tygodnia.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;#3.&lt;/strong&gt; Tutaj zaczyna się magia i sedno &lt;code class=&quot;highlighter-rouge&quot;&gt;Switch&lt;/code&gt;, czyli &lt;code class=&quot;highlighter-rouge&quot;&gt;case&lt;/code&gt;, gdzie pierwszym przypadkiem o indeksie &lt;code class=&quot;highlighter-rouge&quot;&gt;0&lt;/code&gt; jest przypisanie do zmiennej &lt;code class=&quot;highlighter-rouge&quot;&gt;day&lt;/code&gt; nazwy dnia tygodnia, czyli &lt;code class=&quot;highlighter-rouge&quot;&gt;niedziela&lt;/code&gt; tuż po tym następuje kolejne bardzo istotne słowo kluczowe czyli &lt;code class=&quot;highlighter-rouge&quot;&gt;break&lt;/code&gt;, odpowiada za zatrzymanie sprawdzania dalszych przypadków jeśli indeks &lt;code class=&quot;highlighter-rouge&quot;&gt;case&lt;/code&gt; będzie równy warunkowi w nawiasie. Przykładowo, jeśli mamy czwartek i nasz switch będzie sprawdzał pokolei przypadki, czyli czy pobrany dzień tygodnia jest równy numerowi przypadku, jeśli tak jest, zmienna day otrzyma odpowiedni tekst. Dla czwartku Switch będzie sprawdzał do momentu, aż trafi na &lt;code class=&quot;highlighter-rouge&quot;&gt;case&lt;/code&gt; o indeksie &lt;code class=&quot;highlighter-rouge&quot;&gt;4&lt;/code&gt;, ponieważ jest on równy numerowi dnia, licząc od 0 (niedziela) do 6 (sobota).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;#4&lt;/strong&gt; Na końcu wywołuję swoją zmienną w tekście `“Dziś jest “ dzień tygodnia.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;W rezultacie dzisiaj otrzymałem: &lt;code class=&quot;highlighter-rouge&quot;&gt;Dziś jest Czwartek&lt;/code&gt;. No dobrze, a co jeśli żaden z przypadków nie odpowiada warunkowi? Switch przewiduje tego typu możliwość i posiada dodatkowy &lt;code class=&quot;highlighter-rouge&quot;&gt;case&lt;/code&gt; o specjalnej nazwie &lt;code class=&quot;highlighter-rouge&quot;&gt;default&lt;/code&gt; czyli domyślny. A jak to działa?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getDay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Niedziela&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Sobota&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;dzień między niedzielą, a sobotą.&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Dziś jest &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;day&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Skoro jest czwartek otrzymam wiadomość iż &lt;code class=&quot;highlighter-rouge&quot;&gt;Dziś jest dzień między niedzielą, a sobotą&lt;/code&gt;. Wiem, że przykład bardzo trywialny, ale łatwo tłumaczy działanie Switch’a. Switche stosujemy, głównie wtedy gdy instrukcji &lt;code class=&quot;highlighter-rouge&quot;&gt;ELSE IF&lt;/code&gt; w naszym kodzie jest stanowczo za dużo. Jeśli mamy skrypt, który posiada opcje, również używamy Switcha. Zaś gdy mamy wyłącznie &lt;code class=&quot;highlighter-rouge&quot;&gt;IF&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ELSE&lt;/code&gt; lub &lt;code class=&quot;highlighter-rouge&quot;&gt;IF&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ELSE IF&lt;/code&gt; i &lt;code class=&quot;highlighter-rouge&quot;&gt;ELSE&lt;/code&gt; wtedy używanie Switcha wydaje się zbędne.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://s2.quickmeme.com/img/bc/bc3ada7cc81b718053680a8fdd73f9c374c4168bff94970365049726f7e86620.jpg&quot; alt=&quot;zerojs #9-1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Kwintesencja wyrazu Pętla, to właśnie pętla &lt;code class=&quot;highlighter-rouge&quot;&gt;For&lt;/code&gt;(dla). Której zadaniem jest wykonywanie danej linijki kodu do momentu, aż nie zostanie spełniony warunek, tyczy się to kodu które powinien być powtarzany kilkukrotnie. Teraz rozkminimy sobie jakąś pętlę For&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Wyświetlam się już &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; razy!&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;br&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;#1.&lt;/strong&gt; tworzę dwie puste zmienne, pierwsza o nazwie &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;, która jest charakterystyczna dla pętli &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt;, utarło się tak dlatego, że operacja powtarzania czegoś kilkukrotnie to iteracja, stąd pierwsza literka &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;, jako zmienna, ale może to być każda dowolna nazwa.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;#2.&lt;/strong&gt; słowem kluczowym &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; tworzę pętlę, wewnątrz której znajduję się trzy deklaracje, które muszą być zawsze, bo inaczej pętla nie zadziała. Pierwszy warunek to podanie zmiennej. Tłumacząc dosłownie: Dla zmiennej &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;; Mniejszej lub równej &lt;code class=&quot;highlighter-rouge&quot;&gt;20&lt;/code&gt;; Zwiększaj o jeden &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;. Drugi warunek to zachodząca nierówność(ostra lub nieostra), zawsze musi to być nierówność. Gdy wpiszecie znak &lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt;, pętla nie będzie działać. Natomiast trzeci warunek to operacja inkrementacji lub dekrementacji albo jakiejś innej np. &lt;code class=&quot;highlighter-rouge&quot;&gt;i=i + 5&lt;/code&gt;. Pamiętajcie, że między poszczególnymi warunkami jest &lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt;, gdy wam to umknie pętla również was oleje.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;#3.&lt;/strong&gt; wstawiam w miejsce zmiennej tekst z ilością wykonanych pętli&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;#4.&lt;/strong&gt; wywołuję zmienną &lt;code class=&quot;highlighter-rouge&quot;&gt;text&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;W końcowym rezultacie otrzymuję&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Wyświetlam się już 0 razy!
+Wyświetlam się już 1 razy!
+Wyświetlam się już 2 razy!
+Wyświetlam się już 3 razy!
+Wyświetlam się już 4 razy!
+Wyświetlam się już 5 razy!
+Wyświetlam się już 6 razy!
+Wyświetlam się już 7 razy!
+Wyświetlam się już 8 razy!
+Wyświetlam się już 9 razy!
+Wyświetlam się już 10 razy!
+Wyświetlam się już 11 razy!
+Wyświetlam się już 12 razy!
+Wyświetlam się już 13 razy!
+Wyświetlam się już 14 razy!
+Wyświetlam się już 15 razy!
+Wyświetlam się już 16 razy!
+Wyświetlam się już 17 razy!
+Wyświetlam się już 18 razy!
+Wyświetlam się już 19 razy!
+Wyświetlam się już 20 razy!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Pętle &lt;code class=&quot;highlighter-rouge&quot;&gt;For&lt;/code&gt; wykorzystujemy wszędzie tam gdzie coś ma być wykonywane pewną ilość razy. Warunki #1 i #3, można pominąć jeśli nasza pętla ma za zadanie pobierać np. nazwy z tablicy. Przykładowo tak&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;owoce&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;&#39;Jabłko&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;&#39;Banan&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;&#39;Gruszka&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;s1&quot;&gt;&#39;Brzoskwinia&#39;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;owoce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;owoce&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;br&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;W ten sposób wypiszemy nasze owoce, ale nie musimy określać jakichkolwiek warunków. #3 warunek poniekąd jest wykonywany wewnątrz samej pętli.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://cdn.meme.am/cache/instances/folder621/500x/64216621.jpg&quot; alt=&quot;zerojs #9-2&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ten meme dosknale ilustruje z czego składa się pętla &lt;code class=&quot;highlighter-rouge&quot;&gt;While&lt;/code&gt; oraz &lt;code class=&quot;highlighter-rouge&quot;&gt;Do&lt;/code&gt;, którym właśnie się teraz zajmiemy. &lt;code class=&quot;highlighter-rouge&quot;&gt;While&lt;/code&gt; czyli &lt;code class=&quot;highlighter-rouge&quot;&gt;Podczas gdy&lt;/code&gt; to pętla,która jest bardzo podobna do &lt;code class=&quot;highlighter-rouge&quot;&gt;For&lt;/code&gt;, głównie dlatego że też potrafi powtarzać dany kod do momentu osiągnięcia danego warunku. Pętla &lt;code class=&quot;highlighter-rouge&quot;&gt;While&lt;/code&gt; jest zapisana w zwięźlejszy sposób niż &lt;code class=&quot;highlighter-rouge&quot;&gt;For&lt;/code&gt;, dodatkowo do pętli &lt;code class=&quot;highlighter-rouge&quot;&gt;While&lt;/code&gt; dołącza się pętlę &lt;code class=&quot;highlighter-rouge&quot;&gt;Do&lt;/code&gt;, która przechowuj kod do wykonania. A jak to wygląda w praktyce?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Wyświetlam się już &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; razy!&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;br&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Otrzymamy dokładnie ten sam efekt co podczas wywołania zmiennej w pętli &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt;, rzecz jasna do &lt;code class=&quot;highlighter-rouge&quot;&gt;9 razy!&lt;/code&gt;, bo &lt;code class=&quot;highlighter-rouge&quot;&gt;i &amp;lt; 10&lt;/code&gt;. Wobec tego czym różni się pętla &lt;code class=&quot;highlighter-rouge&quot;&gt;For&lt;/code&gt; od &lt;code class=&quot;highlighter-rouge&quot;&gt;Do/While&lt;/code&gt;? Rzekłbym, że tylko składnią i sposobem przechowywania kodu. Większych różnic nie ma. Więc jak komu wygodniej, może używać albo &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; albo &lt;code class=&quot;highlighter-rouge&quot;&gt;Do/While&lt;/code&gt;. Ja w zależności od skryptu preferuję albo &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt;, albo &lt;code class=&quot;highlighter-rouge&quot;&gt;while/do&lt;/code&gt;. Wszystko zapisane za pomocą pętli &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; można zapisać pętlą &lt;code class=&quot;highlighter-rouge&quot;&gt;Do/While&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;W ten sposób dokończyliśmy wiedzę o pętlach i już w Pełni możemy tworzyć bardziej złożone skrypty, wymagające spełniania określonych warunków i sprawdzania ich, a także powtarzania ileś razy jeśli jest taka konieczność. Jeśli zrozumiałeś jak z pętli skorzystać, nie ‘powiesiłeś’ się podczas ich nauki, dowiedziałeś się czegoś przydatnego lub po prostu chcesz docenić moją pracę, zostaw Lubię to na &lt;a href=&quot;https://fb.com/furuart&quot;&gt;Facebooku&lt;/a&gt;, skomentuj na dole artykułu i udostępnij, a tymczasem do następnej lekcji w Pełni! (Teraz lekcje z JS, będą już na poziomie Średnim, dlatego inny kolor nagłówka - tzw. JavascriptOne)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Artykuł jest moją własnością - &lt;strong&gt;FuruArt&lt;/strong&gt; - zakaz kopiowania treści na inne blogi, fanpage czy strony bo nogi z dupy powyrywam i nie ważne ile razy będziesz się iterować i tak spełnię warunek.&lt;/p&gt;
 </description>
         <pubDate>Fri, 23 Sep 2016 08:00:00 +0000</pubDate>
         <link>/zerojs-9/</link>
