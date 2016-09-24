@@ -4,7 +4,7 @@ layout: post
 date: '2016-09-24 08:00:00'
 author: FuruArt
 comments: 'true'
-category: Dla webdeveloper'a
+category: Życiowe sentencje
 image: '/uploads/images/luzneGatki.png'
 tags:
 - luzne
