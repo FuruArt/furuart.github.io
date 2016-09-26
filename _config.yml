@@ -43,7 +43,7 @@ excerpt_separator: <!--more-->
 
 comments: true
 
-gems: ['jekyll-paginate', 'jekyll-minibundle', 'jekyll-admin']
+gems: ['jekyll-paginate', 'jekyll-minibundle', 'jekyll-admin', 'jemoji']
 
 paginate: 6
 
