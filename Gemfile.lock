@@ -174,7 +174,7 @@ DEPENDENCIES
   jekyll-github-metadata
   jekyll-minibundle
   jekyll-paginate
-  jemoji
+  jemoji (~> 0.7.0)
   pygments.rb
 
 BUNDLED WITH
