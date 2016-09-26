@@ -7,5 +7,6 @@
    gem "jekyll-github-metadata"
    gem "jekyll-minibundle"
    gem "jekyll-admin"
+   gem "gemoji"
    gem "jemoji"
  end
