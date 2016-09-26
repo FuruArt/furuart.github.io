@@ -8,4 +8,5 @@
    gem "jekyll-minibundle"
    gem "jekyll-admin"
    gem 'jemoji', '~> 0.7.0'
+   gem 'jekyll-seo-tag'
  end
