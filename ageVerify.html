@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Weryfikacja wieku</title>
+  <style>* { font-family: sans-serif; }</style>
+</head>
+<body>
+<h1>Podaj swój wiek</h1>
+
+<input type="text" id="age">
+<button type="button" onclick="checkAge()">Sprawdź wiek</button>
+
+<p id="message"></p>
+
+<script>
+function checkAge() {
+  var message, age;
+      message = document.getElementById('message');
+      message.innerHTML = "";
+      age = document.getElementById('age').value;
+
+  try {
+    if ( age == "" ) throw "Wartość nie może być pusta!";
+    if ( isNaN(age) ) throw "Wartość nie jest liczbą!";
+    age = Number(age);
+    if ( age < 1 ) throw "Jeszcze się nie urodziłeś!";
+    if ( age < 5 ) throw "Chyba jeszcze nie powinieneś tutaj przebywać";
+    if ( age < 12) throw "Jak będziesz miał 12 lat daj znać!";
+    if ( age <= 99 ) throw "Możesz tutaj przebywać";
+    if ( age > 99 ) throw "A ty tutaj jeszcze jesteś?!";
+  }
+
+  catch(err) {
+    message.innerHTML = err;
+  }
+</script>
+</body>
+</html>
