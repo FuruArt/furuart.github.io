@@ -22,7 +22,7 @@ function checkAge() {
 
   try {
     if ( age == "" ) throw "Wartość nie może być pusta!";
-    if ( isNaN(age) ) throw "Wartość nie jest liczbą!";
+    if ( isNaN(age) ) throw age + " nie jest liczbą!";
     age = Number(age);
     if ( age < 1 ) throw "Jeszcze się nie urodziłeś!";
     if ( age < 5 ) throw "Chyba jeszcze nie powinieneś tutaj przebywać";
