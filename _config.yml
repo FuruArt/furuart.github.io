@@ -52,3 +52,5 @@ paginate_path: "/strona-:num"
 timezone: "Europe/Warsaw"
 
 repository: FuruArt/blog
+
+future: true
