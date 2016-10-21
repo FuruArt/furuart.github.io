@@ -4,7 +4,7 @@
   {% assign counter = 0 %}
   {% for post in site.posts %}
     {% assign thisyear = post.date | date: "%B %Y" | replace:"January","Styczeń" | replace:"Februar","Luty" | replace:"March","Märzec" | replace: "April", "Kwiecień" | replace:"May","Maj" | replace:"June","Czerwiec" | replace:"July","Lipiec" | replace: "August","Sierpień" | replace: "September", "Wrzesień" | replace "October", "Październik" | replace: "November", "Listopad" | replace:"December","Grudzień" %}
-    {% assign prevyear = post.previous.date | date: "%B %Y" | replace:"January","Styczeń" | replace:"Februar","Luty" | replace:"March","Märzec" | replace: "April", "Kwiecień" | replace:"May","Maj" | replace:"June","Czerwiec" | replace:"July","Lipiec" | replace: "August","Sierpień" | replace: "September", "Wrzesień" | replace "October", "Październik" | replace: "November", "Listopad" | replace:"December","Grudzień" %}
+    {% assign prevyear = post.previous.date | date: "%B %Y" | replace:"January","Styczeń" | replace:"Februar","Luty" | replace:"March","Märzec" | replace: "April", "Kwiecień" | replace:"May","Maj" | replace:"June","Czerwiec" | replace:"July","Lipiec" | replace: "August","Sierpień" | replace: "September", "Wrzesień" | replace: "October", "Październik" | replace: "November", "Listopad" | replace:"December","Grudzień" %}
     {% assign counter = counter | plus: 1 %}
     {% if thisyear != prevyear %}
       <li><a href="{{ site.github.url }}/archive/#{{ post.date | date: "%B %Y" }}">{{ thisyear }} <span class="counter">{{ counter }}</span></a></li>
